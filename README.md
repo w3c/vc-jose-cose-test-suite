@@ -1,5 +1,8 @@
 
-# Test Suite for the [vc-jose-cose specification](https://www.w3.org/TR/vc-jose-cose/)
+
+- https://www.w3.org/TR/vc-jose-cose
+
+- https://github.com/w3c/vc-jose-cose-test-suite
 
 ## Approach
 
