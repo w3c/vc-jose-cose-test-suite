@@ -1,0 +1,46 @@
+protectedHeader:
+  alg: ES384
+  typ: vc+ld+json+jwt
+  cty: vc+ld+json
+payload:
+  "@context":
+    - https://www.w3.org/ns/credentials/v2
+  type:
+    - VerifiableCredential
+  issuer: https://vendor.example/issuers/42
+  credentialSchema:
+    id: https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema-credential/schema.jwt
+    type: JsonSchemaCredential
+  credentialSubject:
+    id: https://vendor.example/issuers/42
+issuer:
+  publicKeyJwk:
+    kty: EC
+    x: kH9jVM2RoLIfysJMxKNfPmuWClHsny6KpuKAw-2W_-sXNoD7VcQsX_3QHufgWlrn
+    y: IYGnP0Je2n7FZoiThUrDWf3ctacH8MF4fzCTkd8GBfunqyKb7QF3mySBt34vtllG
+    crv: P-384
+  secretKeyJwk:
+    kty: EC
+    x: kH9jVM2RoLIfysJMxKNfPmuWClHsny6KpuKAw-2W_-sXNoD7VcQsX_3QHufgWlrn
+    y: IYGnP0Je2n7FZoiThUrDWf3ctacH8MF4fzCTkd8GBfunqyKb7QF3mySBt34vtllG
+    crv: P-384
+    d: rQNIB_mz2jJjWDJvpeRMRrZaryKykROEdKXJRDTXVj-Fm_l7T-WdEe9Zt9b5DaLo
+issued: eyJhbGciOiJFUzM4NCIsInR5cCI6InZjK2xkK2pzb24rand0IiwiY3R5IjoidmMrbGQranNvbiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJodHRwczovL3ZlbmRvci5leGFtcGxlL2lzc3VlcnMvNDIiLCJjcmVkZW50aWFsU2NoZW1hIjp7ImlkIjoiaHR0cHM6Ly93M2MuZ2l0aHViLmlvL3ZjLWpvc2UtY29zZS10ZXN0LXN1aXRlL3Rlc3RjYXNlcy9zZWN1cmVkLXZjLXdpdGgtc2NoZW1hLWNyZWRlbnRpYWwvc2NoZW1hLmp3dCIsInR5cGUiOiJKc29uU2NoZW1hQ3JlZGVudGlhbCJ9LCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6Imh0dHBzOi8vdmVuZG9yLmV4YW1wbGUvaXNzdWVycy80MiJ9fQ.uW5b3bsUBUDwRPza8giZToJAr9JK0iCmFGg243Wwg2c5tPGrUfpT_q1avkMLR58PvzubFqgFUPJuF9TWOMP7GJQuyu2grRSz4ig_RTdHWJ_PwuvKJx7mSpmmIUctURr8
+validated:
+  payload:
+    "@context":
+      - https://www.w3.org/ns/credentials/v2
+    type:
+      - VerifiableCredential
+    issuer: https://vendor.example/issuers/42
+    credentialSchema:
+      id: https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema-credential/schema.jwt
+      type: JsonSchemaCredential
+    credentialSubject:
+      id: https://vendor.example/issuers/42
+  protectedHeader:
+    alg: ES384
+    typ: vc+ld+json+jwt
+    cty: vc+ld+json
+  schema:
+    https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema-credential/schema.jwt: true
