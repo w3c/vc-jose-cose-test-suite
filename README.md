@@ -1,5 +1,3 @@
 
-# Specification 'vc-jose-cose-test-suite'
+# Test Suite for the [vc-jose-cose specification](https://www.w3.org/TR/vc-jose-cose/)
 
-This is the repository for vc-jose-cose-test-suite. You're welcome to contribute! Let's make the Web rock our socks
-off!
