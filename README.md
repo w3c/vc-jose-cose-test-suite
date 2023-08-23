@@ -29,6 +29,22 @@ Examples are hosted via github pages:
 
 - [https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/payload.json](https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/payload.json)
 
+### `testcases/test-case-name/payload.yaml`
+
+This file represents the verifiable credential or presentation with selective disclosure
+
+Examples are hosted via github pages:
+
+- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload.yaml](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload.yaml)
+
+### `testcases/test-case-name/payload-disclosure.yaml`
+
+This file represents a holder's preference for disclosing claims:
+
+Examples are hosted via github pages:
+
+- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload-disclosure.yaml](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload-disclosure.yaml)
+
 ### `testcases/test-case-name/protected-header.json`
 
 This file represents the verifiable credential or presentation metadata, including hints related to discovering key material and content types.
