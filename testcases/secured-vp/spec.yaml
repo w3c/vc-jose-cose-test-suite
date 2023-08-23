@@ -7,26 +7,26 @@ payload:
     - https://www.w3.org/ns/credentials/v2
   type:
     - VerifiablePresentation
+issued: eyJhbGciOiJFUzM4NCIsInR5cCI6InZwK2xkK2pzb24rand0IiwiY3R5IjoidnArbGQranNvbiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl19.vWAAwvyxQCdQoR-7qWJ6a5w6YBqn_Buj1SpQ6fYhWG_xpBafmZo3-SCAiedvr9FSOLBOp0qbJBT1LrUyz6Xcgra0SfKWzfHT_yCSbDdXfo8Z7fUBLtRuSmyPr2E4Yq7B
 holder:
   publicKeyJwk:
     kty: EC
-    x: i7KoP3M6DRyYaABVDXFh4VIny-4qzbU_KWvIMp-uNXrzNlbMKa_LtDuAhl9cd8n5
-    y: XPkR_rsy-cnZTCrLwOuwLP0_VZPoKYtS3GTAlbHfcNPskZBSom5DMZ8N13ZkCKqe
+    x: nWiYdELAGp-I_SKhZaZouhmZZNCzHfyOy8570OlGATWUywJNzUnlGFOM3Rw5VhKT
+    y: X24SE4Ea1-z4Jmc-MagW1aoeS4K64eMHcEXsdo36vOwQi2TfGR1zURCRqMU4PlQz
     crv: P-384
   secretKeyJwk:
     kty: EC
-    x: i7KoP3M6DRyYaABVDXFh4VIny-4qzbU_KWvIMp-uNXrzNlbMKa_LtDuAhl9cd8n5
-    y: XPkR_rsy-cnZTCrLwOuwLP0_VZPoKYtS3GTAlbHfcNPskZBSom5DMZ8N13ZkCKqe
+    x: nWiYdELAGp-I_SKhZaZouhmZZNCzHfyOy8570OlGATWUywJNzUnlGFOM3Rw5VhKT
+    y: X24SE4Ea1-z4Jmc-MagW1aoeS4K64eMHcEXsdo36vOwQi2TfGR1zURCRqMU4PlQz
     crv: P-384
-    d: _WHNsZM8tAd4kNimuIxsJ_RRnuth902wwJCw1Xu7O3bbVc5XQSJFfejZgkDYFqH7
-issued: eyJhbGciOiJFUzM4NCIsInR5cCI6InZwK2xkK2pzb24rand0IiwiY3R5IjoidnArbGQranNvbiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl19.JgvWgzvdODG5ninzrBmTnsbU2XfFgY1kWcxIv_IzLA2cR-GfXr-mczEoanGAMxIfdprEWe4RC5UMziN6xF0MQFYX7gOoGqob7IQ09ehQwGIJGEpRxeXj-ABo3_4_moqq
+    d: tbBeMgLlVnqXHSUtFaWcDqp129MzMZ0cXWBcUwvOmK9TaxQbYAj0RUDkvb-RYEDf
 validated:
+  protectedHeader:
+    alg: ES384
+    typ: vp+ld+json+jwt
+    cty: vp+ld+json
   payload:
     "@context":
       - https://www.w3.org/ns/credentials/v2
     type:
       - VerifiablePresentation
-  protectedHeader:
-    alg: ES384
-    typ: vp+ld+json+jwt
-    cty: vp+ld+json
