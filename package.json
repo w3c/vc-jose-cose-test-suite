@@ -1,0 +1,48 @@
+{
+  "name": "vc-jose-cose-test-suite",
+  "version": "1.0.0",
+  "description": "Securing W3C Verifiable Credentials using JOSE and COSE Test Suite",
+  "homepage": "https://github.com/w3c/vc-jose-cose-test-suite",
+  "author": {
+    "name": "Securing W3C Verifiable Credentials using JOSE and COSE Test Suite",
+    "email": "public-vc-wg@w3.org",
+    "url": "https://www.w3.org/groups/wg/vc/"
+  },
+  "main": "/tests",
+  "type": "module",
+  "directories": {
+    "tests": "tests"
+  },
+  "files": [
+    "implementations/*",
+    "tests/*.js"
+  ],
+  "scripts": {
+    "test": "mocha tests/ --reporter @digitalbazaar/mocha-w3c-interop-reporter --reporter-options abstract=\"$PWD/abstract.hbs\",reportDir=\"$PWD/reports\",respec=\"$PWD/respecConfig.json\",title=\"VC Test Suite Template\",suiteLog='./reports/suite.log' --timeout 150000 --preserve-symlinks",
+    "lint": "eslint .",
+    "clean": "find tests/output -name \"*.json\" -type f -delete"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3c/vc-jose-cose-test-suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/w3c/vc-jose-cose-test-suite/issues"
+  },
+  "dependencies": {
+    "@digitalbazaar/mocha-w3c-interop-reporter": "^1.6.0",
+    "chai": "^4.3.7",
+    "jose": "^5.6.2",
+    "mocha": "^10.2.0",
+    "require-dir": "^1.2.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}

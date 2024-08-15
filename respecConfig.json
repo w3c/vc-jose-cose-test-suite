@@ -1,0 +1,65 @@
+{
+  "shortName": "vc-jose-cose-test-suite",
+  "group": "vc",
+  "specStatus": "NOTE",
+  "subtitle": "Securing Verifiable Credentials using JOSE and COSE Interoperability Report",
+  "github": "https://github.com/w3c/vc-jose-cose-test-suite",
+  "edDraftURI": "https://w3c.github.io/vc-jose-cose-test-suite/",
+  "doJsonLd": true,
+  "includePermalinks": false,
+  "otherLinks": [
+    {
+      "key": "Related Specifications",
+      "data": [
+        {
+          "value": "The Verifiable Credentials Data Model v2.0",
+          "href": "https://www.w3.org/TR/vc-data-model-2.0/"
+        },
+        {
+          "value": "Securing Verifiable Credentials using JOSE and COSE",
+          "href": "https://www.w3.org/TR/vc-jose-cose/"
+        }
+      ]
+    }
+  ],
+  "editors": [
+    {
+      "name": "Michael Jones",
+      "url": "https://github.com/selfissued",
+      "company": "Self-Issued Consulting",
+      "companyURL": "https://self-issued.consulting"
+    },
+    {
+      "name": "Michael Prorock",
+      "url": "https://github.com/mprorock",
+      "company": "Mesur.io",
+      "companyURL": "https://mesur.io/"
+    },
+    {
+      "name": "Gabe Cohen",
+      "url": "https://github.com/decentralgabe",
+      "company": "Block",
+      "companyURL": "https://www.tbd.website/"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Michael Jones",
+      "url": "https://github.com/selfissued",
+      "company": "Self-Issued Consulting",
+      "companyURL": "https://self-issued.consulting"
+    },
+    {
+      "name": "Michael Prorock",
+      "url": "https://github.com/mprorock",
+      "company": "Mesur.io",
+      "companyURL": "https://mesur.io/"
+    },
+    {
+      "name": "Gabe Cohen",
+      "url": "https://github.com/decentralgabe",
+      "company": "Block",
+      "companyURL": "https://www.tbd.website/"
+    }
+  ]
+}
