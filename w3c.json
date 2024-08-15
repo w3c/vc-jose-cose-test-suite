@@ -1,5 +1,10 @@
- {
-    "group":      [98922]
-,   "contacts":   ["iherman"]
-,   "repo-type":  "tests"
+{
+    "group": [
+        "98922"
+    ],
+    "contacts": [
+        "iherman"
+    ],
+    "shortName": "vc-jose-cose-test-suite",
+    "repo-type": "tests"
 }

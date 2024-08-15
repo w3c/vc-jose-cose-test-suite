@@ -1,81 +1,162 @@
+# VC JOSE COSE Test Suite
 
+This project provides a flexible and extensible test suite runner for validating implementations of the specification
+for securing [W3C Verifiable Credentials using JSON Object Signing and Encryption (JOSE) and CBOR Object Signing and
+Encryption (COSE)](https://www.w3.org/TR/vc-jose-cose).
 
-- [https://www.w3.org/TR/vc-jose-cose](https://www.w3.org/TR/vc-jose-cose)
+It's designed to work with different types of implementations (SDK or server) as long as they conform to a common CLI
+interface via [Docker](https://www.docker.com/).
 
-- [https://github.com/w3c/vc-jose-cose-test-suite](https://github.com/w3c/vc-jose-cose-test-suite)
+The suite makes use Digital Bazaar's [mocha-w3c-interop-reporter](https://github.com/digitalbazaar/mocha-w3c-interop-reporter).
 
-## Approach
+## Table of Contents
 
-We generate testcases that cover the core data model and securing specification normative statements.
+1. [Project Structure](#project-structure)
+2. [Key Components](#key-components)
+3. [Adding Implementations](#adding-implementations)
+4. [Running Tests](#running-tests)
+5. [Extending the Test Suite](#extending-the-test-suite)
+6. [Docker Integration](#docker-integration)
+7. [Troubleshooting](#troubleshooting)
 
-We generate inputs and outputes for each case, so that implementations can consume the test cases when demonstrating conformance.
+## Project Structure
 
-The structure of each test case is captured in a single yaml file, of the form:
+```
+.
+├── implementations/
+│   ├── docker-compose.yml
+│   ├── implementations.json
+│   └── [implementation folders]
+├── tests/
+│   ├── input/
+│   └── output/
+├── reports/
+│   ├── index.html
+│   └── suite.log
+├── test-mapping.js
+├── test-runner.js
+├── test-util.js
+└── README.md
+```
 
-### `testcases/test-case-name/spec.yml`
+## Key Components
 
-This file describes the test case, and provides all required inputs and expected outputs.
+### test-mapping.js
 
-This file is a reference document, it may contain structures that look like conforming documents, 
-and representation of the results of validation rules against those documents, specifically schema or status validation results. 
+This file defines the structure of the test suite. It exports two main objects:
 
-The validation results are meant to assist implementers and provide clarity regarding the differences between verifification and validation.
+1. `TestResult`: An enum of possible test outcomes (success, failure, indeterminate, error).
+2. `GenericTestMapping`: A mapping of test names to their configurations. Each test configuration includes:
+    - `number`: A unique identifier for the test
+    - `input_file`: The name of the input file to be used
+    - `config`: Configuration options for the test, including the `check` property which determines the feature being tested
+    - `expected_result`: The expected outcome of the test
 
-### `testcases/test-case-name/payload.json`
+### test-runner.js
 
-This file represents the verifiable credential or presentation. 
+This is the main test runner script. It:
 
-Examples are hosted via github pages:
+1. Loads the implementations and their supported features
+2. Iterates through each implementation and test
+3. Skips tests for features not supported by an implementation
+4. Runs the tests and compares the results to the expected outcomes
+5. Generates a report of the test results
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/payload.json](https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/payload.json)
+### test-util.js
 
-### `testcases/test-case-name/payload.yaml`
+This file contains utility functions used by the test runner:
 
-This file represents the verifiable credential or presentation with selective disclosure
+1. `generateTestResults`: Executes the Docker command to run a test for a specific implementation
+2. `checkTestResults`: Reads and interprets the results of a test execution
 
-Examples are hosted via github pages:
+## Adding Implementations
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload.yaml](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload.yaml)
+To add a new implementation:
 
-### `testcases/test-case-name/payload-disclosure.yaml`
+1. Create a new folder in the `implementations/` directory with your implementation name.
+2. Add your implementation files, including a Dockerfile that sets up your environment.
+3. Update `implementations/implementations.json` to include your new implementation and its supported features:
 
-This file represents a holder's preference for disclosing claims:
+```json
+{
+  "your-implementation-name": {
+    "features": {
+      "feature1": true,
+      "feature2": false,
+      "feature3": true
+    }
+  }
+}
+```
 
-Examples are hosted via github pages:
+Note: if your implementation does not support a feature, set the value to `false`. This will cause the test runner to
+skip tests for that feature.
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload-disclosure.yaml](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-jwt-sd/payload-disclosure.yaml)
+4. Update `implementations/docker-compose.yml` to include your new service:
 
-### `testcases/test-case-name/protected-header.json`
+```yaml
+services:
+  your-implementation-name:
+    build: ./your-implementation-name
+    volumes:
+      - ../tests/input:/tests/input
+      - ../tests/output:/tests/output
+```
 
-This file represents the verifiable credential or presentation metadata, including hints related to discovering key material and content types.
+## Running Tests
 
-Examples are hosted via github pages:
+To run the test suite:
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/protected-header.json](https://w3c.github.io/vc-jose-cose-test-suite/testcases/unsecured-vc/protected-header.json)
+1. Ensure Docker and [Docker Compose](https://docs.docker.com/compose/) are installed on your system.
+2. Navigate to the project root directory.
+3. Run the test runner script (the exact command may vary based on your setup, e.g., `node test-runner.js`).
 
-### `testcases/test-case-name/schema.json`
+There is also an npm script that can be used to run the test suite:
 
-This file represents a json schema, per [https://github.com/w3c/vc-json-schema](https://github.com/w3c/vc-json-schema)
+```sh
+npm run test
+```
 
-Example schema is hoested for testing purposes:
+The test runner will execute each test for each implementation and generate a report in the `reports/` directory.
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema/schema.json](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema/schema.json)
+## Extending the Test Suite
 
-### `testcases/test-case-name/schema.jwt`
+To add new tests:
 
-This file represents a json schema credential, per [https://github.com/w3c/vc-json-schema](https://github.com/w3c/vc-json-schema)
+1. Add any necessary input files to the `tests/input/` directory.
+2. Update `test-mapping.js` to include the new test configurations.
+3. If testing a new feature, ensure implementations are updated to declare support (or lack thereof) for the new feature.
 
-Example schema credential is hostes for testing purposes:
+## Docker Integration
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema-credential/schema.jwt](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-with-schema-credential/schema.jwt)
+Each implementation should provide a Docker container that exposes a CLI with the following interface:
 
-### `testcases/test-case-name/status-list.jwt`
+```
+validate --input <input_file> --config '<config_json>' --output <output_file>
+```
 
-Example status list is hosted for testing purposes:
+- `<input_file>`: Path to the input file within the container
+- `<config_json>`: JSON string containing test configuration
+- `<output_file>`: Path where the output should be written within the container
 
-- [https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-status-list/status-list.jwt](https://w3c.github.io/vc-jose-cose-test-suite/testcases/secured-vc-status-list/status-list.jwt)
+The Docker containers are run using Docker Compose, with volumes mounted to provide access to the input and output directories.
 
-This file represents a status list credential, per [https://github.com/w3c/vc-status-list-2021](https://github.com/w3c/vc-status-list-2021)
+This configuration setup is designed to be flexible and can be modified to suit the specific requirements of each implementation,
+though it can be modified to suit the specific requirements of a given test suite.
 
+## Troubleshooting
 
+If you encounter issues:
 
+1. Check the console output for error messages.
+2. Verify that all necessary files exist in the expected locations.
+3. Ensure Docker containers have the necessary permissions to read input and write output.
+4. Check that implementations correctly handle the provided CLI arguments.
+
+For more detailed debugging:
+- Add console.log statements in the test runner or utility functions.
+- Inspect the Docker container logs for implementation-specific issues.
+
+---
+
+For any questions or issues not covered in this README, please open an issue in the project repository.
