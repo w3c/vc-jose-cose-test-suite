@@ -24,16 +24,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:01d94e4b-34b9-4596-b6b7-b9cceb9cda8e",
+              "_testId": "urn:uuid:f3c4fd86-7c82-447c-99df-dc67327afff0",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 18730,
+                "_idleStart": 13836,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -42,7 +42,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 1: The credential must have a valid identifier (Valid)"
               },
-              "duration": 18692,
+              "duration": 13727,
               "state": "passed",
               "speed": "slow"
             },
@@ -59,16 +59,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:1a6485a4-b02d-4af4-9a3a-07ca16764740",
+              "_testId": "urn:uuid:846d1fe6-c0ab-4679-acea-b72f0c54e22d",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 19321,
+                "_idleStart": 14440,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -77,7 +77,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 1: The credential must have a valid identifier (Invalid)"
               },
-              "duration": 590,
+              "duration": 602,
               "state": "passed",
               "speed": "slow"
             },
@@ -94,16 +94,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:8df563d8-6931-4e45-acce-0495f02cbc0b",
+              "_testId": "urn:uuid:714589f2-43fa-4c14-9ade-3538a7b000db",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 19919,
+                "_idleStart": 15012,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -112,7 +112,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 2: The credential must have the correct type (Valid)"
               },
-              "duration": 596,
+              "duration": 572,
               "state": "passed",
               "speed": "slow"
             },
@@ -129,16 +129,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:2b81b6f0-41db-46b6-a6bf-ef9572be4649",
+              "_testId": "urn:uuid:be0726c7-d92d-4d22-981e-2f2b05dee473",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 20495,
+                "_idleStart": 15616,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -147,7 +147,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 2: The credential must have the correct type (Invalid)"
               },
-              "duration": 576,
+              "duration": 604,
               "state": "passed",
               "speed": "slow"
             },
@@ -164,16 +164,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:40fadaea-a144-4c76-8ac6-2c6e615222d9",
+              "_testId": "urn:uuid:2dbaa055-8835-4b76-b736-85a26a85ae01",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 21090,
+                "_idleStart": 16208,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -182,7 +182,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 3: The credential must have a valid issuance date (Valid)"
               },
-              "duration": 595,
+              "duration": 592,
               "state": "passed",
               "speed": "slow"
             },
@@ -199,16 +199,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "U28rCTvTDYFbA7AECuNGg",
+              "parent": "HGG7LS1LoQgwhvR-Bxfpk",
               "ctx": null,
-              "_testId": "urn:uuid:3e3dbe68-6f40-4ea5-9933-4cfe26e34df9",
+              "_testId": "urn:uuid:4d17ce5e-70a2-45f3-859c-9779ecdfd6a7",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 21687,
+                "_idleStart": 16797,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -217,7 +217,7 @@
                 "columnId": "example-sdk",
                 "rowId": "Requirement 3: The credential must have a valid issuance date (Invalid)"
               },
-              "duration": 596,
+              "duration": 588,
               "state": "passed",
               "speed": "slow"
             }
@@ -235,9 +235,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "HR4ouUoCOqsUJvEiCwIkP",
+          "parent": "ch4sOEycFZAeK1eYQrkdz",
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "_testId": "urn:uuid:f37082ad-9e91-4a9c-895d-034b63932670"
+          "_testId": "urn:uuid:407c9b5b-754b-40f5-8b4b-ebfae37e7c50"
         },
         {
           "title": "example-server",
@@ -257,16 +257,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:09fd20f9-2340-4d30-b955-7de649e417ab",
+              "_testId": "urn:uuid:f86d534d-a7ab-4d6f-9c6f-ef284d3c152e",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 40083,
+                "_idleStart": 35102,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -275,7 +275,7 @@
                 "columnId": "example-server",
                 "rowId": "Requirement 1: The credential must have a valid identifier (Valid)"
               },
-              "duration": 18395,
+              "duration": 18304,
               "state": "passed",
               "speed": "slow"
             },
@@ -292,16 +292,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:290aa3fe-3d16-4d2f-a219-fb15aa478e94",
+              "_testId": "urn:uuid:46cc2e4d-5133-4094-ae9c-4da47a724c17",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 42723,
+                "_idleStart": 37769,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -310,7 +310,7 @@
                 "columnId": "example-server",
                 "rowId": "Requirement 1: The credential must have a valid identifier (Invalid)"
               },
-              "duration": 2640,
+              "duration": 2667,
               "state": "passed",
               "speed": "slow"
             },
@@ -327,16 +327,16 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:00ae4040-abc0-496c-98ed-b4c4a7d36122",
+              "_testId": "urn:uuid:a79504ef-b15f-4331-b8b7-be6f94994058",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 42875,
+                "_idleStart": 37921,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -357,16 +357,16 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:b0ea9054-86e1-4620-b855-cebbe93b295c",
+              "_testId": "urn:uuid:e9125e50-651b-409c-b0cd-7128479363c7",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 42875,
+                "_idleStart": 37921,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -387,16 +387,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:64cf655e-68e9-494d-992e-344ed934da45",
+              "_testId": "urn:uuid:31109b9b-b212-4a8b-aed6-7a1e368b0d6b",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 45392,
+                "_idleStart": 40425,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -405,7 +405,7 @@
                 "columnId": "example-server",
                 "rowId": "Requirement 3: The credential must have a valid issuance date (Valid)"
               },
-              "duration": 2669,
+              "duration": 2655,
               "state": "passed",
               "speed": "slow"
             },
@@ -422,16 +422,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "Hpk-71namFUJgocxjfZnb",
+              "parent": "VpQv0_lPNLPH0muc8KyRF",
               "ctx": null,
-              "_testId": "urn:uuid:7916c846-6907-4539-9cb4-c9c08bacd826",
+              "_testId": "urn:uuid:c8f749d6-e3c8-44f0-ac29-99c9c94f43e8",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 48030,
+                "_idleStart": 43070,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -440,7 +440,7 @@
                 "columnId": "example-server",
                 "rowId": "Requirement 3: The credential must have a valid issuance date (Invalid)"
               },
-              "duration": 2637,
+              "duration": 2644,
               "state": "passed",
               "speed": "slow"
             }
@@ -458,9 +458,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "HR4ouUoCOqsUJvEiCwIkP",
+          "parent": "ch4sOEycFZAeK1eYQrkdz",
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "_testId": "urn:uuid:0f4210f0-9320-431d-9d5e-425804e7f519"
+          "_testId": "urn:uuid:b4040563-67a2-473a-87a5-b6f4da6b742d"
         }
       ],
       "tests": [
@@ -477,16 +477,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:01d94e4b-34b9-4596-b6b7-b9cceb9cda8e",
+          "_testId": "urn:uuid:f3c4fd86-7c82-447c-99df-dc67327afff0",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 18730,
+            "_idleStart": 13836,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -495,7 +495,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 1: The credential must have a valid identifier (Valid)"
           },
-          "duration": 18692,
+          "duration": 13727,
           "state": "passed",
           "speed": "slow"
         },
@@ -512,16 +512,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:1a6485a4-b02d-4af4-9a3a-07ca16764740",
+          "_testId": "urn:uuid:846d1fe6-c0ab-4679-acea-b72f0c54e22d",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 19321,
+            "_idleStart": 14440,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -530,7 +530,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 1: The credential must have a valid identifier (Invalid)"
           },
-          "duration": 590,
+          "duration": 602,
           "state": "passed",
           "speed": "slow"
         },
@@ -547,16 +547,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:8df563d8-6931-4e45-acce-0495f02cbc0b",
+          "_testId": "urn:uuid:714589f2-43fa-4c14-9ade-3538a7b000db",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 19919,
+            "_idleStart": 15012,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -565,7 +565,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 2: The credential must have the correct type (Valid)"
           },
-          "duration": 596,
+          "duration": 572,
           "state": "passed",
           "speed": "slow"
         },
@@ -582,16 +582,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:2b81b6f0-41db-46b6-a6bf-ef9572be4649",
+          "_testId": "urn:uuid:be0726c7-d92d-4d22-981e-2f2b05dee473",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 20495,
+            "_idleStart": 15616,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -600,7 +600,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 2: The credential must have the correct type (Invalid)"
           },
-          "duration": 576,
+          "duration": 604,
           "state": "passed",
           "speed": "slow"
         },
@@ -617,16 +617,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:40fadaea-a144-4c76-8ac6-2c6e615222d9",
+          "_testId": "urn:uuid:2dbaa055-8835-4b76-b736-85a26a85ae01",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 21090,
+            "_idleStart": 16208,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -635,7 +635,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 3: The credential must have a valid issuance date (Valid)"
           },
-          "duration": 595,
+          "duration": 592,
           "state": "passed",
           "speed": "slow"
         },
@@ -652,16 +652,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "U28rCTvTDYFbA7AECuNGg",
+          "parent": "HGG7LS1LoQgwhvR-Bxfpk",
           "ctx": null,
-          "_testId": "urn:uuid:3e3dbe68-6f40-4ea5-9933-4cfe26e34df9",
+          "_testId": "urn:uuid:4d17ce5e-70a2-45f3-859c-9779ecdfd6a7",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 21687,
+            "_idleStart": 16797,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -670,7 +670,7 @@
             "columnId": "example-sdk",
             "rowId": "Requirement 3: The credential must have a valid issuance date (Invalid)"
           },
-          "duration": 596,
+          "duration": 588,
           "state": "passed",
           "speed": "slow"
         },
@@ -687,16 +687,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:09fd20f9-2340-4d30-b955-7de649e417ab",
+          "_testId": "urn:uuid:f86d534d-a7ab-4d6f-9c6f-ef284d3c152e",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 40083,
+            "_idleStart": 35102,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -705,7 +705,7 @@
             "columnId": "example-server",
             "rowId": "Requirement 1: The credential must have a valid identifier (Valid)"
           },
-          "duration": 18395,
+          "duration": 18304,
           "state": "passed",
           "speed": "slow"
         },
@@ -722,16 +722,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:290aa3fe-3d16-4d2f-a219-fb15aa478e94",
+          "_testId": "urn:uuid:46cc2e4d-5133-4094-ae9c-4da47a724c17",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 42723,
+            "_idleStart": 37769,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -740,7 +740,7 @@
             "columnId": "example-server",
             "rowId": "Requirement 1: The credential must have a valid identifier (Invalid)"
           },
-          "duration": 2640,
+          "duration": 2667,
           "state": "passed",
           "speed": "slow"
         },
@@ -757,16 +757,16 @@
           "_currentRetry": 0,
           "pending": true,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:00ae4040-abc0-496c-98ed-b4c4a7d36122",
+          "_testId": "urn:uuid:a79504ef-b15f-4331-b8b7-be6f94994058",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 42875,
+            "_idleStart": 37921,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -787,16 +787,16 @@
           "_currentRetry": 0,
           "pending": true,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:b0ea9054-86e1-4620-b855-cebbe93b295c",
+          "_testId": "urn:uuid:e9125e50-651b-409c-b0cd-7128479363c7",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 42875,
+            "_idleStart": 37921,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -817,16 +817,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:64cf655e-68e9-494d-992e-344ed934da45",
+          "_testId": "urn:uuid:31109b9b-b212-4a8b-aed6-7a1e368b0d6b",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 45392,
+            "_idleStart": 40425,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -835,7 +835,7 @@
             "columnId": "example-server",
             "rowId": "Requirement 3: The credential must have a valid issuance date (Valid)"
           },
-          "duration": 2669,
+          "duration": 2655,
           "state": "passed",
           "speed": "slow"
         },
@@ -852,16 +852,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "Hpk-71namFUJgocxjfZnb",
+          "parent": "VpQv0_lPNLPH0muc8KyRF",
           "ctx": null,
-          "_testId": "urn:uuid:7916c846-6907-4539-9cb4-c9c08bacd826",
+          "_testId": "urn:uuid:c8f749d6-e3c8-44f0-ac29-99c9c94f43e8",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 48030,
+            "_idleStart": 43070,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -870,7 +870,7 @@
             "columnId": "example-server",
             "rowId": "Requirement 3: The credential must have a valid issuance date (Invalid)"
           },
-          "duration": 2637,
+          "duration": 2644,
           "state": "passed",
           "speed": "slow"
         }
@@ -888,7 +888,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Gbgnd9asz0gBC40PlIQBM",
+      "parent": "AyLORswzQkH_UwIQwJdTU",
       "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
       "matrix": true,
       "report": true,
@@ -898,7 +898,7 @@
       ],
       "rowLabel": "Test Name",
       "columnLabel": "Implementation",
-      "_testId": "urn:uuid:39d18dfb-0be2-4646-91f1-ecb2127cc422"
+      "_testId": "urn:uuid:858a2260-ef5a-42a3-828d-3b32a55d178f"
     }
   ],
   "tests": [],
@@ -922,5 +922,5 @@
     ]
   },
   "_eventsCount": 1,
-  "_testId": "urn:uuid:09dfd5d1-87ad-4753-a2d5-e5ef7ac180e0"
+  "_testId": "urn:uuid:8a6ce4cb-b919-426f-b80a-5789554d2cd6"
 }
