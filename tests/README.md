@@ -1,5 +1,7 @@
 # Test Cases
 
+This document lists all the normative statements that need to be tested for the JOSE-COSE Verifiable Credentials specification.
+
 ## JWT (JOSE) Section
 
 ### For Verifiable Credentials
@@ -78,4 +80,4 @@
 47. After verification has succeeded, additional validation checks SHOULD be performed as described in Section 5.4 Validation.
 48. Schema extension mechanisms such as `credentialSchema` SHOULD be checked.
 49. Status extension mechanisms such as `credentialStatus` SHOULD be checked.
-50. When using URL identifiers, the kid is RECOMMENDED to be an absolute URL that includes a JWK Thumbprint U
+50. When using URL identifiers, the kid is RECOMMENDED to be an absolute URL that includes a JWK Thumbprint URI as defined in RFC7638.
