@@ -7,3 +7,8 @@ services:
     build: ./example-server
     volumes:
       - ../tests:/tests
+  example-node:
+    build: ./example-node
+    volumes:
+      - ../tests:/tests
+

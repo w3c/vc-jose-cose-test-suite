@@ -12,5 +12,12 @@
       "type": false,
       "issuance_date": true
     }
+  },
+  "example-node": {
+    "features": {
+      "identifier": true,
+      "type": true,
+      "issuance_date": true
+    }
   }
 }

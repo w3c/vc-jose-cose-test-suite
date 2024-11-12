@@ -1,0 +1,11 @@
+{
+  "name": "example-node",
+  "main": "main.js",
+  "type": "module",
+  "bin": {
+    "validate": "./main.js"
+  },
+  "dependencies": {
+    "commander": "12.1.0"
+  }
+}
