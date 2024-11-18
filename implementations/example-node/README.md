@@ -2,14 +2,14 @@ This is a example Node implementation CLI wrapper for an implementation. Once th
 
 ## Running
 
-The wrapper exposes `validate` CLI command. If you want to try this locally outside of the Docker environment, navigate to this package `cd implementations/example-node` and run the following command:
+The wrapper exposes the `validate` CLI command. If you want to try this locally outside of the Docker environment, navigate to this package (e.g., `cd implementations/example-node`), and run the following commands:
 
 ```bash
 npm install
 npm link
 ```
 
-After this you will be able to run the implementation without the need for Docker
+Subsequently, you will be able to run the implementation without needing Docker:
 
 ```bash
 validate --input <input-file>  --config <config-json> --output <output-file> 
@@ -36,7 +36,7 @@ docker build -t example-node-validator .
 
 ### Running
 
-To run the validator using Docker:
+To run the validator using Docker, mount the appropriate directories for input and output files, and issue a command like the following:
 
 ```bash
 docker run -v $(pwd)/tests:/tests example-node-validator validate \
@@ -44,5 +44,3 @@ docker run -v $(pwd)/tests:/tests example-node-validator validate \
   --config '{"check":"identifier"}' \
   --output /tests/output/1-sample-impl.json
 ```
-
-Make sure to mount the appropriate directories for input and output files.
