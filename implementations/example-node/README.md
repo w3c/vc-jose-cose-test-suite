@@ -1,4 +1,6 @@
-This is a example Node implementation CLI wrapper for an implementation. Once the CLI is in place, you can take the command and forward it to an JS library implementation or API endpoint.
+This is an example Node CLI wrapper that can help you integrate either:
+- a JavaScript library implementation that you should add to the `dependencies` section of `package.json` and import inside the `main.js`.
+- a Framework-agnostic server implementation that is accessible via HTTP API. You can use `fetch` to make the requests.
 
 ## Running
 
