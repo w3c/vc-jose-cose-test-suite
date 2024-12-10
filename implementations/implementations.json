@@ -1,5 +1,5 @@
 {
-  "block": {
+  "independent": {
     "features": {
       "jose": true,
       "cose": true,

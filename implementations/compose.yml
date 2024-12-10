@@ -1,13 +1,5 @@
 services:
-  block:
-    build: ./block
+  independent:
+    build: ./independent
     volumes:
       - ../tests:/tests
-#  example-sdk:
-#    build: ./example-sdk
-#    volumes:
-#      - ../tests:/tests
-#  example-server:
-#    build: ./example-server
-#    volumes:
-#      - ../tests:/tests
