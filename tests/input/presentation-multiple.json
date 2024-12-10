@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://www.w3.org/ns/credentials/examples/v2"
+  ],
+  "id": "urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5",
+  "type": ["VerifiablePresentation"],
+  "holder": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+  "verifiableCredential": [
+    {
+      "@context": "https://www.w3.org/ns/credentials/v2",
+      "type": "EnvelopedVerifiableCredential",
+      "id": "data:application/vc+jwt,eyJhbGciOiJFUzI1NiJ9.eyJpc3MiOiJkaWQ6ZXhhbXBsZToxMjMifQ...."
+    },
+    {
+      "@context": "https://www.w3.org/ns/credentials/v2",
+      "type": "EnvelopedVerifiableCredential",
+      "id": "data:application/vc+sd-jwt,eyJhbGciOiJFUzI1NiJ9.eyJpc3MiOiJkaWQ6ZXhhbXBsZToxMjMifQ....~"
+    },
+    {
+      "@context": "https://www.w3.org/ns/credentials/v2",
+      "type": "EnvelopedVerifiableCredential",
+      "id": "data:application/vc+cose;base64,0oRDoQEm..."
+    }
+  ]
+}

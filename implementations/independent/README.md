@@ -15,10 +15,10 @@ For example:
 
 ```bash
 go run . issue \
-  --input ../../tests/input/1-credential.json \
+  --input ../../tests/input/credential-minimal.json \
   --key ../../tests/input/vm-ed25519.json \
   --feature credential_jose \
-  --output ../../tests/output/1-credential.json
+  --output ../../tests/output/credential-minimal.json
 ```
 
 ## Docker
@@ -37,10 +37,10 @@ To run the validator using Docker:
 
 ```bash
 docker run -v $(pwd)/tests:/tests independent issue \
-  --input /tests/input/1-credential.json \
+  --input /tests/input/credential-minimal.json \
   --key /tests/input/vm-ed25519.json \
   --feature credential_jose \
-  --output /tests/output/1-credential.json
+  --output /tests/output/credential-minimal.json
 ```
 
 Make sure to mount the appropriate directories for input and output files.
