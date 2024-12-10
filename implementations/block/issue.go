@@ -2,6 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/TBD54566975/vc-jose-cose-go/cid"
+	"github.com/TBD54566975/vc-jose-cose-go/credential"
+	"github.com/TBD54566975/vc-jose-cose-go/jose"
+	"github.com/goccy/go-json"
+	"github.com/lestrrat-go/jwx/v2/jwk"
 	"os"
 )
 
@@ -26,44 +31,118 @@ func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
 	}
 
 	switch feature {
-	case JOSECredential:
-		return IssueJOSECredential(inputBytes, keyBytes)
-	case COSECredential:
-		return IssueCOSECredential(inputBytes, keyBytes)
-	case SDJWTCredential:
-		return IssueSDJWTCredential(inputBytes, keyBytes)
-	case JOSEPresentation:
-		return IssueJOSEPresentation(inputBytes, keyBytes)
-	case COSEPresentation:
-		return IssueCOSEPresentation(inputBytes, keyBytes)
-	case SDJWTPresentation:
-		return IssueSDJWTPresentation(inputBytes, keyBytes)
+	case JOSECredential, COSECredential, SDJWTCredential:
+		return IssueCredential(inputBytes, keyBytes, feature)
+	case JOSEPresentation, COSEPresentation, SDJWTPresentation:
+		return IssuePresentation(inputBytes, keyBytes, feature)
 	default:
 		fmt.Printf("unsupported feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
 	}
 }
 
-func IssueJOSECredential(credBytes, keyBytes []byte) (*Result, error) {
+func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, error) {
+	var cred credential.VerifiableCredential
+	if err := json.Unmarshal(credBytes, &cred); err != nil {
+		return nil, fmt.Errorf("error unmarshaling credential: %v", err)
+	}
+
+	var vm cid.VerificationMethod
+	if err := json.Unmarshal(keyBytes, &vm); err != nil {
+		return nil, fmt.Errorf("error unmarshaling verifcation method: %v", err)
+	}
+
+	key, err := jwk.FromRaw(vm.SecretKeyJWK)
+	if err != nil {
+		return nil, fmt.Errorf("error creating JWK from raw key: %v", err)
+	}
+
+	switch feature {
+	case JOSECredential:
+		return IssueJOSECredential(cred, key)
+	case COSECredential:
+		return IssueCOSECredential(cred, key)
+	case SDJWTCredential:
+		return IssueSDJWTCredential(cred, key)
+	default:
+		fmt.Printf("unsupported credential feature: %s\n", feature)
+		return &Result{Result: Indeterminate}, nil
+	}
+}
+
+func IssuePresentation(presBytes, keyBytes []byte, feature Feature) (*Result, error) {
+	var pres credential.VerifiablePresentation
+	if err := json.Unmarshal(presBytes, &pres); err != nil {
+		return nil, fmt.Errorf("error unmarshaling presentation: %v", err)
+	}
+
+	var vm cid.VerificationMethod
+	if err := json.Unmarshal(keyBytes, &vm); err != nil {
+		return nil, fmt.Errorf("error unmarshaling verification method: %v", err)
+	}
+
+	key, err := jwk.FromRaw(vm.SecretKeyJWK)
+	if err != nil {
+		return nil, fmt.Errorf("error creating JWK from raw key: %v", err)
+	}
+
+	switch feature {
+	case JOSEPresentation:
+		return IssueJOSEPresentation(pres, key)
+	case COSEPresentation:
+		return IssueCOSEPresentation(pres, key)
+	case SDJWTPresentation:
+		return IssueSDJWTPresentation(pres, key)
+	default:
+		fmt.Printf("unsupported presentation feature: %s\n", feature)
+		return &Result{Result: Indeterminate}, nil
+	}
+}
+
+func IssueJOSECredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
+	jws, err := jose.SignVerifiableCredential(cred, key)
+	if err != nil {
+		fmt.Printf("error signing credential: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if jws == nil || *jws == "" {
+		return &Result{Result: Failure}, nil
+	}
+
+	return &Result{
+		Result: Success,
+		Data:   *jws,
+	}, nil
+}
+
+func IssueCOSECredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
 	return nil, nil
 }
 
-func IssueCOSECredential(credBytes, keyBytes []byte) (*Result, error) {
+func IssueSDJWTCredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
 	return nil, nil
 }
 
-func IssueSDJWTCredential(credBytes, keyBytes []byte) (*Result, error) {
+func IssueJOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
+	jws, err := jose.SignVerifiablePresentation(pres, key)
+	if err != nil {
+		fmt.Printf("error signing presentation: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if jws == nil || *jws == "" {
+		return &Result{Result: Failure}, nil
+	}
+
+	return &Result{
+		Result: Success,
+		Data:   *jws,
+	}, nil
+}
+
+func IssueCOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
 	return nil, nil
 }
 
-func IssueJOSEPresentation(presBytes, keyBytes []byte) (*Result, error) {
-	return nil, nil
-}
-
-func IssueCOSEPresentation(presBytes, keyBytes []byte) (*Result, error) {
-	return nil, nil
-}
-
-func IssueSDJWTPresentation(presBytes, keyBytes []byte) (*Result, error) {
+func IssueSDJWTPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
 	return nil, nil
 }

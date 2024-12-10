@@ -1,7 +1,7 @@
 {
-  "id": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb#key-4",
+  "id": "https://example.issuer/vc-jose-cose#key-4",
   "type": "JsonWebKey",
-  "controller": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb",
+  "controller": "https://example.issuer/vc-jose-cose",
   "publicKeyJwk": {
     "alg": "EdDSA",
     "crv": "Ed25519",
