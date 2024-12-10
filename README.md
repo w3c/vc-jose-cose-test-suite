@@ -24,7 +24,7 @@ The suite makes use Digital Bazaar's [mocha-w3c-interop-reporter](https://github
 ```
 .
 ├── implementations/
-│   ├── docker-compose.yml
+│   ├── compose.yml
 │   ├── implementations.json
 │   └── [implementation folders]
 ├── tests/
