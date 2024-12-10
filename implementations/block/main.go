@@ -62,7 +62,7 @@ func main() {
 
 		result, err := Issue(input, key, Feature(feature))
 		if err != nil {
-			fmt.Printf("error verifying %s: %s\n", feature, err.Error())
+			fmt.Printf("error issuing %s: %s\n", feature, err.Error())
 			// Write failure result to output file
 			writeEmptyResult(Failure, output)
 			os.Exit(1)

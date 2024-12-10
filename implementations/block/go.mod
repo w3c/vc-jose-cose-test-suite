@@ -2,7 +2,7 @@ module github.com/w3c/vc-test-suite-template
 
 go 1.23.3
 
-replace github.com/TBD54566975/vc-jose-cose-go => github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241210044408-487d633d17dd
+replace github.com/TBD54566975/vc-jose-cose-go => github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241210054134-7282d9d3f9c3
 
 require (
 	github.com/TBD54566975/vc-jose-cose-go v0.0.0-20241024034117-8f8ea12e5ec7

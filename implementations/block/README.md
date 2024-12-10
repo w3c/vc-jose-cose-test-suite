@@ -3,7 +3,7 @@
 To run the implementation validator, use the following command structure:
 
 ```bash
-./block [command] \
+go run . [command] \
  --input /path/to/input.json \
  --key /path/to/key.json \
  --feature [feature] \ 
@@ -14,9 +14,9 @@ Where possible commands are `issue` and `verify` and possible features are `cred
 For example:
 
 ```bash
-./block issue \
+go run . issue \
   --input ../../tests/input/1-credential.json \
-  --key ../../tests/input/cid-ed25519.json \
+  --key ../../tests/input/vm-ed25519.json \
   --feature credential_jose \
   --output ../../tests/output/1-credential.json
 ```
@@ -38,7 +38,7 @@ To run the validator using Docker:
 ```bash
 docker run -v $(pwd)/tests:/tests block issue \
   --input /tests/input/1-credential.json \
-  --key /tests/input/cid-ed25519.json \
+  --key /tests/input/vm-ed25519.json \
   --feature credential_jose \
   --output /tests/output/1-credential.json
 ```

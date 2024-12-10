@@ -51,19 +51,15 @@ func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, erro
 	if err := json.Unmarshal(keyBytes, &vm); err != nil {
 		return nil, fmt.Errorf("error unmarshaling verifcation method: %v", err)
 	}
-
-	key, err := jwk.FromRaw(vm.SecretKeyJWK)
-	if err != nil {
-		return nil, fmt.Errorf("error creating JWK from raw key: %v", err)
-	}
+	fmt.Printf("%+v\n", vm)
 
 	switch feature {
 	case JOSECredential:
-		return IssueJOSECredential(cred, key)
+		return IssueJOSECredential(cred, vm.SecretKeyJWK)
 	case COSECredential:
-		return IssueCOSECredential(cred, key)
+		return IssueCOSECredential(cred, vm.SecretKeyJWK)
 	case SDJWTCredential:
-		return IssueSDJWTCredential(cred, key)
+		return IssueSDJWTCredential(cred, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported credential feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
@@ -81,18 +77,13 @@ func IssuePresentation(presBytes, keyBytes []byte, feature Feature) (*Result, er
 		return nil, fmt.Errorf("error unmarshaling verification method: %v", err)
 	}
 
-	key, err := jwk.FromRaw(vm.SecretKeyJWK)
-	if err != nil {
-		return nil, fmt.Errorf("error creating JWK from raw key: %v", err)
-	}
-
 	switch feature {
 	case JOSEPresentation:
-		return IssueJOSEPresentation(pres, key)
+		return IssueJOSEPresentation(pres, vm.SecretKeyJWK)
 	case COSEPresentation:
-		return IssueCOSEPresentation(pres, key)
+		return IssueCOSEPresentation(pres, vm.SecretKeyJWK)
 	case SDJWTPresentation:
-		return IssueSDJWTPresentation(pres, key)
+		return IssueSDJWTPresentation(pres, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported presentation feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil

@@ -20,10 +20,10 @@ export const TestFunction = {
 };
 
 const TestVerificationMethods = {
-  p256: 'cid-p256.json',
-  p384: 'cid-p384.json',
-  p521: 'cid-p521.json',
-  ed25519: 'cid-ed25519.json',
+  p256: 'vm-p256.json',
+  p384: 'vm-p384.json',
+  p521: 'vm-p521.json',
+  ed25519: 'vm-ed25519.json',
 };
 
 // See README.md for details
