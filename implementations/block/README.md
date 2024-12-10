@@ -1,18 +1,24 @@
 ## Running
 
-To run the validator, use the following command structure:
+To run the implementation validator, use the following command structure:
 
 ```bash
-./sample-vc-validator validate --input /path/to/input.json --key /path/to/key.json --feature jose --output 
+./block [command] \
+ --input /path/to/input.json \
+ --key /path/to/key.json \
+ --feature [feature] \ 
+ --output /path/to/output.json 
 ```
+Where possible commands are `issue` and `verify` and possible features are `credential_jose`, `presentation_jose`, `credential_cose`, `presentation_cose`, `credential_sdjwt`, and `presentation_sdjwt`.
 
 For example:
 
 ```bash
-./sample-vc-validator validate \
-  --input ../../tests/input/valid-credential.json \
-  --config '{"check":"identifier"}' \
-  --output ../../tests/output/1-sample-impl.json
+./block issue \
+  --input ../../tests/input/1-credential.json \
+  --key ../../tests/input/cid-ed25519.json \
+  --feature credential_jose \
+  --output ../../tests/output/1-credential.json
 ```
 
 ## Docker
@@ -22,7 +28,7 @@ For example:
 To build the Docker image:
 
 ```bash
-docker build -t sample-vc-validator .
+docker build -t block .
 ```
 
 ### Running
@@ -30,10 +36,11 @@ docker build -t sample-vc-validator .
 To run the validator using Docker:
 
 ```bash
-docker run -v $(pwd)/tests:/tests sample-vc-validator validate \
-  --input /tests/input/valid-credential.json \
-  --config '{"check":"identifier"}' \
-  --output /tests/output/1-sample-impl.json
+docker run -v $(pwd)/tests:/tests block issue \
+  --input /tests/input/1-credential.json \
+  --key /tests/input/cid-ed25519.json \
+  --feature credential_jose \
+  --output /tests/output/1-credential.json
 ```
 
 Make sure to mount the appropriate directories for input and output files.

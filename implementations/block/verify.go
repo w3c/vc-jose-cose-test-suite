@@ -27,9 +27,17 @@ func Verify(inputFile, keyFile string, feature Feature) (*Status, error) {
 
 	switch feature {
 	case JOSECredential:
-		return VerifyCredential(inputBytes, keyBytes, feature)
-	case JOSEPresentation, COSEPresentation, SDJWTPresentation:
-		return VerifyPresentation(inputBytes, keyBytes, feature)
+		return VerifyJOSECredential(inputBytes, keyBytes)
+	case COSECredential:
+		return VerifyCOSECredential(inputBytes, keyBytes)
+	case SDJWTCredential:
+		return VerifySDJWTCredential(inputBytes, keyBytes)
+	case JOSEPresentation:
+		return VerifyJOSEPresentation(inputBytes, keyBytes)
+	case COSEPresentation:
+		return VerifyCOSEPresentation(inputBytes, keyBytes)
+	case SDJWTPresentation:
+		return VerifySDJWTPresentation(inputBytes, keyBytes)
 	default:
 		i := Indeterminate
 		fmt.Printf("unsupported feature: %s\n", feature)
@@ -37,10 +45,26 @@ func Verify(inputFile, keyFile string, feature Feature) (*Status, error) {
 	}
 }
 
-func VerifyCredential(credBytes, keyBytes []byte, feature Feature) (*Status, error) {
+func VerifyJOSECredential(credBytes, keyBytes []byte) (*Status, error) {
 	return nil, nil
 }
 
-func VerifyPresentation(presBytes, keyBytes []byte, feature Feature) (*Status, error) {
+func VerifyCOSECredential(credBytes, keyBytes []byte) (*Status, error) {
+	return nil, nil
+}
+
+func VerifySDJWTCredential(credBytes, keyBytes []byte) (*Status, error) {
+	return nil, nil
+}
+
+func VerifyJOSEPresentation(presBytes, keyBytes []byte) (*Status, error) {
+	return nil, nil
+}
+
+func VerifyCOSEPresentation(presBytes, keyBytes []byte) (*Status, error) {
+	return nil, nil
+}
+
+func VerifySDJWTPresentation(presBytes, keyBytes []byte) (*Status, error) {
 	return nil, nil
 }

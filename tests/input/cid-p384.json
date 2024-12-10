@@ -1,0 +1,22 @@
+{
+  "id": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb#key-2",
+  "type": "JsonWebKey",
+  "controller": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb",
+  "publicKeyJwk": {
+    "alg": "ES384",
+    "crv": "P-384",
+    "kid": "96qBnDpvS6x8YSCH_xmnLlXZMkDhHBr8lj99u5aog7s",
+    "kty": "EC",
+    "x": "PBM13G1rU-NPczSpFO7QGc-uSUHqoDPZSbshgR820ligqFB2yGFbE90VnpTiSswG",
+    "y": "x7mdD6reunUlSQ5LoC2GDpLOrjbIMLnt1TEGgxoyXSaKScPPRYY7hTr3geCvEZpf"
+  },
+  "secretKeyJwk": {
+    "alg": "ES384",
+    "crv": "P-384",
+    "d": "c4UX9J2YcD6frHBJr1AKOBzr9niqDaNwaV001vmJVnShDk_QM7j8ggZu4klh32r7",
+    "kid": "96qBnDpvS6x8YSCH_xmnLlXZMkDhHBr8lj99u5aog7s",
+    "kty": "EC",
+    "x": "PBM13G1rU-NPczSpFO7QGc-uSUHqoDPZSbshgR820ligqFB2yGFbE90VnpTiSswG",
+    "y": "x7mdD6reunUlSQ5LoC2GDpLOrjbIMLnt1TEGgxoyXSaKScPPRYY7hTr3geCvEZpf"
+  }
+}

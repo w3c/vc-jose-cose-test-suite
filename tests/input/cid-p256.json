@@ -1,0 +1,22 @@
+{
+  "id": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb#key-1",
+  "type": "JsonWebKey",
+  "controller": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb",
+  "publicKeyJwk": {
+    "alg": "ES256",
+    "crv": "P-256",
+    "kid": "73voMXFNmNlOEpuYCSJlh8eN0dscykoO6gBukgRS1uU",
+    "kty": "EC",
+    "x": "WfTi93YuhsQxKbD0ftnjOXJndqhnJ5kgDV-ZDGyrhBQ",
+    "y": "qUd_55EjX0mjKZ6W6mF4UXVYTQ41K6jfdnYFwN5uPyk"
+  },
+  "secretKeyJwk": {
+    "alg": "ES256",
+    "crv": "P-256",
+    "d": "J_a5KH6A2Ru7iOAzvUkQEjKCJQCdxUXVajaW3CaPORs",
+    "kid": "73voMXFNmNlOEpuYCSJlh8eN0dscykoO6gBukgRS1uU",
+    "kty": "EC",
+    "x": "WfTi93YuhsQxKbD0ftnjOXJndqhnJ5kgDV-ZDGyrhBQ",
+    "y": "qUd_55EjX0mjKZ6W6mF4UXVYTQ41K6jfdnYFwN5uPyk"
+  }
+}

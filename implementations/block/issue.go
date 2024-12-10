@@ -27,19 +27,43 @@ func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
 
 	switch feature {
 	case JOSECredential:
-		return IssueCredential(inputBytes, keyBytes, feature)
-	case JOSEPresentation, COSEPresentation, SDJWTPresentation:
-		return IssuePresentation(inputBytes, keyBytes, feature)
+		return IssueJOSECredential(inputBytes, keyBytes)
+	case COSECredential:
+		return IssueCOSECredential(inputBytes, keyBytes)
+	case SDJWTCredential:
+		return IssueSDJWTCredential(inputBytes, keyBytes)
+	case JOSEPresentation:
+		return IssueJOSEPresentation(inputBytes, keyBytes)
+	case COSEPresentation:
+		return IssueCOSEPresentation(inputBytes, keyBytes)
+	case SDJWTPresentation:
+		return IssueSDJWTPresentation(inputBytes, keyBytes)
 	default:
 		fmt.Printf("unsupported feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
 	}
 }
 
-func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, error) {
+func IssueJOSECredential(credBytes, keyBytes []byte) (*Result, error) {
 	return nil, nil
 }
 
-func IssuePresentation(presBytes, keyBytes []byte, feature Feature) (*Result, error) {
+func IssueCOSECredential(credBytes, keyBytes []byte) (*Result, error) {
+	return nil, nil
+}
+
+func IssueSDJWTCredential(credBytes, keyBytes []byte) (*Result, error) {
+	return nil, nil
+}
+
+func IssueJOSEPresentation(presBytes, keyBytes []byte) (*Result, error) {
+	return nil, nil
+}
+
+func IssueCOSEPresentation(presBytes, keyBytes []byte) (*Result, error) {
+	return nil, nil
+}
+
+func IssueSDJWTPresentation(presBytes, keyBytes []byte) (*Result, error) {
 	return nil, nil
 }

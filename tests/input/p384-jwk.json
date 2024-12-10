@@ -1,9 +1,0 @@
-{
-  "alg": "ES384",
-  "crv": "P-384",
-  "d": "MwMJrvq0xa_YDeC1UavdKx06xo-nhYjYI7o17miyv_Y1hHCqxNFe1-rgR0AvH-Nb",
-  "kid": "KdXpAyDDKLiCHKIOZwPqTmfIfZK2R4k_69rORYWrje0",
-  "kty": "EC",
-  "x": "2pu1zmWcywgnbkEhZUUrdx9D1oEuDSdRf6d6cS2yBbvqyb2TxtcCtfLL-4jUJrKE",
-  "y": "FUuBqVQKXFVEGjOirsJdKE2eZvEPLnr7N3jBmIOMyEmdnB60shg6Jl-2EAl_rE2n"
-}

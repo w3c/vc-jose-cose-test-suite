@@ -1,0 +1,20 @@
+{
+  "id": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb#key-4",
+  "type": "JsonWebKey",
+  "controller": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb",
+  "publicKeyJwk": {
+    "alg": "EdDSA",
+    "crv": "Ed25519",
+    "kid": "2aOHaQxsWVT4mLsUkdtlCnUV-au0BBR-5yPYaPaCc5k",
+    "kty": "OKP",
+    "x": "NvUhsjZe7Mdv8Esoc60o3ma1U5j2tFUTDsOQd39xMnI"
+  },
+  "secretKeyJwk": {
+    "alg": "EdDSA",
+    "crv": "Ed25519",
+    "d": "cbxP1TvbhLteRSspEvwxEuFKRDHWpGmPla8ePI0cmv8",
+    "kid": "2aOHaQxsWVT4mLsUkdtlCnUV-au0BBR-5yPYaPaCc5k",
+    "kty": "OKP",
+    "x": "NvUhsjZe7Mdv8Esoc60o3ma1U5j2tFUTDsOQd39xMnI"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb#key-3",
+  "type": "JsonWebKey",
+  "controller": "https://example.issuer/6c427e8392ab4057b93356fbb9022ecb",
+  "publicKeyJwk": {
+    "alg": "ES512",
+    "crv": "P-521",
+    "kid": "KQsihxP-LTeTZO2ETEfduP153UBIiFRhI8nSklMSmm0",
+    "kty": "EC",
+    "x": "Ac8mt4TvYd3TOrYtTk_YTQ5QQMpl58OnrU7uRxQEUoOO_6QnRBM0Xan8KQI_0dPKzcKBak0ZSEXcc5SNFUBHYfbP",
+    "y": "ADP_cowssurHA7uMHy4IODl247oQjCxZWFX7Gtr3cFmfVIwEyKGegrJh9ooZy5FsvFVbYwAmLKVfGZs7O15RBsO-"
+  },
+  "secretKeyJwk": {
+    "alg": "ES512",
+    "crv": "P-521",
+    "d": "ABLav_lS-i3hVtEiYGNHwl7xdAu93Qc0O1httqelzCTs8uEmiSjkoKX6tCKwz--beZSL5a8qtdoC4mazTMtvsS4h",
+    "kid": "KQsihxP-LTeTZO2ETEfduP153UBIiFRhI8nSklMSmm0",
+    "kty": "EC",
+    "x": "Ac8mt4TvYd3TOrYtTk_YTQ5QQMpl58OnrU7uRxQEUoOO_6QnRBM0Xan8KQI_0dPKzcKBak0ZSEXcc5SNFUBHYfbP",
+    "y": "ADP_cowssurHA7uMHy4IODl247oQjCxZWFX7Gtr3cFmfVIwEyKGegrJh9ooZy5FsvFVbYwAmLKVfGZs7O15RBsO-"
+  }
+}

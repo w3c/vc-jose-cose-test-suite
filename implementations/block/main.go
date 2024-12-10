@@ -32,22 +32,22 @@ type Result struct {
 }
 
 func main() {
-	if len(os.Args) < 5 {
-		panic("must supply [input, key, fn, feature, output] arguments")
+	if len(os.Args) < 4 {
+		panic("must supply [input, key, feature, output] arguments")
 	}
 
-	var input, key, fn, feature, output string
+	var input, key, feature, output string
 
 	verifyCmd := flag.NewFlagSet("verify", flag.ExitOnError)
-	verifyCmd.StringVar(&input, "input", "", "input credential file")
+	verifyCmd.StringVar(&input, "input", "", "input file")
 	verifyCmd.StringVar(&key, "key", "", "input key file")
-	verifyCmd.StringVar(&feature, "feature", "", "feature to test ('jose', 'cose', or 'sdjwt')")
+	verifyCmd.StringVar(&feature, "feature", "", "feature to test (e.g credential_jose, presentation_sdjwt)")
 	verifyCmd.StringVar(&output, "output", "", "output file")
 
 	issueCmd := flag.NewFlagSet("issue", flag.ExitOnError)
-	issueCmd.StringVar(&input, "input", "", "input credential file")
+	issueCmd.StringVar(&input, "input", "", "input file")
 	issueCmd.StringVar(&key, "key", "", "input key file")
-	issueCmd.StringVar(&feature, "feature", "", "feature to test ('jose', 'cose', or 'sdjwt')")
+	issueCmd.StringVar(&feature, "feature", "", "feature to test (e.g credential_jose, presentation_sdjwt)")
 	issueCmd.StringVar(&output, "output", "", "output file")
 
 	switch os.Args[1] {
@@ -56,7 +56,7 @@ func main() {
 			fmt.Printf("error parsing flags: %s\n", err.Error())
 			os.Exit(1)
 		}
-		fmt.Printf("flags parsed: input=%s, key=%s, fn=%s, feature=%s, output=%s\n", input, key, fn, feature, output)
+		fmt.Printf("flags parsed: input=%s, key=%s, feature=%s, output=%s\n", input, key, feature, output)
 
 		validateFlags(input, key, feature, output)
 
@@ -76,7 +76,7 @@ func main() {
 			fmt.Printf("error parsing flags: %s\n", err.Error())
 			os.Exit(1)
 		}
-		fmt.Printf("flags parsed: input=%s, key=%s, fn=%s, feature=%s, output=%s\n", input, key, fn, feature, output)
+		fmt.Printf("flags parsed: input=%s, key=%s, feature=%s, output=%s\n", input, key, feature, output)
 
 		validateFlags(input, key, feature, output)
 
