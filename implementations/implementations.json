@@ -1,16 +1,9 @@
 {
-  "example-sdk": {
+  "block": {
     "features": {
-      "identifier": true,
-      "type": true,
-      "issuance_date": true
-    }
-  },
-  "example-server": {
-    "features": {
-      "identifier": true,
-      "type": false,
-      "issuance_date": true
+      "jose": true,
+      "cose": true,
+      "sdjwt": true
     }
   }
 }

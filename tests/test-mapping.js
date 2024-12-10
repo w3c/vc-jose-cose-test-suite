@@ -6,41 +6,35 @@ export const TestResult = {
   skipped: 'skipped',
 };
 
-export const GenericTestMapping = {
-  'Requirement 1: The credential must have a valid identifier (Valid)': {
+export const TestFeature = {
+  credential_jose: 'credential_jose',
+  credential_cose: 'cose',
+  credential_sdjwt: 'sdjwt',
+  presentation_jose: 'presentation_jose',
+  presentation_cose: 'presentation_cose',
+  presentation_sdjwt: 'presentation_sdjwt',
+};
+
+export const TestFunction = {
+  issue: 'issue',
+  verify: 'verify',
+};
+
+const TestKeys = {
+  p256: 'p256-jwk.json',
+  p384: 'p384-jwk.json',
+  p521: 'p521-jwk.json',
+  ed25519: 'ed25519-jwk.json',
+};
+
+// See README.md for details
+export const TestMapping = {
+  'Requirement 1: ': {
     'number': 1,
-    'input_file': 'valid-credential.json',
-    'config': {'check': 'identifier'},
+    'input_file': '1-credential.json',
+    'key_file': TestKeys.p256,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
     'expected_result': TestResult.success,
-  },
-  'Requirement 1: The credential must have a valid identifier (Invalid)': {
-    'number': 2,
-    'input_file': 'invalid-identifier-credential.json',
-    'config': {'check': 'identifier'},
-    'expected_result': TestResult.failure,
-  },
-  'Requirement 2: The credential must have the correct type (Valid)': {
-    'number': 3,
-    'input_file': 'valid-credential.json',
-    'config': {'check': 'type', 'expected_type': 'VerifiableCredential'},
-    'expected_result': TestResult.success,
-  },
-  'Requirement 2: The credential must have the correct type (Invalid)': {
-    'number': 4,
-    'input_file': 'invalid-type-credential.json',
-    'config': {'check': 'type', 'expected_type': 'VerifiableCredential'},
-    'expected_result': TestResult.failure,
-  },
-  'Requirement 3: The credential must have a valid issuance date (Valid)': {
-    'number': 5,
-    'input_file': 'valid-credential.json',
-    'config': {'check': 'issuance_date'},
-    'expected_result': TestResult.success,
-  },
-  'Requirement 3: The credential must have a valid issuance date (Invalid)': {
-    'number': 6,
-    'input_file': 'invalid-issuance-date-credential.json',
-    'config': {'check': 'issuance_date'},
-    'expected_result': TestResult.failure,
   },
 };

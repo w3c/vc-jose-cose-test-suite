@@ -1,7 +1,7 @@
 import chai from 'chai';
 import {getImplementationFeatures, implementationsWithFeatures} from '../implementations/index.js';
 import {checkTestResults, generateTestResults} from './test-util.js';
-import {GenericTestMapping} from './test-mapping.js';
+import {TestMapping} from './test-mapping.js';
 
 const should = chai.should();
 
@@ -23,8 +23,8 @@ describe('Generic Test Suite', function() {
       const features = getImplementationFeatures(i.name);
       console.log(`Features for ${i.name}:`, JSON.stringify(features, null, 2));
 
-      for (const [testName, testConfig] of Object.entries(GenericTestMapping)) {
-        const requiredFeature = testConfig.config.check;
+      for (const [testName, testConfig] of Object.entries(TestMapping)) {
+        const requiredFeature = testConfig.config.feature;
 
         it(testName, async function() {
           if (!features[requiredFeature]) {
