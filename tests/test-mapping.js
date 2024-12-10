@@ -28,7 +28,7 @@ const TestVerificationMethods = {
 
 // See README.md for details
 export const TestMapping = {
-  'Requirement 1: ': {
+  'JWT Credential Issuance': {
     'number': 1,
     'input_file': '1-credential.json',
     'key_file': TestVerificationMethods.p256,

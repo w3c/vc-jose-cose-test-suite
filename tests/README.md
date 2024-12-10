@@ -70,118 +70,129 @@ Following, are a set of test cases which describe how the statements are to be t
 
 ## Test Cases
 
-### Issuance Test Cases
+### JOSE Tests
 
-1. Basic JWT Credential Issuance
+#### Issuance Tests
+
+1. Basic Credential Issuance
     * Input: Minimal credential with only required fields (type, issuer, credentialSubject)
     * Format: jose
     * Covers: 1, 4
 
-2. JWT Presentation Issuance
-    * Input: Presentation containing one credential
+2. Credential with All Optional Fields
+    * Input: Credential containing all optional fields (evidence, termsOfUse, etc.)
+    * Format: jose
+    * Covers: 1, 4
+
+3. Basic Presentation Issuance
+    * Input: Presentation containing single credential
     * Format: jose
     * Covers: 5, 7, 8
 
-3. SD-JWT Selective Disclosure Credential
-    * Input: Credential with multiple disclosable claims in credentialSubject
-    * Format: sd-jwt
-    * Covers: 9
-
-4. COSE Credential Issuance
-    * Input: Standard credential with issuer DID and key references
-    * Format: cose
-    * Covers: 15, 22
-
-5. Complex Presentation Issuance
-    * Input: Presentation containing multiple credentials of different types
+4. Complex Presentation Issuance
+    * Input: Presentation containing multiple credentials with different types
     * Format: jose
     * Covers: 5, 7, 8
 
-6. Credential with Extensions
-    * Input: Credential with credentialSchema and credentialStatus
-    * Format: jose
-    * Covers: 1, 33
+#### Verification Tests
 
-### Verification Test Cases
-
-7. Basic JWT Credential Verification
+5. Basic Credential Verification
     * Input: Signed minimal credential
     * Format: jose
     * Covers: 2, 3, 29, 30, 31, 32
 
-8. SD-JWT Verification with Selective Disclosure
-    * Input: SD-JWT credential with multiple disclosed and undisclosed claims
-    * Format: sd-jwt
-    * Covers: 10, 26, 31
+6. Presentation Verification
+    * Input: Signed presentation with multiple credentials
+    * Format: jose
+    * Covers: 6, 7, 8
 
-9. COSE Base64 Format Check
-    * Input: COSE credential within a presentation using base64 encoding
-    * Format: cose
-    * Covers: 17, 20, 21
-
-10. Issuer Match Verification
+7. Issuer Match Verification
     * Input: Credential with string issuer and matching iss claim
     * Format: jose
     * Covers: 24, 25
 
-11. URL Verification Method Resolution
+8. URL Method Resolution
     * Input: Credential using URL identifiers without iss
     * Format: jose
     * Covers: 27, 28
 
-12. Presentation Format Verification
-    * Input: Presentation with multiple credentials in different formats
-    * Format: jose
-    * Covers: 6, 7, 8, 34, 35
+### SD-JWT Tests
 
-13. Serialization Format Check
-    * Input: Credential using compact serialization
-    * Format: jose/sd-jwt
-    * Covers: 34, 35
+#### Issuance Tests
 
-14. Type Validation
-    * Input: Credential with expected type fields
-    * Format: jose
-    * Covers: 29, 30, 31, 32
+9. Basic SD-JWT Credential
+    * Input: Credential with simple selective disclosure claims
+    * Format: sd-jwt
+    * Covers: 9
 
-15. Extension Processing
-    * Input: Credential with unknown extension fields
-    * Format: jose
-    * Covers: 26, 31, 33
+10. Complex SD-JWT Credential
+    * Input: Credential with nested selective disclosure claims
+    * Format: sd-jwt
+    * Covers: 9
 
-16. Multi-format Presentation Verification
+11. SD-JWT Presentation
+    * Input: Presentation containing SD-JWT credentials
+    * Format: sd-jwt
+    * Covers: 11, 13, 14
+
+#### Verification Tests
+
+12. Basic SD-JWT Verification
+    * Input: SD-JWT credential with mix of disclosed/undisclosed claims
+    * Format: sd-jwt
+    * Covers: 10, 26, 31
+
+13. Complex SD-JWT Verification
+    * Input: SD-JWT credential with nested disclosures
+    * Format: sd-jwt
+    * Covers: 10, 26, 31
+
+14. SD-JWT Presentation Verification
+    * Input: Presentation with multiple SD-JWT credentials
+    * Format: sd-jwt
+    * Covers: 12, 13, 14
+
+### COSE Tests
+
+#### Issuance Tests
+
+15. Basic COSE Credential
+    * Input: Standard credential with required fields
+    * Format: cose
+    * Covers: 15, 22
+
+16. COSE Presentation
+    * Input: Presentation containing COSE credentials
+    * Format: cose
+    * Covers: 18, 20, 21
+
+#### Verification Tests
+
+17. Basic COSE Verification
+    * Input: Signed COSE credential
+    * Format: cose
+    * Covers: 16, 29, 30, 31, 32
+
+18. Base64 Encoding Verification
+    * Input: COSE credential in presentation with base64 encoding
+    * Format: cose
+    * Covers: 17, 20, 21
+
+19. COSE Presentation Verification
+    * Input: Presentation with multiple COSE credentials
+    * Format: cose
+    * Covers: 19, 20, 21
+
+### Cross-Format Tests
+
+#### Verification Tests
+
+20. Multi-format Presentation
     * Input: Presentation containing JWT, SD-JWT, and COSE credentials
-    * Format: jose
+    * Format: jose, cose, sd-jwt
     * Covers: 7, 8, 13, 14, 20, 21
 
-17. Controller Document Resolution
-    * Input: Credential using DID URLs for key references
-    * Format: jose
-    * Covers: 22, 27, 28
-
-### (Optional) Negative Test Cases
-
-18. Invalid Signature Verification
-    * Input: Credential with tampered signature
-    * Format: jose
-    * Covers: 2, 3
-
-19. Missing Required Claims
-    * Input: Credential missing mandatory type claim
-    * Format: jose
-    * Covers: 29, 30
-
-20. Invalid Base64 Encoding
-    * Input: COSE credential with improper base64 encoding
-    * Format: cose
-    * Covers: 17
-
-21. Non-compact Serialization
-    * Input: Credential using JSON serialization
-    * Format: jose
-    * Covers: 34, 35
-
-22. Mismatched Issuer Claims
-    * Input: Credential with non-matching issuer and iss values
-    * Format: jose
-    * Covers: 24, 25
+21. Extension Processing
+    * Input: Credentials of different formats with unknown extensions
+    * Format: jose, cose, sd-jwt
+    * Covers: 26, 31, 33
