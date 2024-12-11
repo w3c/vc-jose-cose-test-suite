@@ -1,9 +1,12 @@
 {
   "independent": {
     "features": {
-      "jose": true,
-      "cose": true,
-      "sdjwt": true
+      "credential_jose": true,
+      "credential_cose": true,
+      "credential_sdjwt": true,
+      "presentation_jose": true,
+      "presentation_cose": true,
+      "presentation_sdjwt": true
     }
   }
 }

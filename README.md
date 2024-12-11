@@ -92,7 +92,7 @@ To add a new implementation:
 Note: if your implementation does not support a feature, set the value to `false`. This will cause the test runner to
 skip tests for that feature.
 
-4. Update `implementations/docker-compose.yml` to include your new service:
+4. Update `implementations/compose.yml` to include your new service:
 
 ```yaml
 services:

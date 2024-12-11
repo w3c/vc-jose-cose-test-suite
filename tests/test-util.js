@@ -10,10 +10,9 @@ import {TestResult} from './test-mapping.js';
  */
 export async function generateTestResults(impl, testConfig) {
   const command = `
-docker compose -f ./implementations/docker-compose.yml run --rm ${impl} ${testConfig.fn} \
+docker compose -f ./implementations/compose.yml run --rm ${impl} ${testConfig.fn} \
   --input /tests/input/${testConfig.input_file} \
   --key /tests/input/${testConfig.key_file} \
-  --fn '${testConfig.fn}' \
   --feature '${testConfig.feature}' \
   --output /tests/output/${testConfig.number}-${impl}.json
 `;
