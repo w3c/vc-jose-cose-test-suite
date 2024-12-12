@@ -46,10 +46,16 @@ The suite makes use Digital Bazaar's [mocha-w3c-interop-reporter](https://github
 This file defines the structure of the test suite. It exports two main objects:
 
 1. `TestResult`: An enum of possible test outcomes (success, failure, indeterminate, error).
-2. `GenericTestMapping`: A mapping of test names to their configurations. Each test configuration includes:
+2. `TestMapping`: A mapping of test names to their configurations. Each test configuration includes:
     - `number`: A unique identifier for the test
-    - `input_file`: The name of the input file to be used
-    - `config`: Configuration options for the test, including the `check` property which determines the feature being tested
+    - `input_file`: The name of the input file to be used, representing:
+      - For issuance, a JSON unsigned Verifiable Credential or Presentation
+      - For verification, a signed Verifiable Credential or Presentation, encoded as a JWT string (JOSE), 
+        Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT)
+    - `key_file`: The name of the key file to be used, representing a Verification Method
+    - `fn`: The function being tested either `issue` or `verify`
+    - `feature`: The function being tested, one of `credential_jose`, `credential_cose`, `credential_sdjwt`, 
+      `presentation_jose`, `presentation_cose`, or `presentation_sdjwt`
     - `expected_result`: The expected outcome of the test
 
 ### test-runner.js

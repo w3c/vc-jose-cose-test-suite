@@ -38,7 +38,7 @@ export const TestError = {
 
 // See README.md for details
 export const JOSETestMapping = {
-  'JWT Basic Credential Issuance': {
+  '1. JWT Basic Credential Issuance': {
     'number': 1,
     'input_file': 'credential-minimal.json',
     'key_file': TestVerificationMethods.p256,
@@ -53,7 +53,7 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Complex Credential Issuance': {
+  '2. JWT Complex Credential Issuance': {
     'number': 2,
     'input_file': 'credential-full.json',
     'key_file': TestVerificationMethods.p384,
@@ -68,7 +68,7 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Basic Presentation Issuance': {
+  '3. JWT Basic Presentation Issuance': {
     'number': 3,
     'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.p256,
@@ -83,7 +83,7 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Complex Presentation Issuance': {
+  '4. JWT Complex Presentation Issuance': {
     'number': 4,
     'input_file': 'presentation-multiple.json',
     'key_file': TestVerificationMethods.p521,
@@ -98,7 +98,7 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Basic Credential Verification': {
+  '5. JWT Basic Credential Verification': {
     'number': 5,
     'input_file': 'credential-minimal-signed.json',
     'key_file': TestVerificationMethods.p256,
@@ -110,7 +110,7 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Presentation Verification': {
+  '6. JWT Presentation Verification': {
     'number': 6,
     'input_file': 'presentation-multiple-signed.json',
     'key_file': TestVerificationMethods.p384,
@@ -122,9 +122,9 @@ export const JOSETestMapping = {
     // },
   },
 
-  'JWT Issuer Match Verification': {
+  '7. JWT Issuer Match Verification': {
     'number': 7,
-    'input_file': 'credential-issuer-match.json',
+    'input_file': 'credential-issuer-match-signed.json',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
@@ -137,7 +137,7 @@ export const JOSETestMapping = {
 };
 
 export const SDJWTTestMapping = {
-  'SD-JWT Basic Credential Issuance': {
+  '8. SD-JWT Basic Credential Issuance': {
     'number': 9,
     'input_file': 'credential-selective.json',
     'key_file': TestVerificationMethods.p384,
@@ -156,7 +156,7 @@ export const SDJWTTestMapping = {
     // },
   },
 
-  'SD-JWT Complex Credential Issuance': {
+  '9. SD-JWT Complex Credential Issuance': {
     'number': 10,
     'input_file': 'credential-nested-selective.json',
     'key_file': TestVerificationMethods.p521,
@@ -181,9 +181,9 @@ export const SDJWTTestMapping = {
 };
 
 export const COSETestMapping = {
-  'COSE Basic Credential Issuance': {
+  '10. COSE Basic Credential Issuance': {
     'number': 15,
-    'input_file': 'credential-cose.json',
+    'input_file': 'credential-minimal.json',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_cose,
@@ -196,9 +196,9 @@ export const COSETestMapping = {
     // },
   },
 
-  'COSE Presentation': {
+  '11. COSE Presentation': {
     'number': 18,
-    'input_file': 'presentation-cose.json',
+    'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.presentation_cose,

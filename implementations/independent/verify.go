@@ -1,11 +1,18 @@
 package main
 
 import (
+	"encoding/base64"
 	"fmt"
+	"github.com/decentralgabe/vc-jose-cose-go/cid"
+	"github.com/decentralgabe/vc-jose-cose-go/cose"
+	"github.com/decentralgabe/vc-jose-cose-go/jose"
+	"github.com/goccy/go-json"
+	"github.com/lestrrat-go/jwx/v2/jwk"
+	"github.com/pkg/errors"
 	"os"
 )
 
-func Verify(inputFile, keyFile string, feature Feature) (*Status, error) {
+func Verify(inputFile, keyFile string, feature Feature) (*Result, error) {
 	fmt.Printf("Attempting to read input file: %s\n", inputFile)
 
 	// Read and parse the input file
@@ -13,6 +20,10 @@ func Verify(inputFile, keyFile string, feature Feature) (*Status, error) {
 	if err != nil {
 		return nil, fmt.Errorf("error reading input file: %v", err)
 	}
+	if len(inputBytes) == 0 {
+		return nil, fmt.Errorf("input file is empty")
+	}
+	inputStr := string(inputBytes)
 
 	fmt.Printf("Successfully read input file. Content length: %d bytes\n", len(inputBytes))
 
@@ -25,46 +36,86 @@ func Verify(inputFile, keyFile string, feature Feature) (*Status, error) {
 		return nil, fmt.Errorf("key file is empty")
 	}
 
+	var vm cid.VerificationMethod
+	if err := json.Unmarshal(keyBytes, &vm); err != nil {
+		return nil, fmt.Errorf("error unmarshaling verifcation method: %v", err)
+	}
+
 	switch feature {
 	case JOSECredential:
-		return VerifyJOSECredential(inputBytes, keyBytes)
+		return VerifyJOSECredential(inputStr, vm.PublicKeyJWK)
 	case COSECredential:
-		return VerifyCOSECredential(inputBytes, keyBytes)
+		return VerifyCOSECredential(inputStr, vm.PublicKeyJWK)
 	case SDJWTCredential:
-		return VerifySDJWTCredential(inputBytes, keyBytes)
+		return VerifySDJWTCredential(inputStr, vm.PublicKeyJWK)
 	case JOSEPresentation:
-		return VerifyJOSEPresentation(inputBytes, keyBytes)
+		return VerifyJOSEPresentation(inputStr, vm.PublicKeyJWK)
 	case COSEPresentation:
-		return VerifyCOSEPresentation(inputBytes, keyBytes)
+		return VerifyCOSEPresentation(inputStr, vm.PublicKeyJWK)
 	case SDJWTPresentation:
-		return VerifySDJWTPresentation(inputBytes, keyBytes)
+		return VerifySDJWTPresentation(inputStr, vm.PublicKeyJWK)
 	default:
-		i := Indeterminate
 		fmt.Printf("unsupported feature: %s\n", feature)
-		return &i, nil
+		return &Result{Result: Indeterminate}, nil
 	}
 }
 
-func VerifyJOSECredential(credBytes, keyBytes []byte) (*Status, error) {
+func VerifyJOSECredential(credStr string, key jwk.Key) (*Result, error) {
+	cred, err := jose.VerifyVerifiableCredential(credStr, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying JOSE credential: %v", err)}, nil
+	}
+	if cred == nil {
+		return &Result{Result: Failure, Data: "JOSE credential is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
+}
+
+func VerifyCOSECredential(credStr string, key jwk.Key) (*Result, error) {
+	credBytes, err := base64.RawStdEncoding.DecodeString(credStr)
+	if err != nil {
+		return nil, errors.Wrap(err, "error decoding base64 encoded COSE credential")
+	}
+	cred, err := cose.VerifyVerifiableCredential(credBytes, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying COSE credential: %v", err)}, nil
+	}
+	if cred == nil {
+		return &Result{Result: Failure, Data: "COSE credential is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
+}
+
+func VerifySDJWTCredential(credStr string, key jwk.Key) (*Result, error) {
 	return nil, nil
 }
 
-func VerifyCOSECredential(credBytes, keyBytes []byte) (*Status, error) {
-	return nil, nil
+func VerifyJOSEPresentation(presStr string, key jwk.Key) (*Result, error) {
+	pres, err := jose.VerifyVerifiablePresentation(presStr, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying JOSE presentation: %v", err)}, nil
+	}
+	if pres == nil {
+		return &Result{Result: Failure, Data: "JOSE presentation is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
 }
 
-func VerifySDJWTCredential(credBytes, keyBytes []byte) (*Status, error) {
-	return nil, nil
+func VerifyCOSEPresentation(presStr string, key jwk.Key) (*Result, error) {
+	presBytes, err := base64.RawStdEncoding.DecodeString(presStr)
+	if err != nil {
+		return nil, errors.Wrap(err, "error decoding base64 encoded COSE presentation")
+	}
+	pres, err := cose.VerifyVerifiablePresentation(presBytes, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying COSE presentation: %v", err)}, nil
+	}
+	if pres == nil {
+		return &Result{Result: Failure, Data: "COSE presentation is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
 }
 
-func VerifyJOSEPresentation(presBytes, keyBytes []byte) (*Status, error) {
-	return nil, nil
-}
-
-func VerifyCOSEPresentation(presBytes, keyBytes []byte) (*Status, error) {
-	return nil, nil
-}
-
-func VerifySDJWTPresentation(presBytes, keyBytes []byte) (*Status, error) {
+func VerifySDJWTPresentation(presStr string, key jwk.Key) (*Result, error) {
 	return nil, nil
 }

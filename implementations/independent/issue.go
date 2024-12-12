@@ -1,8 +1,10 @@
 package main
 
 import (
+	"encoding/base64"
 	"fmt"
 	"github.com/decentralgabe/vc-jose-cose-go/cid"
+	"github.com/decentralgabe/vc-jose-cose-go/cose"
 	"github.com/decentralgabe/vc-jose-cose-go/credential"
 	"github.com/decentralgabe/vc-jose-cose-go/jose"
 	"github.com/goccy/go-json"
@@ -18,7 +20,9 @@ func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
 	if err != nil {
 		return nil, fmt.Errorf("error reading input file: %v", err)
 	}
-
+	if len(inputBytes) == 0 {
+		return nil, fmt.Errorf("input file is empty")
+	}
 	fmt.Printf("Successfully read input file. Content length: %d bytes\n", len(inputBytes))
 
 	// Read and parse the key file
@@ -26,7 +30,7 @@ func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
 	if err != nil {
 		return nil, fmt.Errorf("error reading key file: %v", err)
 	}
-	if keyBytes == nil {
+	if len(keyBytes) == 0 {
 		return nil, fmt.Errorf("key file is empty")
 	}
 
@@ -51,7 +55,6 @@ func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, erro
 	if err := json.Unmarshal(keyBytes, &vm); err != nil {
 		return nil, fmt.Errorf("error unmarshaling verifcation method: %v", err)
 	}
-	fmt.Printf("%+v\n", vm)
 
 	switch feature {
 	case JOSECredential:
@@ -107,7 +110,18 @@ func IssueJOSECredential(cred credential.VerifiableCredential, key jwk.Key) (*Re
 }
 
 func IssueCOSECredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
-	return nil, nil
+	cs1, err := cose.SignVerifiableCredential(cred, key)
+	if err != nil {
+		fmt.Printf("error signing credential: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if cs1 == nil {
+		return &Result{Result: Failure}, nil
+	}
+	return &Result{
+		Result: Success,
+		Data:   base64.RawStdEncoding.EncodeToString(cs1),
+	}, nil
 }
 
 func IssueSDJWTCredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
@@ -131,7 +145,18 @@ func IssueJOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) 
 }
 
 func IssueCOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
-	return nil, nil
+	cs1, err := cose.SignVerifiablePresentation(pres, key)
+	if err != nil {
+		fmt.Printf("error signing presentation: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if cs1 == nil {
+		return &Result{Result: Failure}, nil
+	}
+	return &Result{
+		Result: Success,
+		Data:   base64.RawStdEncoding.EncodeToString(cs1),
+	}, nil
 }
 
 func IssueSDJWTPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {

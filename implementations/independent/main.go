@@ -81,15 +81,14 @@ func main() {
 		validateFlags(input, key, feature, output)
 
 		result, err := Verify(input, key, Feature(feature))
-		if err != nil {
+		if err != nil || result == nil {
 			fmt.Printf("error verifying %s: %s\n", feature, err.Error())
-			// Write failure result to output file
 			writeEmptyResult(Failure, output)
 			os.Exit(1)
 		}
 
 		// Write the result to the output file
-		writeEmptyResult(*result, output)
+		writeResult(*result, output)
 		fmt.Printf("Successfully wrote output to file\n")
 	default:
 		fmt.Println("expected 'issue' or 'verify' command")
