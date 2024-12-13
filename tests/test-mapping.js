@@ -152,8 +152,8 @@ export const SDJWTTestMapping = {
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_sdjwt,
-    'expected_result': TestResult.success,
     'disclosure_paths': ['credentialSubject.firstName', 'credentialSubject.lastName'],
+    'expected_result': TestResult.success,
   },
 
   '10. SD-JWT Complex Credential Issuance': {
@@ -162,8 +162,8 @@ export const SDJWTTestMapping = {
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_sdjwt,
-    'expected_result': TestResult.success,
     'disclosure_paths': ['credentialSubject.address.street', 'credentialSubject.address.city', 'credentialSubject.phoneNumbers[0]'],
+    'expected_result': TestResult.success,
   },
 
   '11. SD-JWT Presentation Issuance': {
@@ -172,8 +172,8 @@ export const SDJWTTestMapping = {
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.presentation_sdjwt,
-    'expected_result': TestResult.success,
     'disclosure_paths': ['holder', 'verifiableCredential[0]'],
+    'expected_result': TestResult.success,
   },
 
   '12. SD-JWT Basic Credential Verification': {

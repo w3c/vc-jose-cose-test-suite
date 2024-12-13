@@ -54,6 +54,7 @@ This file defines the structure of the test suite. It exports two main objects:
         Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT)
     - `key_file`: The name of the key file to be used, representing a Verification Method
     - `fn`: The function being tested either `issue` or `verify`
+    - `disclosure_paths`: An array of paths to be disclosed in a Selective Disclosure JWT (e.g. `["issuer", "validFrom", "credentialSubject.id"]`)
     - `feature`: The function being tested, one of `credential_jose`, `credential_cose`, `credential_sdjwt`, 
       `presentation_jose`, `presentation_cose`, or `presentation_sdjwt`
     - `expected_result`: The expected outcome of the test
