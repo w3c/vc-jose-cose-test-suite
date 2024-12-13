@@ -7,12 +7,13 @@ import (
 	"github.com/decentralgabe/vc-jose-cose-go/cose"
 	"github.com/decentralgabe/vc-jose-cose-go/credential"
 	"github.com/decentralgabe/vc-jose-cose-go/jose"
+	"github.com/decentralgabe/vc-jose-cose-go/sdjwt"
 	"github.com/goccy/go-json"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"os"
 )
 
-func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
+func Issue(inputFile, keyFile string, disclosures []string, feature Feature) (*Result, error) {
 	fmt.Printf("Attempting to read input file: %s\n", inputFile)
 
 	// Read and parse the input file
@@ -36,16 +37,16 @@ func Issue(inputFile, keyFile string, feature Feature) (*Result, error) {
 
 	switch feature {
 	case JOSECredential, COSECredential, SDJWTCredential:
-		return IssueCredential(inputBytes, keyBytes, feature)
+		return IssueCredential(inputBytes, disclosures, keyBytes, feature)
 	case JOSEPresentation, COSEPresentation, SDJWTPresentation:
-		return IssuePresentation(inputBytes, keyBytes, feature)
+		return IssuePresentation(inputBytes, disclosures, keyBytes, feature)
 	default:
 		fmt.Printf("unsupported feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
 	}
 }
 
-func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, error) {
+func IssueCredential(credBytes []byte, disclosures []string, keyBytes []byte, feature Feature) (*Result, error) {
 	var cred credential.VerifiableCredential
 	if err := json.Unmarshal(credBytes, &cred); err != nil {
 		return nil, fmt.Errorf("error unmarshaling credential: %v", err)
@@ -62,14 +63,14 @@ func IssueCredential(credBytes, keyBytes []byte, feature Feature) (*Result, erro
 	case COSECredential:
 		return IssueCOSECredential(cred, vm.SecretKeyJWK)
 	case SDJWTCredential:
-		return IssueSDJWTCredential(cred, vm.SecretKeyJWK)
+		return IssueSDJWTCredential(cred, disclosures, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported credential feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
 	}
 }
 
-func IssuePresentation(presBytes, keyBytes []byte, feature Feature) (*Result, error) {
+func IssuePresentation(presBytes []byte, disclosures []string, keyBytes []byte, feature Feature) (*Result, error) {
 	var pres credential.VerifiablePresentation
 	if err := json.Unmarshal(presBytes, &pres); err != nil {
 		return nil, fmt.Errorf("error unmarshaling presentation: %v", err)
@@ -86,7 +87,7 @@ func IssuePresentation(presBytes, keyBytes []byte, feature Feature) (*Result, er
 	case COSEPresentation:
 		return IssueCOSEPresentation(pres, vm.SecretKeyJWK)
 	case SDJWTPresentation:
-		return IssueSDJWTPresentation(pres, vm.SecretKeyJWK)
+		return IssueSDJWTPresentation(pres, disclosures, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported presentation feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
@@ -124,8 +125,25 @@ func IssueCOSECredential(cred credential.VerifiableCredential, key jwk.Key) (*Re
 	}, nil
 }
 
-func IssueSDJWTCredential(cred credential.VerifiableCredential, key jwk.Key) (*Result, error) {
-	return nil, nil
+func IssueSDJWTCredential(cred credential.VerifiableCredential, disclosures []string, key jwk.Key) (*Result, error) {
+	sdDisclosures := make([]sdjwt.DisclosurePath, len(disclosures))
+	for i, d := range disclosures {
+		sdDisclosures[i] = sdjwt.DisclosurePath(d)
+	}
+
+	sdJWT, err := sdjwt.SignVerifiableCredential(cred, sdDisclosures, key)
+	if err != nil {
+		fmt.Printf("error signing credential: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if sdJWT == nil || *sdJWT == "" {
+		return &Result{Result: Failure}, nil
+	}
+
+	return &Result{
+		Result: Success,
+		Data:   *sdJWT,
+	}, nil
 }
 
 func IssueJOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
@@ -159,6 +177,23 @@ func IssueCOSEPresentation(pres credential.VerifiablePresentation, key jwk.Key) 
 	}, nil
 }
 
-func IssueSDJWTPresentation(pres credential.VerifiablePresentation, key jwk.Key) (*Result, error) {
-	return nil, nil
+func IssueSDJWTPresentation(pres credential.VerifiablePresentation, disclosures []string, key jwk.Key) (*Result, error) {
+	sdDisclosures := make([]sdjwt.DisclosurePath, len(disclosures))
+	for i, d := range disclosures {
+		sdDisclosures[i] = sdjwt.DisclosurePath(d)
+	}
+
+	sdJWT, err := sdjwt.SignVerifiablePresentation(pres, sdDisclosures, key)
+	if err != nil {
+		fmt.Printf("error signing credential: %v", err)
+		return &Result{Result: Failure}, nil
+	}
+	if sdJWT == nil || *sdJWT == "" {
+		return &Result{Result: Failure}, nil
+	}
+
+	return &Result{
+		Result: Success,
+		Data:   *sdJWT,
+	}, nil
 }

@@ -6,10 +6,12 @@ import (
 	"github.com/decentralgabe/vc-jose-cose-go/cid"
 	"github.com/decentralgabe/vc-jose-cose-go/cose"
 	"github.com/decentralgabe/vc-jose-cose-go/jose"
+	"github.com/decentralgabe/vc-jose-cose-go/sdjwt"
 	"github.com/goccy/go-json"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/pkg/errors"
 	"os"
+	"strings"
 )
 
 func Verify(inputFile, keyFile string, feature Feature) (*Result, error) {
@@ -23,7 +25,7 @@ func Verify(inputFile, keyFile string, feature Feature) (*Result, error) {
 	if len(inputBytes) == 0 {
 		return nil, fmt.Errorf("input file is empty")
 	}
-	inputStr := string(inputBytes)
+	inputStr := strings.TrimSpace(string(inputBytes))
 
 	fmt.Printf("Successfully read input file. Content length: %d bytes\n", len(inputBytes))
 
@@ -87,7 +89,14 @@ func VerifyCOSECredential(credStr string, key jwk.Key) (*Result, error) {
 }
 
 func VerifySDJWTCredential(credStr string, key jwk.Key) (*Result, error) {
-	return nil, nil
+	cred, err := sdjwt.VerifyVerifiableCredential(credStr, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying SD-JWT credential: %v", err)}, nil
+	}
+	if cred == nil {
+		return &Result{Result: Failure, Data: "SD-JWT credential is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
 }
 
 func VerifyJOSEPresentation(presStr string, key jwk.Key) (*Result, error) {
@@ -117,5 +126,12 @@ func VerifyCOSEPresentation(presStr string, key jwk.Key) (*Result, error) {
 }
 
 func VerifySDJWTPresentation(presStr string, key jwk.Key) (*Result, error) {
-	return nil, nil
+	pres, err := sdjwt.VerifyVerifiablePresentation(presStr, key)
+	if err != nil {
+		return &Result{Result: Failure, Data: fmt.Sprintf("error verifying SD-JWT presentation: %v", err)}, nil
+	}
+	if pres == nil {
+		return &Result{Result: Failure, Data: "SD-JWT presentation is invalid"}, nil
+	}
+	return &Result{Result: Success}, nil
 }

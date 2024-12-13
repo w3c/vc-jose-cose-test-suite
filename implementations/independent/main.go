@@ -33,10 +33,10 @@ type Result struct {
 
 func main() {
 	if len(os.Args) < 4 {
-		panic("must supply [input, key, feature, output] arguments")
+		panic("must supply [input, key, feature, output] and optional [sd] arguments")
 	}
 
-	var input, key, feature, output string
+	var input, key, sd, feature, output string
 
 	verifyCmd := flag.NewFlagSet("verify", flag.ExitOnError)
 	verifyCmd.StringVar(&input, "input", "", "input file")
@@ -47,6 +47,7 @@ func main() {
 	issueCmd := flag.NewFlagSet("issue", flag.ExitOnError)
 	issueCmd.StringVar(&input, "input", "", "input file")
 	issueCmd.StringVar(&key, "key", "", "input key file")
+	issueCmd.StringVar(&sd, "sd", "", "SD-JWT disclosures")
 	issueCmd.StringVar(&feature, "feature", "", "feature to test (e.g credential_jose, presentation_sdjwt)")
 	issueCmd.StringVar(&output, "output", "", "output file")
 
@@ -60,10 +61,21 @@ func main() {
 
 		validateFlags(input, key, feature, output)
 
-		result, err := Issue(input, key, Feature(feature))
-		if err != nil {
-			fmt.Printf("error issuing %s: %s\n", feature, err.Error())
-			// Write failure result to output file
+		var disclosures []string
+		if sd != "" {
+			if err := json.Unmarshal([]byte(sd), &disclosures); err != nil {
+				fmt.Printf("error unmarshaling disclosures: %v\n", err)
+				os.Exit(1)
+			}
+		}
+
+		result, err := Issue(input, key, disclosures, Feature(feature))
+		if err != nil || result == nil {
+			if err != nil {
+				fmt.Printf("error issuing %s: %s\n", feature, err.Error())
+			} else {
+				fmt.Printf("error issuing %s: result is nil\n", feature)
+			}
 			writeEmptyResult(Failure, output)
 			os.Exit(1)
 		}
@@ -82,7 +94,11 @@ func main() {
 
 		result, err := Verify(input, key, Feature(feature))
 		if err != nil || result == nil {
-			fmt.Printf("error verifying %s: %s\n", feature, err.Error())
+			if err != nil {
+				fmt.Printf("error verifying %s: %s\n", feature, err.Error())
+			} else {
+				fmt.Printf("error verifying %s: result is nil\n", feature)
+			}
 			writeEmptyResult(Failure, output)
 			os.Exit(1)
 		}

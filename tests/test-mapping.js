@@ -7,11 +7,11 @@ export const TestResult = {
 
 export const TestFeature = {
   credential_jose: 'credential_jose',
-  credential_cose: 'credential_cose',
   credential_sdjwt: 'credential_sdjwt',
+  credential_cose: 'credential_cose',
   presentation_jose: 'presentation_jose',
-  presentation_cose: 'presentation_cose',
   presentation_sdjwt: 'presentation_sdjwt',
+  presentation_cose: 'presentation_cose',
 };
 
 export const TestFunction = {
@@ -134,54 +134,78 @@ export const JOSETestMapping = {
     //   'expected_error': TestError.INVALID_ISSUER,
     // },
   },
+
+  // '8. JWT Issuer as URL without a kid': {
+  //   'number': 8,
+  //   'input_file': 'credential-issuer-url-no-kid-signed.json',
+  //   'key_file': TestVerificationMethods.ed25519,
+  //   'fn': TestFunction.verify,
+  //   'feature': TestFeature.credential_jose,
+  //   'expected_result': TestResult.success,
+  // },
 };
 
 export const SDJWTTestMapping = {
-  '8. SD-JWT Basic Credential Issuance': {
+  '9. SD-JWT Basic Credential Issuance': {
     'number': 9,
     'input_file': 'credential-selective.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'sd_jwt',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p384,
-    //   'required_fields': ['type', 'issuer'],
-    //   'selective_disclosure': {
-    //     'required': ['type', 'issuer'],
-    //     'disclosable': ['credentialSubject.firstName', 'credentialSubject.lastName'],
-    //   },
-    // },
+    'disclosure_paths': ['credentialSubject.firstName', 'credentialSubject.lastName'],
   },
 
-  '9. SD-JWT Complex Credential Issuance': {
+  '10. SD-JWT Complex Credential Issuance': {
     'number': 10,
     'input_file': 'credential-nested-selective.json',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'sd_jwt',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p521,
-    //   'required_fields': ['type', 'issuer'],
-    //   'selective_disclosure': {
-    //     'required': ['type', 'issuer'],
-    //     'disclosable': [
-    //       'credentialSubject.address.street',
-    //       'credentialSubject.address.city',
-    //       'credentialSubject.phoneNumbers[]',
-    //     ],
-    //   },
-    // },
+    'disclosure_paths': ['credentialSubject.address.street', 'credentialSubject.address.city', 'credentialSubject.phoneNumbers[0]'],
+  },
+
+  '11. SD-JWT Presentation Issuance': {
+    'number': 11,
+    'input_file': 'presentation-selective.json',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.issue,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.success,
+    'disclosure_paths': ['holder', 'verifiableCredential[0]'],
+  },
+
+  '12. SD-JWT Basic Credential Verification': {
+    'number': 12,
+    'input_file': 'credential-selective-signed.json',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.success,
+  },
+
+  '13. SD-JWT Complex Credential Verification': {
+    'number': 13,
+    'input_file': 'credential-nested-selective-signed.json',
+    'key_file': TestVerificationMethods.p521,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.success,
+  },
+
+  '14. SD-JWT Presentation Verification': {
+    'number': 14,
+    'input_file': 'presentation-selective-signed.json',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.success,
   },
 };
 
 export const COSETestMapping = {
-  '10. COSE Basic Credential Issuance': {
+  '15. COSE Basic Credential Issuance': {
     'number': 15,
     'input_file': 'credential-minimal.json',
     'key_file': TestVerificationMethods.p256,
@@ -196,8 +220,8 @@ export const COSETestMapping = {
     // },
   },
 
-  '11. COSE Presentation': {
-    'number': 18,
+  '16. COSE Basic Presentation Issuance': {
+    'number': 16,
     'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -211,53 +235,22 @@ export const COSETestMapping = {
     //   'encoding_valid': true,
     // },
   },
+
+  '17. COSE Basic Credential Verification': {
+    'number': 17,
+    'input_file': 'credential-minimal-cose-signed.json',
+    'key_file': TestVerificationMethods.p256,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_cose,
+    'expected_result': TestResult.success,
+  },
+
+  '18. COSE Basic Presentation Verification': {
+    'number': 18,
+    'input_file': 'presentation-single-cose-signed.json',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.success,
+  },
 };
-
-
-// // Negative test cases
-// 'Invalid JWT Signature': {
-//   'number': 22,
-//   'input_file': 'credential-invalid-signature.json',
-//   'key_file': TestVerificationMethods.p256,
-//   'fn': TestFunction.verify,
-//   'feature': TestFeature.credential_jose,
-//   'verification_checks': {
-//     'expected_result': TestResult.failure,
-//     'expected_error': TestError.INVALID_SIGNATURE,
-//   },
-// },
-//
-// 'Missing Required JWT Claims': {
-//   'number': 23,
-//   'input_file': 'credential-missing-claims.json',
-//   'key_file': TestVerificationMethods.p384,
-//   'fn': TestFunction.verify,
-//   'feature': TestFeature.credential_jose,
-//   'verification_checks': {
-//     'expected_result': TestResult.failure,
-//     'expected_error': TestError.MISSING_REQUIRED_FIELDS,
-//   },
-// },
-//
-// 'Invalid SD-JWT Disclosure': {
-//   'number': 24,
-//   'input_file': 'credential-invalid-disclosure.json',
-//   'key_file': TestVerificationMethods.p384,
-//   'fn': TestFunction.verify,
-//   'feature': TestFeature.credential_sdjwt,
-//   'verification_checks': {
-//     'expected_result': TestResult.failure,
-//     'expected_error': TestError.INVALID_DISCLOSURE,
-//   },
-// },
-//
-// 'Invalid COSE Encoding': {
-//   'number': 25,
-//   'input_file': 'credential-invalid-encoding.json',
-//   'key_file': TestVerificationMethods.p256,
-//   'fn': TestFunction.verify,
-//   'feature': TestFeature.credential_cose,
-//   'verification_checks': {
-//     'expected_result': TestResult.failure,
-//     'expected_error': TestError.INVALID_ENCODING,
-//   },
