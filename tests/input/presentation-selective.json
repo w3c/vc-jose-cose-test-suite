@@ -1,0 +1,14 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://www.w3.org/ns/credentials/examples/v2"
+  ],
+  "id": "urn:uuid:3978344f-8596-4c3a-a978-8fcaba3903c5",
+  "type": ["VerifiablePresentation"],
+  "holder": "https://example.issuer/vc-jose-cose",
+  "verifiableCredential": [{
+    "@context": "https://www.w3.org/ns/credentials/v2",
+    "type": "EnvelopedVerifiableCredential",
+    "id": "data:application/vc+sd-jwt,eyJhbGciOiJFUzM4NCIsImN0eSI6InZjIiwia2lkIjoiOTZxQm5EcHZTNng4WVNDSF94bW5MbFhaTWtEaEhCcjhsajk5dTVhb2c3cyIsInR5cCI6InZjK3NkLWp3dCJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjIiXSwiY3JlZGVudGlhbFN1YmplY3QiOnsiX3NkIjpbIjVQTk5EV0VPcmhIYUl1R19TUWpvb3B4ODVIdGNKVmZ0dk9nUG1LYmdyLTQiLCI5ZnZJTWZzV1pDTUM3V2sxN2RadjFFSExEZ1ZtOExtaDFOdzI3Z0k5aEJjIl0sImJpcnRoRGF0ZSI6IjE5OTAtMDEtMDEiLCJpZCI6ImRpZDpleGFtcGxlOmViZmViMWY3MTJlYmM2ZjFjMjc2ZTEyZWMyMSJ9LCJpYXQiOiIyMDI0LTAxLTAxVDAwOjAwOjAwWiIsImlzcyI6Imh0dHBzOi8vZXhhbXBsZS5pc3N1ZXIvdmMtam9zZS1jb3NlIiwiaXNzdWVyIjoiaHR0cHM6Ly9leGFtcGxlLmlzc3Vlci92Yy1qb3NlLWNvc2UiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiSWRlbnRpdHlDcmVkZW50aWFsIl0sInZhbGlkRnJvbSI6IjIwMjQtMDEtMDFUMDA6MDA6MDBaIn0.ED7xVJQXpcQfkO6zcjgbdWRVtczUZV1x3Kc-KbPmOX2qsSpPaS4_p52uDCzBIKI45OHTfsIqqcFYVhhK0KHrU6yTMXEXN9bZ-6mlbqPaBHkeEdINhRry8kjVPW8X8eOy~WyIwWm9WNGV5dDFQbHhPdmRSQlhLaW13IiwiZmlyc3ROYW1lIiwiSmFuZSJd~WyJsd0s2WEVodXNiaHpCak54aTBIZm53IiwibGFzdE5hbWUiLCJEb2UiXQ~"
+  }]
+}

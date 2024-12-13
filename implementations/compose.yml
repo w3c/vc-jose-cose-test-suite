@@ -1,0 +1,5 @@
+services:
+  independent:
+    build: ./independent
+    volumes:
+      - ../tests:/tests

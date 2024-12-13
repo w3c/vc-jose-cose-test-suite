@@ -5,18 +5,19 @@ import {TestResult} from './test-mapping.js';
 /**
  * generateTestResults is a function that runs the tests for a given implementation
  * @param {string} impl - The name of the implementation
- * @param {string} testConfig - Data associated with the test
+ * @param {Object} testConfig - Data associated with the test
  * @return {Promise<void>} - A promise that resolves after the tests are run
  */
 export async function generateTestResults(impl, testConfig) {
-  const command = `
-docker compose -f ./implementations/docker-compose.yml run --rm ${impl} validate \
-  --input /tests/input/${testConfig.input_file} \
-  --config '${JSON.stringify(testConfig.config)}' \
-  --output /tests/output/${testConfig.number}-${impl}.json
-`;
+  const command = `docker compose -f ./implementations/compose.yml run --rm ${impl} ${testConfig.fn} \\
+  --input /tests/input/${testConfig.input_file} \\
+  --key /tests/input/${testConfig.key_file} \\
+  --feature '${testConfig.feature}' \\
+  ${testConfig.disclosure_paths ? `--sd '${JSON.stringify(testConfig.disclosure_paths)}' \\` : '\\'}
+  --output /tests/output/${testConfig.number}-${impl}.json`;
 
   console.log(`Executing command: ${command}`);
+
   const {code, stdout, stderr} = await shell.exec(command, {silent: false});
   if (code !== 0) {
     console.warn(`Command exited with code ${code}`);

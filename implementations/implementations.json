@@ -1,16 +1,12 @@
 {
-  "example-sdk": {
+  "independent": {
     "features": {
-      "identifier": true,
-      "type": true,
-      "issuance_date": true
-    }
-  },
-  "example-server": {
-    "features": {
-      "identifier": true,
-      "type": false,
-      "issuance_date": true
+      "credential_jose": true,
+      "credential_cose": true,
+      "credential_sdjwt": true,
+      "presentation_jose": true,
+      "presentation_cose": true,
+      "presentation_sdjwt": true
     }
   }
 }

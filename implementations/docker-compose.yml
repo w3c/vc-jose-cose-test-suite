@@ -1,9 +1,0 @@
-services:
-  example-sdk:
-    build: ./example-sdk
-    volumes:
-      - ../tests:/tests
-  example-server:
-    build: ./example-server
-    volumes:
-      - ../tests:/tests
