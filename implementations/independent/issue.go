@@ -47,23 +47,24 @@ func Issue(inputFile, keyFile string, disclosures []string, feature Feature) (*R
 }
 
 func IssueCredential(credBytes []byte, disclosures []string, keyBytes []byte, feature Feature) (*Result, error) {
-	var cred credential.VerifiableCredential
-	if err := json.Unmarshal(credBytes, &cred); err != nil {
-		return nil, fmt.Errorf("error unmarshaling credential: %v", err)
+	// Unmarshal the payload into VerifiableCredential
+	cred, err := credential.DecodeVC(credBytes)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal VerifiableCredential: %w", err)
 	}
 
 	var vm cid.VerificationMethod
 	if err := json.Unmarshal(keyBytes, &vm); err != nil {
-		return nil, fmt.Errorf("error unmarshaling verifcation method: %v", err)
+		return nil, fmt.Errorf("error unmarshaling verification method: %v", err)
 	}
 
 	switch feature {
 	case JOSECredential:
-		return IssueJOSECredential(cred, vm.SecretKeyJWK)
+		return IssueJOSECredential(*cred, vm.SecretKeyJWK)
 	case COSECredential:
-		return IssueCOSECredential(cred, vm.SecretKeyJWK)
+		return IssueCOSECredential(*cred, vm.SecretKeyJWK)
 	case SDJWTCredential:
-		return IssueSDJWTCredential(cred, disclosures, vm.SecretKeyJWK)
+		return IssueSDJWTCredential(*cred, disclosures, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported credential feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
@@ -71,9 +72,10 @@ func IssueCredential(credBytes []byte, disclosures []string, keyBytes []byte, fe
 }
 
 func IssuePresentation(presBytes []byte, disclosures []string, keyBytes []byte, feature Feature) (*Result, error) {
-	var pres credential.VerifiablePresentation
-	if err := json.Unmarshal(presBytes, &pres); err != nil {
-		return nil, fmt.Errorf("error unmarshaling presentation: %v", err)
+	// Unmarshal the payload into VerifiablePresentation
+	pres, err := credential.DecodeVP(presBytes)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal VerifiablePresentation: %w", err)
 	}
 
 	var vm cid.VerificationMethod
@@ -83,11 +85,11 @@ func IssuePresentation(presBytes []byte, disclosures []string, keyBytes []byte, 
 
 	switch feature {
 	case JOSEPresentation:
-		return IssueJOSEPresentation(pres, vm.SecretKeyJWK)
+		return IssueJOSEPresentation(*pres, vm.SecretKeyJWK)
 	case COSEPresentation:
-		return IssueCOSEPresentation(pres, vm.SecretKeyJWK)
+		return IssueCOSEPresentation(*pres, vm.SecretKeyJWK)
 	case SDJWTPresentation:
-		return IssueSDJWTPresentation(pres, disclosures, vm.SecretKeyJWK)
+		return IssueSDJWTPresentation(*pres, disclosures, vm.SecretKeyJWK)
 	default:
 		fmt.Printf("unsupported presentation feature: %s\n", feature)
 		return &Result{Result: Indeterminate}, nil
