@@ -19,20 +19,20 @@ func Issue(inputFile, keyFile string, disclosures []string, feature Feature) (*R
 	// Read and parse the input file
 	inputBytes, err := os.ReadFile(inputFile)
 	if err != nil {
-		return nil, fmt.Errorf("error reading input file: %v", err)
+		return nil, fmt.Error("error reading input file: %v", err)
 	}
 	if len(inputBytes) == 0 {
-		return nil, fmt.Errorf("input file is empty")
+		return nil, fmt.Error("input file is empty")
 	}
 	fmt.Printf("Successfully read input file. Content length: %d bytes\n", len(inputBytes))
 
 	// Read and parse the key file
 	keyBytes, err := os.ReadFile(keyFile)
 	if err != nil {
-		return nil, fmt.Errorf("error reading key file: %v", err)
+		return nil, fmt.Error("error reading key file: %v", err)
 	}
 	if len(keyBytes) == 0 {
-		return nil, fmt.Errorf("key file is empty")
+		return nil, fmt.Error("key file is empty")
 	}
 
 	switch feature {
@@ -50,12 +50,12 @@ func IssueCredential(credBytes []byte, disclosures []string, keyBytes []byte, fe
 	// Unmarshal the payload into VerifiableCredential
 	cred, err := credential.DecodeVC(credBytes)
 	if err != nil {
-		return nil, fmt.Errorf("failed to unmarshal VerifiableCredential: %w", err)
+		return nil, fmt.Error("failed to unmarshal VerifiableCredential: %w", err)
 	}
 
 	var vm cid.VerificationMethod
 	if err := json.Unmarshal(keyBytes, &vm); err != nil {
-		return nil, fmt.Errorf("error unmarshaling verification method: %v", err)
+		return nil, fmt.Error("error unmarshaling verification method: %v", err)
 	}
 
 	switch feature {
@@ -75,12 +75,12 @@ func IssuePresentation(presBytes []byte, disclosures []string, keyBytes []byte, 
 	// Unmarshal the payload into VerifiablePresentation
 	pres, err := credential.DecodeVP(presBytes)
 	if err != nil {
-		return nil, fmt.Errorf("failed to unmarshal VerifiablePresentation: %w", err)
+		return nil, fmt.Error("failed to unmarshal VerifiablePresentation: %w", err)
 	}
 
 	var vm cid.VerificationMethod
 	if err := json.Unmarshal(keyBytes, &vm); err != nil {
-		return nil, fmt.Errorf("error unmarshaling verification method: %v", err)
+		return nil, fmt.Error("error unmarshaling verification method: %v", err)
 	}
 
 	switch feature {
