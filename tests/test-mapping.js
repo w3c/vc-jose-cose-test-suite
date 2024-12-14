@@ -119,11 +119,65 @@ export const JOSETestMapping = {
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.failure,
   },
+
+  '!! 10. JWT Unsecured Credential Verification': {
+    'number': 10,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 11. JWT Unsecured Presentation Verification': {
+    'number': 11,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 13. JWT Credential with an Invalid Media Type': {
+    'number': 13,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 14. JWT Presentation with an Invalid Media Type': {
+    'number': 14,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 15. JWT Credential with vc and vp Claims': {
+    'number': 15,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 16. JWT Presentation with Invalid Credentia': {
+    'number': 16,
+    'input_file': '',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
 };
 
 export const SDJWTTestMapping = {
-  '10. SD-JWT Basic Credential Issuance': {
-    'number': 10,
+  '17. SD-JWT Basic Credential Issuance': {
+    'number': 17,
     'input_file': 'credential-selective.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -132,8 +186,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '11. SD-JWT Complex Credential Issuance': {
-    'number': 11,
+  '18. SD-JWT Complex Credential Issuance': {
+    'number': 18,
     'input_file': 'credential-nested-selective.json',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.issue,
@@ -142,8 +196,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '12. SD-JWT Presentation Issuance': {
-    'number': 12,
+  '19. SD-JWT Presentation Issuance': {
+    'number': 19,
     'input_file': 'presentation-selective.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -152,8 +206,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '13. SD-JWT Basic Credential Verification': {
-    'number': 12,
+  '20. SD-JWT Basic Credential Verification': {
+    'number': 20,
     'input_file': 'credential-selective-signed.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
@@ -161,8 +215,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '14. SD-JWT Complex Credential Verification': {
-    'number': 13,
+  '21. SD-JWT Complex Credential Verification': {
+    'number': 21,
     'input_file': 'credential-nested-selective-signed.json',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.verify,
@@ -170,19 +224,46 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '15. SD-JWT Presentation Verification': {
-    'number': 14,
+  '!! 23. SD-JWT Credential With an Invalid Signature': {
+    'number': 23,
     'input_file': 'presentation-selective-signed.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 24. SD-JWT Credential with an Invalid Media Type': {
+    'number': 24,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 25. SD-JWT Presentation with an Invalid Media Type': {
+    'number': 25,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
     'feature': TestFeature.presentation_sdjwt,
-    'expected_result': TestResult.success,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 26. SD-JWT Presentation Verification': {
+    'number': 26,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.failure,
   },
 };
 
 export const COSETestMapping = {
-  '16. COSE Basic Credential Issuance': {
-    'number': 16,
+  '27. COSE Basic Credential Issuance': {
+    'number': 27,
     'input_file': 'credential-minimal.json',
     'key_file': TestVerificationMethods.didEd25519,
     'fn': TestFunction.issue,
@@ -190,8 +271,8 @@ export const COSETestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '17. COSE Basic Presentation Issuance': {
-    'number': 17,
+  '28. COSE Basic Presentation Issuance': {
+    'number': 28,
     'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -199,8 +280,8 @@ export const COSETestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '18. COSE Basic Credential Verification': {
-    'number': 18,
+  '29. COSE Basic Credential Verification': {
+    'number': 29,
     'input_file': 'credential-minimal-cose-signed.json',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
@@ -208,8 +289,8 @@ export const COSETestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '19. COSE Credential Verification Incorrect Encoding': {
-    'number': 19,
+  '30. COSE Credential Verification Incorrect Encoding': {
+    'number': 30,
     'input_file': 'credential-minimal-cose-signed-not-base64.json',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
@@ -217,12 +298,48 @@ export const COSETestMapping = {
     'expected_result': TestResult.failure,
   },
 
-  '20. COSE Basic Presentation Verification': {
-    'number': 20,
+  '31. COSE Basic Presentation Verification': {
+    'number': 31,
     'input_file': 'presentation-single-cose-signed.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.success,
+  },
+
+  '!! 32. COSE Credential With an Invalid Signature': {
+    'number': 32,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 33. COSE Credential with an Invalid Media Type': {
+    'number': 33,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 34. COSE Presentation with an Invalid Media Type': {
+    'number': 34,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '!! 33. COSE Presentation with Invalid Credentials': {
+    'number': 33,
+    'input_file': '',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.failure,
   },
 };

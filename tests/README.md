@@ -156,7 +156,6 @@ Following, are a set of test cases which describe how the statements are to be t
     * Format: jose
     * Covers: 7, 8
 
-
 ### SD-JWT Tests
 
 #### Issuance Tests
@@ -178,12 +177,12 @@ Following, are a set of test cases which describe how the statements are to be t
  
 #### Verification Tests
 
-20. Basic SD-JWT Verification
+20. Basic SD-JWT Credential Verification
     * Input: SD-JWT credential with mix of disclosed/undisclosed claims
     * Format: sd-jwt
     * Covers: 10, 26, 27, 28, 31, 35
 
-21. Complex SD-JWT Verification
+21. Complex SD-JWT Credential Verification
     * Input: SD-JWT credential with nested disclosures
     * Format: sd-jwt
     * Covers: 10, 26, 27, 28, 31, 35
@@ -229,12 +228,12 @@ Following, are a set of test cases which describe how the statements are to be t
 
 #### Verification Tests
 
-29. Basic COSE Verification
+29. Basic COSE Credential Verification
     * Input: Signed COSE credential
     * Format: cose
     * Covers: 16, 27, 28, 29, 30, 31, 32
 
-30. COSE Base64 Encoding Verification
+30. COSE Credential Verification Incorrect Encoding
     * Input: COSE credential in presentation with base64 encoding
     * Format: cose
     * Covers: 17, 20, 21, 27, 28
@@ -249,7 +248,17 @@ Following, are a set of test cases which describe how the statements are to be t
     * Format: cose
     * Covers: 15, 16
 
-33. COSE Presentation with Invalid Credentials
+33. COSE Credential with an Invalid Media Type
+    * Input: Credential with an invalid media type
+    * Format: cose
+    * Covers: 23, 29
+
+34. COSE Presentation with an Invalid Media Type
+    * Input: Presentation with an invalid media type
+    * Format: cose
+    * Covers: 23, 29
+    * 
+35. COSE Presentation with Invalid Credentials
     * Input: Presentation with invalid credentials (unsecured, wrong type)
     * Format: cose
     * Covers: 23, 29
