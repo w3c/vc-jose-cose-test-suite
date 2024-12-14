@@ -24,16 +24,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:cee4192d-7a78-482b-8e20-099e9dfb8a3d",
+              "_testId": "urn:uuid:feb8ed72-ec55-4076-b217-55d1400c70dc",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 31768,
+                "_idleStart": 32200,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -42,9 +42,17 @@
                 "columnId": "independent",
                 "rowId": "1. JWT Basic Credential Issuance"
               },
-              "duration": 31735,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 32146,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -59,16 +67,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:76d21134-2380-43e9-a58f-a923ae841f18",
+              "_testId": "urn:uuid:aece0de2-be1a-4f20-b6a4-543b6d09d536",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 32336,
+                "_idleStart": 52842,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -77,9 +85,17 @@
                 "columnId": "independent",
                 "rowId": "2. JWT Credential Issuance with All Optional Fields"
               },
-              "duration": 566,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20639,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -94,16 +110,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:d5783b34-41b9-4a2f-a350-df4167dc34aa",
+              "_testId": "urn:uuid:f72f0696-70f3-4366-880d-3cf5fe6847bb",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 32916,
+                "_idleStart": 73490,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -112,9 +128,17 @@
                 "columnId": "independent",
                 "rowId": "3. JWT Basic Presentation Issuance"
               },
-              "duration": 580,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20647,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -129,16 +153,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:6bc6c921-7611-405c-804a-c537664043ba",
+              "_testId": "urn:uuid:908142d6-7876-46fd-939f-d7ac7d92ea94",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 33527,
+                "_idleStart": 94625,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -147,9 +171,17 @@
                 "columnId": "independent",
                 "rowId": "4. JWT Complex Presentation Issuance"
               },
-              "duration": 611,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 21135,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -164,16 +196,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:943fd9f8-1564-4c0e-9f54-dfa980262084",
+              "_testId": "urn:uuid:c2e7cabb-6017-4ab4-9046-2a09148b3f03",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 34129,
+                "_idleStart": 115880,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -182,9 +214,17 @@
                 "columnId": "independent",
                 "rowId": "5. JWT Issuance with Unknown Extensions"
               },
-              "duration": 602,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 21256,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -199,16 +239,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:0f0df922-6a6b-456b-b84f-0be113b895e2",
+              "_testId": "urn:uuid:c69ad209-3485-4d84-8f21-bef2a4484b21",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 34719,
+                "_idleStart": 136531,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -217,9 +257,17 @@
                 "columnId": "independent",
                 "rowId": "6. JWT Basic Credential Verification"
               },
-              "duration": 590,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20649,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -234,16 +282,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:b18b450a-6a2d-4344-b808-11649f4f7559",
+              "_testId": "urn:uuid:47d5fe21-642e-48cb-a4ab-7832e7894ab9",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 35299,
+                "_idleStart": 157161,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -252,9 +300,17 @@
                 "columnId": "independent",
                 "rowId": "7. JWT Presentation Verification"
               },
-              "duration": 580,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20629,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -269,16 +325,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:fcd25d07-ed35-4308-945c-2c791e12785f",
+              "_testId": "urn:uuid:f414ffea-4016-4bc2-af81-7d2c306c8ac0",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 35895,
+                "_idleStart": 177827,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -287,9 +343,17 @@
                 "columnId": "independent",
                 "rowId": "8. JWT Issuer Match Verification"
               },
-              "duration": 596,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20665,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
@@ -304,16 +368,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "wrOJzG3J_mJym7xK55Mtq",
+              "parent": "3sDzw2770HQgK1AadDJWq",
               "ctx": null,
-              "_testId": "urn:uuid:82fdc2a7-9cfe-4998-91e9-6266196cd8b2",
+              "_testId": "urn:uuid:961459c1-e81b-4e22-aee4-e9a2462d215b",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 36476,
+                "_idleStart": 198507,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -322,9 +386,275 @@
                 "columnId": "independent",
                 "rowId": "9. JWT Verification With Unknown Extensions"
               },
-              "duration": 581,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20680,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 10. JWT Unsecured Credential Verification",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:5b935ebc-9e64-43a3-9acc-bdd95c530000",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 219673,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 10. JWT Unsecured Credential Verification"
+              },
+              "duration": 21166,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 11. JWT Unsecured Presentation Verification",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:8317f500-d6b8-4e43-b913-f371a121ad07",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 240796,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 11. JWT Unsecured Presentation Verification"
+              },
+              "duration": 21122,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 13. JWT Credential with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:666c34da-c11d-42b0-a211-5c4c35fe86c5",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 261299,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 13. JWT Credential with an Invalid Media Type"
+              },
+              "duration": 20504,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 14. JWT Presentation with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:04cd8245-2ff2-4f27-b4ba-99df2957074f",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 281883,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 14. JWT Presentation with an Invalid Media Type"
+              },
+              "duration": 20582,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 15. JWT Credential with vc and vp Claims",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:b831201f-f120-452e-8abd-c67794c81426",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 302731,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 15. JWT Credential with vc and vp Claims"
+              },
+              "duration": 20847,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 16. JWT Presentation with Invalid Credentia",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "3sDzw2770HQgK1AadDJWq",
+              "ctx": null,
+              "_testId": "urn:uuid:a9810bb2-8c13-4bc2-a158-ead1995c2cf3",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 323635,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 16. JWT Presentation with Invalid Credentia"
+              },
+              "duration": 20903,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             }
           ],
           "root": false,
@@ -340,9 +670,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "Xk_k21Jjubssk817WViKs",
+          "parent": "JrzMAeibdtToKO0IPB6lT",
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "_testId": "urn:uuid:4fa735b6-d03d-4d1b-9c6d-e8aed1e86e32"
+          "_testId": "urn:uuid:0bb3820c-c7b9-4aae-8b33-08dc43bce4ad"
         }
       ],
       "tests": [
@@ -359,16 +689,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:cee4192d-7a78-482b-8e20-099e9dfb8a3d",
+          "_testId": "urn:uuid:feb8ed72-ec55-4076-b217-55d1400c70dc",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 31768,
+            "_idleStart": 32200,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -377,9 +707,17 @@
             "columnId": "independent",
             "rowId": "1. JWT Basic Credential Issuance"
           },
-          "duration": 31735,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 32146,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -394,16 +732,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:76d21134-2380-43e9-a58f-a923ae841f18",
+          "_testId": "urn:uuid:aece0de2-be1a-4f20-b6a4-543b6d09d536",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 32336,
+            "_idleStart": 52842,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -412,9 +750,17 @@
             "columnId": "independent",
             "rowId": "2. JWT Credential Issuance with All Optional Fields"
           },
-          "duration": 566,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20639,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -429,16 +775,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:d5783b34-41b9-4a2f-a350-df4167dc34aa",
+          "_testId": "urn:uuid:f72f0696-70f3-4366-880d-3cf5fe6847bb",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 32916,
+            "_idleStart": 73490,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -447,9 +793,17 @@
             "columnId": "independent",
             "rowId": "3. JWT Basic Presentation Issuance"
           },
-          "duration": 580,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20647,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -464,16 +818,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:6bc6c921-7611-405c-804a-c537664043ba",
+          "_testId": "urn:uuid:908142d6-7876-46fd-939f-d7ac7d92ea94",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 33527,
+            "_idleStart": 94625,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -482,9 +836,17 @@
             "columnId": "independent",
             "rowId": "4. JWT Complex Presentation Issuance"
           },
-          "duration": 611,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 21135,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -499,16 +861,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:943fd9f8-1564-4c0e-9f54-dfa980262084",
+          "_testId": "urn:uuid:c2e7cabb-6017-4ab4-9046-2a09148b3f03",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 34129,
+            "_idleStart": 115880,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -517,9 +879,17 @@
             "columnId": "independent",
             "rowId": "5. JWT Issuance with Unknown Extensions"
           },
-          "duration": 602,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 21256,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -534,16 +904,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:0f0df922-6a6b-456b-b84f-0be113b895e2",
+          "_testId": "urn:uuid:c69ad209-3485-4d84-8f21-bef2a4484b21",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 34719,
+            "_idleStart": 136531,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -552,9 +922,17 @@
             "columnId": "independent",
             "rowId": "6. JWT Basic Credential Verification"
           },
-          "duration": 590,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20649,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -569,16 +947,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:b18b450a-6a2d-4344-b808-11649f4f7559",
+          "_testId": "urn:uuid:47d5fe21-642e-48cb-a4ab-7832e7894ab9",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 35299,
+            "_idleStart": 157161,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -587,9 +965,17 @@
             "columnId": "independent",
             "rowId": "7. JWT Presentation Verification"
           },
-          "duration": 580,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20629,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -604,16 +990,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:fcd25d07-ed35-4308-945c-2c791e12785f",
+          "_testId": "urn:uuid:f414ffea-4016-4bc2-af81-7d2c306c8ac0",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 35895,
+            "_idleStart": 177827,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -622,9 +1008,17 @@
             "columnId": "independent",
             "rowId": "8. JWT Issuer Match Verification"
           },
-          "duration": 596,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20665,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
@@ -639,16 +1033,16 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "wrOJzG3J_mJym7xK55Mtq",
+          "parent": "3sDzw2770HQgK1AadDJWq",
           "ctx": null,
-          "_testId": "urn:uuid:82fdc2a7-9cfe-4998-91e9-6266196cd8b2",
+          "_testId": "urn:uuid:961459c1-e81b-4e22-aee4-e9a2462d215b",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 36476,
+            "_idleStart": 198507,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
@@ -657,9 +1051,275 @@
             "columnId": "independent",
             "rowId": "9. JWT Verification With Unknown Extensions"
           },
-          "duration": 581,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20680,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 10. JWT Unsecured Credential Verification",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:5b935ebc-9e64-43a3-9acc-bdd95c530000",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 219673,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 10. JWT Unsecured Credential Verification"
+          },
+          "duration": 21166,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 11. JWT Unsecured Presentation Verification",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:8317f500-d6b8-4e43-b913-f371a121ad07",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 240796,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 11. JWT Unsecured Presentation Verification"
+          },
+          "duration": 21122,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 13. JWT Credential with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:666c34da-c11d-42b0-a211-5c4c35fe86c5",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 261299,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 13. JWT Credential with an Invalid Media Type"
+          },
+          "duration": 20504,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 14. JWT Presentation with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:04cd8245-2ff2-4f27-b4ba-99df2957074f",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 281883,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 14. JWT Presentation with an Invalid Media Type"
+          },
+          "duration": 20582,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 15. JWT Credential with vc and vp Claims",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:b831201f-f120-452e-8abd-c67794c81426",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 302731,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 15. JWT Credential with vc and vp Claims"
+          },
+          "duration": 20847,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 16. JWT Presentation with Invalid Credentia",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "3sDzw2770HQgK1AadDJWq",
+          "ctx": null,
+          "_testId": "urn:uuid:a9810bb2-8c13-4bc2-a158-ead1995c2cf3",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 323635,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 16. JWT Presentation with Invalid Credentia"
+          },
+          "duration": 20903,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         }
       ],
       "root": false,
@@ -675,7 +1335,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Ey7sJDezw-PzyI-5rCCkm",
+      "parent": "UrGAdc2jkxdgooPxtDzft",
       "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
       "matrix": true,
       "report": true,
@@ -684,7 +1344,7 @@
       ],
       "rowLabel": "Test Name",
       "columnLabel": "Implementation",
-      "_testId": "urn:uuid:8a576bd1-54d3-44e9-ab2f-d18b380222f2"
+      "_testId": "urn:uuid:47c4b3c8-1147-456b-acad-272a8e03f3a7"
     },
     {
       "title": "SD-JWT Tests",
@@ -697,7 +1357,7 @@
           "tests": [
             {
               "type": "test",
-              "title": "10. SD-JWT Basic Credential Issuance",
+              "title": "17. SD-JWT Basic Credential Issuance",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -708,31 +1368,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:d0b67b54-f3ed-4291-b705-8ccc4be66f0d",
+              "_testId": "urn:uuid:3a19898a-23ef-47c5-a012-7595573c4e3c",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 37053,
+                "_idleStart": 344755,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "10. SD-JWT Basic Credential Issuance"
+                "rowId": "17. SD-JWT Basic Credential Issuance"
               },
-              "duration": 576,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 21119,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "11. SD-JWT Complex Credential Issuance",
+              "title": "18. SD-JWT Complex Credential Issuance",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -743,31 +1411,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:e14a86f2-2a2d-4a12-a246-968b12620003",
+              "_testId": "urn:uuid:49114f44-24fe-464c-a556-d5283126fcef",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 37671,
+                "_idleStart": 365501,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "11. SD-JWT Complex Credential Issuance"
+                "rowId": "18. SD-JWT Complex Credential Issuance"
               },
-              "duration": 618,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20745,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "12. SD-JWT Presentation Issuance",
+              "title": "19. SD-JWT Presentation Issuance",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -778,31 +1454,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:2f6e7994-ea82-4431-812d-ccefbea8e48c",
+              "_testId": "urn:uuid:5fffa22e-6534-427e-9a04-6ec9eb27dcdc",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 38308,
+                "_idleStart": 386115,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "12. SD-JWT Presentation Issuance"
+                "rowId": "19. SD-JWT Presentation Issuance"
               },
-              "duration": 637,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20614,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "13. SD-JWT Basic Credential Verification",
+              "title": "20. SD-JWT Basic Credential Verification",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -813,31 +1497,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:20be0b30-9443-4c07-a49d-9e19518c8828",
+              "_testId": "urn:uuid:5199ad5f-8dc6-45b5-92e4-9bea98e84b6a",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 38892,
+                "_idleStart": 406829,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "13. SD-JWT Basic Credential Verification"
+                "rowId": "20. SD-JWT Basic Credential Verification"
               },
-              "duration": 584,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20712,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "14. SD-JWT Complex Credential Verification",
+              "title": "21. SD-JWT Complex Credential Verification",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -848,31 +1540,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:90106b98-4f04-4096-87fd-430a2c4a0921",
+              "_testId": "urn:uuid:eeec86cc-5455-4e32-9c2a-2dc0a4fd58fc",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 39496,
+                "_idleStart": 427490,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "14. SD-JWT Complex Credential Verification"
+                "rowId": "21. SD-JWT Complex Credential Verification"
               },
-              "duration": 604,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20660,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "15. SD-JWT Presentation Verification",
+              "title": "!! 23. SD-JWT Credential With an Invalid Signature",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -883,27 +1583,164 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
               "ctx": null,
-              "_testId": "urn:uuid:b4abfef3-0d78-4a3c-8694-b736c40246af",
+              "_testId": "urn:uuid:e756672b-3833-42ef-8719-010ebf99fe1c",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 40072,
+                "_idleStart": 448416,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "15. SD-JWT Presentation Verification"
+                "rowId": "!! 23. SD-JWT Credential With an Invalid Signature"
               },
-              "duration": 576,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20926,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 24. SD-JWT Credential with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
+              "ctx": null,
+              "_testId": "urn:uuid:33c781eb-64c7-4017-9d66-1aafae835171",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 469588,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 24. SD-JWT Credential with an Invalid Media Type"
+              },
+              "duration": 21170,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 25. SD-JWT Presentation with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
+              "ctx": null,
+              "_testId": "urn:uuid:6525de90-be61-4d90-b3f1-07268810f221",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 490333,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 25. SD-JWT Presentation with an Invalid Media Type"
+              },
+              "duration": 20745,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 26. SD-JWT Presentation Verification",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "tA2mcBOSxkP1DzERsZoU-",
+              "ctx": null,
+              "_testId": "urn:uuid:82e3fde5-4f0d-4833-a71c-e353a4047af4",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 510733,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 26. SD-JWT Presentation Verification"
+              },
+              "duration": 20399,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             }
           ],
           "root": false,
@@ -919,15 +1756,15 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "sSHFPs_D872xf08TjHcsd",
+          "parent": "3ZxYocUbS2elRmmNPCdVG",
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "_testId": "urn:uuid:b2af7c15-80fd-4e51-8048-812fe388c005"
+          "_testId": "urn:uuid:790c0d88-f503-4690-84f8-2e35c38be419"
         }
       ],
       "tests": [
         {
           "type": "test",
-          "title": "10. SD-JWT Basic Credential Issuance",
+          "title": "17. SD-JWT Basic Credential Issuance",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -938,31 +1775,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:d0b67b54-f3ed-4291-b705-8ccc4be66f0d",
+          "_testId": "urn:uuid:3a19898a-23ef-47c5-a012-7595573c4e3c",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 37053,
+            "_idleStart": 344755,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "10. SD-JWT Basic Credential Issuance"
+            "rowId": "17. SD-JWT Basic Credential Issuance"
           },
-          "duration": 576,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 21119,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "11. SD-JWT Complex Credential Issuance",
+          "title": "18. SD-JWT Complex Credential Issuance",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -973,31 +1818,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:e14a86f2-2a2d-4a12-a246-968b12620003",
+          "_testId": "urn:uuid:49114f44-24fe-464c-a556-d5283126fcef",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 37671,
+            "_idleStart": 365501,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "11. SD-JWT Complex Credential Issuance"
+            "rowId": "18. SD-JWT Complex Credential Issuance"
           },
-          "duration": 618,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20745,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "12. SD-JWT Presentation Issuance",
+          "title": "19. SD-JWT Presentation Issuance",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1008,31 +1861,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:2f6e7994-ea82-4431-812d-ccefbea8e48c",
+          "_testId": "urn:uuid:5fffa22e-6534-427e-9a04-6ec9eb27dcdc",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 38308,
+            "_idleStart": 386115,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "12. SD-JWT Presentation Issuance"
+            "rowId": "19. SD-JWT Presentation Issuance"
           },
-          "duration": 637,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20614,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "13. SD-JWT Basic Credential Verification",
+          "title": "20. SD-JWT Basic Credential Verification",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1043,31 +1904,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:20be0b30-9443-4c07-a49d-9e19518c8828",
+          "_testId": "urn:uuid:5199ad5f-8dc6-45b5-92e4-9bea98e84b6a",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 38892,
+            "_idleStart": 406829,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "13. SD-JWT Basic Credential Verification"
+            "rowId": "20. SD-JWT Basic Credential Verification"
           },
-          "duration": 584,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20712,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "14. SD-JWT Complex Credential Verification",
+          "title": "21. SD-JWT Complex Credential Verification",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1078,31 +1947,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:90106b98-4f04-4096-87fd-430a2c4a0921",
+          "_testId": "urn:uuid:eeec86cc-5455-4e32-9c2a-2dc0a4fd58fc",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 39496,
+            "_idleStart": 427490,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "14. SD-JWT Complex Credential Verification"
+            "rowId": "21. SD-JWT Complex Credential Verification"
           },
-          "duration": 604,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20660,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "15. SD-JWT Presentation Verification",
+          "title": "!! 23. SD-JWT Credential With an Invalid Signature",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1113,27 +1990,164 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "JkSDWGRsDr7Hsgp_kCcBE",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
           "ctx": null,
-          "_testId": "urn:uuid:b4abfef3-0d78-4a3c-8694-b736c40246af",
+          "_testId": "urn:uuid:e756672b-3833-42ef-8719-010ebf99fe1c",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 40072,
+            "_idleStart": 448416,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "15. SD-JWT Presentation Verification"
+            "rowId": "!! 23. SD-JWT Credential With an Invalid Signature"
           },
-          "duration": 576,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20926,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 24. SD-JWT Credential with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
+          "ctx": null,
+          "_testId": "urn:uuid:33c781eb-64c7-4017-9d66-1aafae835171",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 469588,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 24. SD-JWT Credential with an Invalid Media Type"
+          },
+          "duration": 21170,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 25. SD-JWT Presentation with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
+          "ctx": null,
+          "_testId": "urn:uuid:6525de90-be61-4d90-b3f1-07268810f221",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 490333,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 25. SD-JWT Presentation with an Invalid Media Type"
+          },
+          "duration": 20745,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 26. SD-JWT Presentation Verification",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "tA2mcBOSxkP1DzERsZoU-",
+          "ctx": null,
+          "_testId": "urn:uuid:82e3fde5-4f0d-4833-a71c-e353a4047af4",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 510733,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 26. SD-JWT Presentation Verification"
+          },
+          "duration": 20399,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         }
       ],
       "root": false,
@@ -1149,7 +2163,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Ey7sJDezw-PzyI-5rCCkm",
+      "parent": "UrGAdc2jkxdgooPxtDzft",
       "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
       "matrix": true,
       "report": true,
@@ -1158,7 +2172,7 @@
       ],
       "rowLabel": "Test Name",
       "columnLabel": "Implementation",
-      "_testId": "urn:uuid:6c066a5f-81b4-48cc-9928-7339ce49e620"
+      "_testId": "urn:uuid:3150b741-a779-4ca4-ae54-4c319212e7a2"
     },
     {
       "title": "COSE Tests",
@@ -1171,7 +2185,7 @@
           "tests": [
             {
               "type": "test",
-              "title": "16. COSE Basic Credential Issuance",
+              "title": "27. COSE Basic Credential Issuance",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -1182,31 +2196,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "FXe2LZLwId32xByv3Nr0Q",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
               "ctx": null,
-              "_testId": "urn:uuid:f4f4b0c1-6acb-4be3-ae9f-ab4aa336cf5b",
+              "_testId": "urn:uuid:b3f7f7d8-8219-4155-82f0-8493e1f50f1b",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 40652,
+                "_idleStart": 531043,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "16. COSE Basic Credential Issuance"
+                "rowId": "27. COSE Basic Credential Issuance"
               },
-              "duration": 580,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20309,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "17. COSE Basic Presentation Issuance",
+              "title": "28. COSE Basic Presentation Issuance",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -1217,31 +2239,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "FXe2LZLwId32xByv3Nr0Q",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
               "ctx": null,
-              "_testId": "urn:uuid:77b1e448-863f-4ef2-b6ca-f5a2c288473c",
+              "_testId": "urn:uuid:6022f8ff-74a8-47e8-bc4a-2b973f53a639",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 41244,
+                "_idleStart": 551427,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "17. COSE Basic Presentation Issuance"
+                "rowId": "28. COSE Basic Presentation Issuance"
               },
-              "duration": 591,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20383,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "18. COSE Basic Credential Verification",
+              "title": "29. COSE Basic Credential Verification",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -1252,31 +2282,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "FXe2LZLwId32xByv3Nr0Q",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
               "ctx": null,
-              "_testId": "urn:uuid:b6547e48-2037-42e8-91bd-998504cd8a88",
+              "_testId": "urn:uuid:1801c189-c626-4601-ab01-6ed19890b85c",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 41819,
+                "_idleStart": 571743,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "18. COSE Basic Credential Verification"
+                "rowId": "29. COSE Basic Credential Verification"
               },
-              "duration": 576,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20316,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "19. COSE Credential Verification Incorrect Encoding",
+              "title": "30. COSE Credential Verification Incorrect Encoding",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -1287,31 +2325,39 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "FXe2LZLwId32xByv3Nr0Q",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
               "ctx": null,
-              "_testId": "urn:uuid:c4df6772-d4f4-405f-8b37-15b979b96f93",
+              "_testId": "urn:uuid:29343d8b-f1b4-4513-8c74-b8c5e9e78347",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 42428,
+                "_idleStart": 592233,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "19. COSE Credential Verification Incorrect Encoding"
+                "rowId": "30. COSE Credential Verification Incorrect Encoding"
               },
-              "duration": 608,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20489,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             },
             {
               "type": "test",
-              "title": "20. COSE Basic Presentation Verification",
+              "title": "31. COSE Basic Presentation Verification",
               "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
               "async": 0,
               "sync": true,
@@ -1322,27 +2368,207 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-              "parent": "FXe2LZLwId32xByv3Nr0Q",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
               "ctx": null,
-              "_testId": "urn:uuid:30dd4b3a-ffb5-4917-91c8-66be2db772d2",
+              "_testId": "urn:uuid:f977b706-88dd-4b1b-8aef-92181a721d3b",
               "_events": {},
               "_eventsCount": 1,
               "timer": {
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 43028,
+                "_idleStart": 612571,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
               "cell": {
                 "columnId": "independent",
-                "rowId": "20. COSE Basic Presentation Verification"
+                "rowId": "31. COSE Basic Presentation Verification"
               },
-              "duration": 600,
-              "state": "passed",
-              "speed": "slow"
+              "duration": 20337,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'success'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "success",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 32. COSE Credential With an Invalid Signature",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+              "ctx": null,
+              "_testId": "urn:uuid:e7c73a2a-af30-4937-8721-7a80a968ea40",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 632952,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 32. COSE Credential With an Invalid Signature"
+              },
+              "duration": 20380,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 33. COSE Credential with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+              "ctx": null,
+              "_testId": "urn:uuid:8988b393-0d79-4df0-bfab-3bc35094a951",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 653307,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 33. COSE Credential with an Invalid Media Type"
+              },
+              "duration": 20354,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 34. COSE Presentation with an Invalid Media Type",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+              "ctx": null,
+              "_testId": "urn:uuid:ad4ffbc7-41c4-4f64-9454-4ca536aad206",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 673599,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 34. COSE Presentation with an Invalid Media Type"
+              },
+              "duration": 20291,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
+            },
+            {
+              "type": "test",
+              "title": "!! 33. COSE Presentation with Invalid Credentials",
+              "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+              "async": 0,
+              "sync": true,
+              "_timeout": 150000,
+              "_slow": 75,
+              "_retries": -1,
+              "timedOut": false,
+              "_currentRetry": 0,
+              "pending": false,
+              "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+              "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+              "ctx": null,
+              "_testId": "urn:uuid:7a4cd1c8-1500-4437-9049-8305a309d19c",
+              "_events": {},
+              "_eventsCount": 1,
+              "timer": {
+                "_idleTimeout": -1,
+                "_idlePrev": null,
+                "_idleNext": null,
+                "_idleStart": 693965,
+                "_onTimeout": null,
+                "_repeat": null,
+                "_destroyed": true
+              },
+              "cell": {
+                "columnId": "independent",
+                "rowId": "!! 33. COSE Presentation with Invalid Credentials"
+              },
+              "duration": 20365,
+              "state": "failed",
+              "err": {
+                "name": "AssertionError",
+                "message": "expected 'error' to equal 'failure'",
+                "showDiff": true,
+                "actual": "error",
+                "expected": "failure",
+                "operator": "strictEqual",
+                "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+              }
             }
           ],
           "root": false,
@@ -1358,15 +2584,15 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "KR0RbPzpnv-bchIdMbmUC",
+          "parent": "x761OvnWwXdjTTtZuB93g",
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "_testId": "urn:uuid:32ac83cc-69cb-4657-a9d6-f254594b9fe6"
+          "_testId": "urn:uuid:34950952-b93e-4217-ba2a-cc40dc0b86f5"
         }
       ],
       "tests": [
         {
           "type": "test",
-          "title": "16. COSE Basic Credential Issuance",
+          "title": "27. COSE Basic Credential Issuance",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1377,31 +2603,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "FXe2LZLwId32xByv3Nr0Q",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
           "ctx": null,
-          "_testId": "urn:uuid:f4f4b0c1-6acb-4be3-ae9f-ab4aa336cf5b",
+          "_testId": "urn:uuid:b3f7f7d8-8219-4155-82f0-8493e1f50f1b",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 40652,
+            "_idleStart": 531043,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "16. COSE Basic Credential Issuance"
+            "rowId": "27. COSE Basic Credential Issuance"
           },
-          "duration": 580,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20309,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "17. COSE Basic Presentation Issuance",
+          "title": "28. COSE Basic Presentation Issuance",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1412,31 +2646,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "FXe2LZLwId32xByv3Nr0Q",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
           "ctx": null,
-          "_testId": "urn:uuid:77b1e448-863f-4ef2-b6ca-f5a2c288473c",
+          "_testId": "urn:uuid:6022f8ff-74a8-47e8-bc4a-2b973f53a639",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 41244,
+            "_idleStart": 551427,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "17. COSE Basic Presentation Issuance"
+            "rowId": "28. COSE Basic Presentation Issuance"
           },
-          "duration": 591,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20383,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "18. COSE Basic Credential Verification",
+          "title": "29. COSE Basic Credential Verification",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1447,31 +2689,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "FXe2LZLwId32xByv3Nr0Q",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
           "ctx": null,
-          "_testId": "urn:uuid:b6547e48-2037-42e8-91bd-998504cd8a88",
+          "_testId": "urn:uuid:1801c189-c626-4601-ab01-6ed19890b85c",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 41819,
+            "_idleStart": 571743,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "18. COSE Basic Credential Verification"
+            "rowId": "29. COSE Basic Credential Verification"
           },
-          "duration": 576,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20316,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "19. COSE Credential Verification Incorrect Encoding",
+          "title": "30. COSE Credential Verification Incorrect Encoding",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1482,31 +2732,39 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "FXe2LZLwId32xByv3Nr0Q",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
           "ctx": null,
-          "_testId": "urn:uuid:c4df6772-d4f4-405f-8b37-15b979b96f93",
+          "_testId": "urn:uuid:29343d8b-f1b4-4513-8c74-b8c5e9e78347",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 42428,
+            "_idleStart": 592233,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "19. COSE Credential Verification Incorrect Encoding"
+            "rowId": "30. COSE Credential Verification Incorrect Encoding"
           },
-          "duration": 608,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20489,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         },
         {
           "type": "test",
-          "title": "20. COSE Basic Presentation Verification",
+          "title": "31. COSE Basic Presentation Verification",
           "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
           "async": 0,
           "sync": true,
@@ -1517,27 +2775,207 @@
           "_currentRetry": 0,
           "pending": false,
           "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
-          "parent": "FXe2LZLwId32xByv3Nr0Q",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
           "ctx": null,
-          "_testId": "urn:uuid:30dd4b3a-ffb5-4917-91c8-66be2db772d2",
+          "_testId": "urn:uuid:f977b706-88dd-4b1b-8aef-92181a721d3b",
           "_events": {},
           "_eventsCount": 1,
           "timer": {
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 43028,
+            "_idleStart": 612571,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
           "cell": {
             "columnId": "independent",
-            "rowId": "20. COSE Basic Presentation Verification"
+            "rowId": "31. COSE Basic Presentation Verification"
           },
-          "duration": 600,
-          "state": "passed",
-          "speed": "slow"
+          "duration": 20337,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'success'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "success",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'success'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 32. COSE Credential With an Invalid Signature",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+          "ctx": null,
+          "_testId": "urn:uuid:e7c73a2a-af30-4937-8721-7a80a968ea40",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 632952,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 32. COSE Credential With an Invalid Signature"
+          },
+          "duration": 20380,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 33. COSE Credential with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+          "ctx": null,
+          "_testId": "urn:uuid:8988b393-0d79-4df0-bfab-3bc35094a951",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 653307,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 33. COSE Credential with an Invalid Media Type"
+          },
+          "duration": 20354,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 34. COSE Presentation with an Invalid Media Type",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+          "ctx": null,
+          "_testId": "urn:uuid:ad4ffbc7-41c4-4f64-9454-4ca536aad206",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 673599,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 34. COSE Presentation with an Invalid Media Type"
+          },
+          "duration": 20291,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
+        },
+        {
+          "type": "test",
+          "title": "!! 33. COSE Presentation with Invalid Credentials",
+          "body": "async function() {\n            if (!features[requiredFeature]) {\n              console.log(`Skipping test \"${testName}\" for ${i.name} due to missing feature: ${requiredFeature}`);\n              this.skip();\n              return;\n            }\n\n            console.log(`Running test: ${testName} for implementation: ${i.name}`);\n            await generateTestResults(i.name, testConfig);\n            this.test.cell = {columnId: i.name, rowId: testName};\n            const result = await checkTestResults(i.name, testConfig);\n            console.log(`Test result for ${i.name} - ${testName}: ${result}`);\n            should.equal(result, testConfig.expected_result);\n\n            // Log the test result in a format that matches the report generator's expectations\n            console.log(`Reporter data: ${this.test.cell.columnId},${this.test.cell.rowId},${result}`);\n          }",
+          "async": 0,
+          "sync": true,
+          "_timeout": 150000,
+          "_slow": 75,
+          "_retries": -1,
+          "timedOut": false,
+          "_currentRetry": 0,
+          "pending": false,
+          "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
+          "parent": "bcG9l_Bi8PsDwcl3jhUSZ",
+          "ctx": null,
+          "_testId": "urn:uuid:7a4cd1c8-1500-4437-9049-8305a309d19c",
+          "_events": {},
+          "_eventsCount": 1,
+          "timer": {
+            "_idleTimeout": -1,
+            "_idlePrev": null,
+            "_idleNext": null,
+            "_idleStart": 693965,
+            "_onTimeout": null,
+            "_repeat": null,
+            "_destroyed": true
+          },
+          "cell": {
+            "columnId": "independent",
+            "rowId": "!! 33. COSE Presentation with Invalid Credentials"
+          },
+          "duration": 20365,
+          "state": "failed",
+          "err": {
+            "name": "AssertionError",
+            "message": "expected 'error' to equal 'failure'",
+            "showDiff": true,
+            "actual": "error",
+            "expected": "failure",
+            "operator": "strictEqual",
+            "stack": "AssertionError: expected 'error' to equal 'failure'\n    at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)\n    at Context.<anonymous> (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)"
+          }
         }
       ],
       "root": false,
@@ -1553,7 +2991,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Ey7sJDezw-PzyI-5rCCkm",
+      "parent": "UrGAdc2jkxdgooPxtDzft",
       "file": "/home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js",
       "matrix": true,
       "report": true,
@@ -1562,7 +3000,7 @@
       ],
       "rowLabel": "Test Name",
       "columnLabel": "Implementation",
-      "_testId": "urn:uuid:5cc58dd0-14df-4701-bbee-cdc5a75c7bac"
+      "_testId": "urn:uuid:18aba453-db8e-4e54-b5d1-6ec8eaa86c09"
     }
   ],
   "tests": [],
@@ -1586,5 +3024,5 @@
     ]
   },
   "_eventsCount": 1,
-  "_testId": "urn:uuid:e937489c-27cd-4b21-8fa2-2cee0c2f298b"
+  "_testId": "urn:uuid:0acb20c2-e719-4d9c-825c-634001ccd413"
 }
