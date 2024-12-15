@@ -7,8 +7,8 @@ github.com/btcsuite/btcd/btcec/v2 v2.3.4/go.mod h1:zYzJ8etWJQIv1Ogk7OzpWjowwOdXY
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241214004022-47f4d05fd2cc h1:3yrGckdayGbgac+zUNSTX/roKLD7Nh1+/WIVvvNPuCE=
-github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241214004022-47f4d05fd2cc/go.mod h1:ZOHYH9iQGJdawl1+iSfzrfQQxPHrDVL/rpZRc5z9okI=
+github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241215004540-cb1cc1a9b436 h1:U3QRg5mEczSF0diw3nAn6MdGQfoF8pTI3+yKWy32NeA=
+github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241215004540-cb1cc1a9b436/go.mod h1:ZOHYH9iQGJdawl1+iSfzrfQQxPHrDVL/rpZRc5z9okI=
 github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0 h1:rpfIENRNNilwHwZeG5+P150SMrnNEcHYvcCuK6dPZSg=
 github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0/go.mod h1:v57UDF4pDQJcEfFUCRop3lJL149eHGSe9Jvczhzjo/0=
 github.com/fxamacker/cbor/v2 v2.5.0 h1:oHsG0V/Q6E/wqTS2O1Cozzsy69nqCiguo5Q1a1ADivE=

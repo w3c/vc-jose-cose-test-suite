@@ -86,7 +86,7 @@ export const JOSETestMapping = {
 
   '6. JWT Basic Credential Verification': {
     'number': 6,
-    'input_file': 'credential-minimal-signed.json',
+    'input_file': 'credential-jose-minimal.txt',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
@@ -95,7 +95,7 @@ export const JOSETestMapping = {
 
   '7. JWT Presentation Verification': {
     'number': 7,
-    'input_file': 'presentation-multiple-signed.json',
+    'input_file': 'presentation-jose-multiple.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_jose,
@@ -104,7 +104,7 @@ export const JOSETestMapping = {
 
   '8. JWT Issuer Match Verification': {
     'number': 8,
-    'input_file': 'credential-issuer-match-signed.json',
+    'input_file': 'credential-issuer-match-signed.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
@@ -113,61 +113,70 @@ export const JOSETestMapping = {
 
   '9. JWT Verification With Unknown Extensions': {
     'number': 9,
-    'input_file': 'credential-unknown-extensions-signed.json',
+    'input_file': 'credential-jose-unknown-extensions.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 10. JWT Unsecured Credential Verification': {
+  '10. JWT Unsecured Credential Verification': {
     'number': 10,
-    'input_file': '',
+    'input_file': 'credential-minimal.json',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 11. JWT Unsecured Presentation Verification': {
+  '11. JWT Unsecured Presentation Verification': {
     'number': 11,
-    'input_file': '',
+    'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 13. JWT Credential with an Invalid Media Type': {
+  '12. JWT Credential with an Invalid Signature': {
+    'number': 12,
+    'input_file': 'credential-jose-bad-signature.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '13. JWT Credential with an Invalid Media Type': {
     'number': 13,
-    'input_file': '',
+    'input_file': 'credential-jose-bad-media-type.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 14. JWT Presentation with an Invalid Media Type': {
+  '14. JWT Presentation with an Invalid Media Type': {
     'number': 14,
-    'input_file': '',
+    'input_file': 'presentation-jose-bad-media-type.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 15. JWT Credential with vc and vp Claims': {
+  '15. JWT Credential with vc and/or vp Claims': {
     'number': 15,
-    'input_file': '',
+    'input_file': 'credential-jose-vc-vp-claims.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 16. JWT Presentation with Invalid Credentia': {
+  '16. JWT Presentation with Invalid Credential': {
     'number': 16,
-    'input_file': '',
+    'input_file': 'presentation-jose-bad-credential.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_jose,
@@ -208,7 +217,7 @@ export const SDJWTTestMapping = {
 
   '20. SD-JWT Basic Credential Verification': {
     'number': 20,
-    'input_file': 'credential-selective-signed.json',
+    'input_file': 'credential-sdjwt-selective.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
@@ -217,16 +226,16 @@ export const SDJWTTestMapping = {
 
   '21. SD-JWT Complex Credential Verification': {
     'number': 21,
-    'input_file': 'credential-nested-selective-signed.json',
+    'input_file': 'credential-sdjwt-nested.txt',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.success,
   },
 
-  '!! 23. SD-JWT Credential With an Invalid Signature': {
+  '23. SD-JWT Credential With an Invalid Signature': {
     'number': 23,
-    'input_file': 'presentation-selective-signed.json',
+    'input_file': 'credential-sdjwt-bad-signature.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
@@ -251,7 +260,7 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.failure,
   },
 
-  '!! 26. SD-JWT Presentation Verification': {
+  '!! 26. SD-JWT Presentation with Invalid Credentials': {
     'number': 26,
     'input_file': '',
     'key_file': TestVerificationMethods.p384,
@@ -282,7 +291,7 @@ export const COSETestMapping = {
 
   '29. COSE Basic Credential Verification': {
     'number': 29,
-    'input_file': 'credential-minimal-cose-signed.json',
+    'input_file': 'credential-cose-minimal.txt',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_cose,
@@ -291,7 +300,7 @@ export const COSETestMapping = {
 
   '30. COSE Credential Verification Incorrect Encoding': {
     'number': 30,
-    'input_file': 'credential-minimal-cose-signed-not-base64.json',
+    'input_file': 'credential-cose-minimal-not-base64.txt',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_cose,
@@ -300,7 +309,7 @@ export const COSETestMapping = {
 
   '31. COSE Basic Presentation Verification': {
     'number': 31,
-    'input_file': 'presentation-single-cose-signed.json',
+    'input_file': 'presentation-cose-single.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,

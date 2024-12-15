@@ -131,7 +131,7 @@ Following, are a set of test cases which describe how the statements are to be t
     * Format: jose
     * Covers: 3
     * 
-12. JWT Credential With an Invalid Signature
+12. JWT Credential with an Invalid Signature
     * Input: Credential with an invalid signature
     * Format: jose
     * Covers: 1, 2
