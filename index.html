@@ -200,22 +200,22 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 0/33 0%
+      Tests passed 0/16 0%
       </p>
       <p>
-      Tests failed 33/33 100%
+      Tests failed 16/16 100%
       </p>
       <p>
-      Failures 33
+      Failures 16
       </p>
       <p>
       Tests skipped 0
       </p>
       <p>
-      Total tests 33
+      Total tests 16
       </p>
       <p>
-        These tests were run on <time>14 December 2024 at 2:51 am UTC</time>
+        These tests were run on <time>15 December 2024 at 12:58 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -446,7 +446,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 10. JWT Unsecured Credential Verification
+                    10. JWT Unsecured Credential Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -464,7 +464,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 11. JWT Unsecured Presentation Verification
+                    11. JWT Unsecured Presentation Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -482,7 +482,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 13. JWT Credential with an Invalid Media Type
+                    12. JWT Credential with an Invalid Signature
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -500,7 +500,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 14. JWT Presentation with an Invalid Media Type
+                    13. JWT Credential with an Invalid Media Type
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -518,7 +518,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 15. JWT Credential with vc and vp Claims
+                    14. JWT Presentation with an Invalid Media Type
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -536,143 +536,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 16. JWT Presentation with Invalid Credentia
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          <div>
-            <div class="flex-center">
-              <div class="row">
-              </div>
-              <div class="">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="informative" id="SD-JWT Tests">
-          <h2>SD-JWT Tests</h2>
-          <div class="row">
-            <table class="simple">
-              <thead>
-                <th width="20%">
-                  <div class="text-right small-font">
-                  Implementation &#8658;
-                  </div>
-                  <div class="text-left small-font">
-                  <span>&#8659;</span><span>Test Name</span>
-                  </div>
-                </th>
-                    <th class="no-wrap small-font text-center">independent</th>
-                </thead>
-              <tbody>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    17. SD-JWT Basic Credential Issuance
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    18. SD-JWT Complex Credential Issuance
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    19. SD-JWT Presentation Issuance
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    20. SD-JWT Basic Credential Verification
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    21. SD-JWT Complex Credential Verification
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 23. SD-JWT Credential With an Invalid Signature
+                    15. JWT Credential with vc and/or vp Claims
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -690,233 +554,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    !! 24. SD-JWT Credential with an Invalid Media Type
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 25. SD-JWT Presentation with an Invalid Media Type
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 26. SD-JWT Presentation Verification
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          <div>
-            <div class="flex-center">
-              <div class="row">
-              </div>
-              <div class="">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="informative" id="COSE Tests">
-          <h2>COSE Tests</h2>
-          <div class="row">
-            <table class="simple">
-              <thead>
-                <th width="20%">
-                  <div class="text-right small-font">
-                  Implementation &#8658;
-                  </div>
-                  <div class="text-left small-font">
-                  <span>&#8659;</span><span>Test Name</span>
-                  </div>
-                </th>
-                    <th class="no-wrap small-font text-center">independent</th>
-                </thead>
-              <tbody>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    27. COSE Basic Credential Issuance
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    28. COSE Basic Presentation Issuance
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    29. COSE Basic Credential Verification
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    30. COSE Credential Verification Incorrect Encoding
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    31. COSE Basic Presentation Verification
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;success&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;success&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 32. COSE Credential With an Invalid Signature
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 33. COSE Credential with an Invalid Media Type
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 34. COSE Presentation with an Invalid Media Type
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>expected &#x27;error&#x27; to equal &#x27;failure&#x27;:</summary>
-                        <pre>AssertionError: expected &#x27;error&#x27; to equal &#x27;failure&#x27;
-                        at should.equal (node_modules/chai/lib/chai/interface/should.js:98:35)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-jose-cose-test-suite/vc-jose-cose-test-suite/tests/test-runner.js:49:20)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    !! 33. COSE Presentation with Invalid Credentials
+                    16. JWT Presentation with Invalid Credential
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="failed not-optional highlight-on-hover text-center">
