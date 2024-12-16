@@ -1,14 +1,14 @@
 import chai from 'chai';
 import {getImplementationFeatures, implementationsWithFeatures} from '../implementations/index.js';
 import {checkTestResults, generateTestResults} from './test-util.js';
-import {JOSETestMapping} from './test-mapping.js';
+import {COSETestMapping, JOSETestMapping, SDJWTTestMapping} from './test-mapping.js';
 
 const should = chai.should();
 
 const testMappingSuites = [
   {name: 'JOSE Tests', mapping: JOSETestMapping},
-  // {name: 'SD-JWT Tests', mapping: SDJWTTestMapping},
-  // {name: 'COSE Tests', mapping: COSETestMapping},
+  {name: 'SD-JWT Tests', mapping: SDJWTTestMapping},
+  {name: 'COSE Tests', mapping: COSETestMapping},
 ];
 
 for (const {name: suiteName, mapping} of testMappingSuites) {

@@ -242,28 +242,28 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.failure,
   },
 
-  '!! 24. SD-JWT Credential with an Invalid Media Type': {
+  '24. SD-JWT Credential with an Invalid Media Type': {
     'number': 24,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+    'input_file': 'credential-sdjwt-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.failure,
   },
 
-  '!! 25. SD-JWT Presentation with an Invalid Media Type': {
+  '25. SD-JWT Presentation with an Invalid Media Type': {
     'number': 25,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+    'input_file': 'presentation-sdjwt-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_sdjwt,
     'expected_result': TestResult.failure,
   },
 
-  '!! 26. SD-JWT Presentation with Invalid Credentials': {
+  '26. SD-JWT Presentation with Invalid Credentials': {
     'number': 26,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+    'input_file': 'presentation-sdjwt-bad-credential.txt',
+    'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_sdjwt,
     'expected_result': TestResult.failure,
@@ -316,37 +316,37 @@ export const COSETestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '!! 32. COSE Credential With an Invalid Signature': {
+  '32. COSE Credential With an Invalid Signature': {
     'number': 32,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+    'input_file': 'credential-cose-bad-signature.txt',
+    'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
-    'feature': TestFeature.presentation_cose,
+    'feature': TestFeature.credential_cose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 33. COSE Credential with an Invalid Media Type': {
+  '33. COSE Credential with an Invalid Media Type': {
     'number': 33,
-    'input_file': '',
+    'input_file': 'credential-cose-bad-media-type.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_cose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 34. COSE Presentation with an Invalid Media Type': {
+  '34. COSE Presentation with an Invalid Media Type': {
     'number': 34,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+    'input_file': 'presentation-cose-bad-media-type.txt',
+    'key_file': TestVerificationMethods.p348,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.failure,
   },
 
-  '!! 33. COSE Presentation with Invalid Credentials': {
-    'number': 33,
-    'input_file': '',
-    'key_file': TestVerificationMethods.p384,
+  '35. COSE Presentation with Invalid Credentials': {
+    'number': 35,
+    'input_file': 'presentation-cose-bad-credential.txt',
+    'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.failure,
