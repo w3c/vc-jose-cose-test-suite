@@ -27,16 +27,6 @@ const TestVerificationMethods = {
   didEd25519: 'vm-did-ed25519.json',
 };
 
-export const TestError = {
-  INVALID_SIGNATURE: 'INVALID_SIGNATURE',
-  MISSING_REQUIRED_FIELDS: 'MISSING_REQUIRED_FIELDS',
-  INVALID_MEDIA_TYPE: 'INVALID_MEDIA_TYPE',
-  INVALID_DISCLOSURE: 'INVALID_DISCLOSURE',
-  INVALID_ENCODING: 'INVALID_ENCODING',
-  INVALID_CLAIMS: 'INVALID_CLAIMS',
-  INVALID_ISSUER: 'INVALID_ISSUER',
-};
-
 // See README.md for details
 export const JOSETestMapping = {
   '1. JWT Basic Credential Issuance': {
