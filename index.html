@@ -200,10 +200,10 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 17/17 100%
+      Tests passed 35/35 100%
       </p>
       <p>
-      Tests failed 0/17 0%
+      Tests failed 0/35 0%
       </p>
       <p>
       Failures 0
@@ -212,10 +212,10 @@
       Tests skipped 0
       </p>
       <p>
-      Total tests 17
+      Total tests 35
       </p>
       <p>
-        These tests were run on <time>15 December 2024 at 5:05 am UTC</time>
+        These tests were run on <time>16 December 2024 at 1:32 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -296,7 +296,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    2. JWT Complex Credential Issuance
+                    2. JWT Credential Issuance with All Optional Fields
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -332,7 +332,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    5. JWT Basic Credential Verification
+                    5. JWT Issuance with Unknown Extensions
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -344,7 +344,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    6. JWT Presentation Verification
+                    6. JWT Basic Credential Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -356,7 +356,115 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    7. JWT Issuer Match Verification
+                    7. JWT Presentation Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    8. JWT Issuer Match Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    9. JWT Verification With Unknown Extensions
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    10. JWT Unsecured Credential Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    11. JWT Unsecured Presentation Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    12. JWT Credential with an Invalid Signature
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    13. JWT Credential with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    14. JWT Presentation with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    15. JWT Credential with vc and/or vp Claims
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    16. JWT Presentation with Invalid Credential
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -396,7 +504,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    9. SD-JWT Basic Credential Issuance
+                    17. SD-JWT Basic Credential Issuance
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -408,7 +516,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    10. SD-JWT Complex Credential Issuance
+                    18. SD-JWT Complex Credential Issuance
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -420,7 +528,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    11. SD-JWT Presentation Issuance
+                    19. SD-JWT Presentation Issuance
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -432,7 +540,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    12. SD-JWT Basic Credential Verification
+                    20. SD-JWT Basic Credential Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -444,7 +552,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    13. SD-JWT Complex Credential Verification
+                    21. SD-JWT Complex Credential Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -456,7 +564,55 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    14. SD-JWT Presentation Verification
+                    22. SD-JWT Presentation Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    23. SD-JWT Credential With an Invalid Signature
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    24. SD-JWT Credential with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    25. SD-JWT Presentation with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    26. SD-JWT Presentation with Invalid Credentials
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -496,7 +652,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    15. COSE Basic Credential Issuance
+                    27. COSE Basic Credential Issuance
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -508,7 +664,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    16. COSE Basic Presentation Issuance
+                    28. COSE Basic Presentation Issuance
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -520,7 +676,7 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    17. COSE Basic Credential Verification
+                    29. COSE Basic Credential Verification
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -532,7 +688,67 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    18. COSE Basic Presentation Verification
+                    30. COSE Credential Verification Incorrect Encoding
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    31. COSE Basic Presentation Verification
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    32. COSE Credential With an Invalid Signature
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    33. COSE Credential with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    34. COSE Presentation with an Invalid Media Type
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    35. COSE Presentation with Invalid Credentials
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
