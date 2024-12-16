@@ -130,7 +130,7 @@ Following, are a set of test cases which describe how the statements are to be t
     * Input: Unsecured presentation with no integrity protection
     * Format: jose
     * Covers: 3
-    * 
+      
 12. JWT Credential with an Invalid Signature
     * Input: Credential with an invalid signature
     * Format: jose
@@ -257,7 +257,7 @@ Following, are a set of test cases which describe how the statements are to be t
     * Input: Presentation with an invalid media type
     * Format: cose
     * Covers: 23, 29
-    * 
+   
 35. COSE Presentation with Invalid Credentials
     * Input: Presentation with invalid credentials (unsecured, wrong type)
     * Format: cose
