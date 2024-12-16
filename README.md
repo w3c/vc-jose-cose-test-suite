@@ -49,15 +49,25 @@ This file defines the structure of the test suite. It exports two main objects:
 2. `TestMapping`: A mapping of test names to their configurations. Each test configuration includes:
     - `number`: A unique identifier for the test
     - `input_file`: The name of the input file to be used, representing:
-      - For issuance, a JSON unsigned Verifiable Credential or Presentation
+      - For issuance, a JSON unsigned Verifiable Credential or Presentation (a .json file)
       - For verification, a signed Verifiable Credential or Presentation, encoded as a JWT string (JOSE), 
-        Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT)
-    - `key_file`: The name of the key file to be used, representing a Verification Method
+        Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT) (a .txt file)
+    - `key_file`: The name of the key file to be used, representing a Verification Method (a .json file)
     - `fn`: The function being tested either `issue` or `verify`
-    - `disclosure_paths`: An array of paths to be disclosed in a Selective Disclosure JWT (e.g. `["issuer", "validFrom", "credentialSubject.id"]`)
+    - `disclosure_paths`: An array of paths to be disclosed in a Selective Disclosure JWT (e.g. a JSON array like 
+      `["issuer", "validFrom", "credentialSubject.id"]`)
     - `feature`: The function being tested, one of `credential_jose`, `credential_cose`, `credential_sdjwt`, 
       `presentation_jose`, `presentation_cose`, or `presentation_sdjwt`
-    - `expected_result`: The expected outcome of the test
+    - `expected_result`: The expected outcome of the test written to a file of the following format:
+    
+    ```json
+    {
+      "result": "success",
+      "data": "..."
+    }
+    ```
+    Where `result` is one of `success`, `failure`, `indeterminate`, or `error`, and `data` is a string containing a 
+    signed and encoded credential or presentation.
 
 ### test-runner.js
 

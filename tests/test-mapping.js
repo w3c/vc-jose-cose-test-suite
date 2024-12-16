@@ -24,6 +24,7 @@ const TestVerificationMethods = {
   p384: 'vm-p384.json',
   p521: 'vm-p521.json',
   ed25519: 'vm-ed25519.json',
+  didEd25519: 'vm-did-ed25519.json',
 };
 
 export const TestError = {
@@ -45,27 +46,15 @@ export const JOSETestMapping = {
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'jwt_compact',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p256,
-    //   'required_fields': ['type', 'issuer', 'credentialSubject'],
-    // },
   },
 
-  '2. JWT Complex Credential Issuance': {
+  '2. JWT Credential Issuance with All Optional Fields': {
     'number': 2,
     'input_file': 'credential-full.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'jwt_compact',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p384,
-    //   'required_fields': ['type', 'issuer', 'credentialSubject', 'evidence', 'termsOfUse'],
-    // },
   },
 
   '3. JWT Basic Presentation Issuance': {
@@ -75,12 +64,6 @@ export const JOSETestMapping = {
     'fn': TestFunction.issue,
     'feature': TestFeature.presentation_jose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'jwt_compact',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p256,
-    //   'required_fields': ['type', 'verifiableCredential'],
-    // },
   },
 
   '4. JWT Complex Presentation Issuance': {
@@ -90,64 +73,120 @@ export const JOSETestMapping = {
     'fn': TestFunction.issue,
     'feature': TestFeature.presentation_jose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'jwt_compact',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p521,
-    //   'required_fields': ['type', 'verifiableCredential'],
-    // },
   },
 
-  '5. JWT Basic Credential Verification': {
+  '5. JWT Issuance with Unknown Extensions': {
     'number': 5,
-    'input_file': 'credential-minimal-signed.json',
+    'input_file': 'credential-unknown-extensions.json',
+    'key_file': TestVerificationMethods.p521,
+    'fn': TestFunction.issue,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '6. JWT Basic Credential Verification': {
+    'number': 6,
+    'input_file': 'credential-jose-minimal.txt',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.success,
-    // 'verification_checks': {
-    //   'expected_result': TestResult.success,
-    // },
   },
 
-  '6. JWT Presentation Verification': {
-    'number': 6,
-    'input_file': 'presentation-multiple-signed.json',
+  '7. JWT Presentation Verification': {
+    'number': 7,
+    'input_file': 'presentation-jose-multiple.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_jose,
     'expected_result': TestResult.success,
-    // 'verification_checks': {
-    //   'expected_result': TestResult.success,
-    // },
   },
 
-  '7. JWT Issuer Match Verification': {
-    'number': 7,
-    'input_file': 'credential-issuer-match-signed.json',
+  '8. JWT Issuer Match Verification': {
+    'number': 8,
+    'input_file': 'credential-issuer-match-signed.txt',
     'key_file': TestVerificationMethods.ed25519,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_jose,
     'expected_result': TestResult.success,
-    // 'verification_checks': {
-    //   'expected_result': TestResult.failure,
-    //   'expected_error': TestError.INVALID_ISSUER,
-    // },
   },
 
-  // '8. JWT Issuer as URL without a kid': {
-  //   'number': 8,
-  //   'input_file': 'credential-issuer-url-no-kid-signed.json',
-  //   'key_file': TestVerificationMethods.ed25519,
-  //   'fn': TestFunction.verify,
-  //   'feature': TestFeature.credential_jose,
-  //   'expected_result': TestResult.success,
-  // },
+  '9. JWT Verification With Unknown Extensions': {
+    'number': 9,
+    'input_file': 'credential-jose-unknown-extensions.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '10. JWT Unsecured Credential Verification': {
+    'number': 10,
+    'input_file': 'credential-minimal.json',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '11. JWT Unsecured Presentation Verification': {
+    'number': 11,
+    'input_file': 'presentation-single.json',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '12. JWT Credential with an Invalid Signature': {
+    'number': 12,
+    'input_file': 'credential-jose-bad-signature.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '13. JWT Credential with an Invalid Media Type': {
+    'number': 13,
+    'input_file': 'credential-jose-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '14. JWT Presentation with an Invalid Media Type': {
+    'number': 14,
+    'input_file': 'presentation-jose-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '15. JWT Credential with vc and/or vp Claims': {
+    'number': 15,
+    'input_file': 'credential-jose-vc-vp-claims.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_jose,
+    'expected_result': TestResult.failure,
+  },
+
+  '16. JWT Presentation with Invalid Credential': {
+    'number': 16,
+    'input_file': 'presentation-jose-bad-credential.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_jose,
+    'expected_result': TestResult.failure,
+  },
 };
 
 export const SDJWTTestMapping = {
-  '9. SD-JWT Basic Credential Issuance': {
-    'number': 9,
+  '17. SD-JWT Basic Credential Issuance': {
+    'number': 17,
     'input_file': 'credential-selective.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -156,8 +195,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '10. SD-JWT Complex Credential Issuance': {
-    'number': 10,
+  '18. SD-JWT Complex Credential Issuance': {
+    'number': 18,
     'input_file': 'credential-nested-selective.json',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.issue,
@@ -166,8 +205,8 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '11. SD-JWT Presentation Issuance': {
-    'number': 11,
+  '19. SD-JWT Presentation Issuance': {
+    'number': 19,
     'input_file': 'presentation-selective.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
@@ -176,81 +215,149 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
-  '12. SD-JWT Basic Credential Verification': {
-    'number': 12,
-    'input_file': 'credential-selective-signed.json',
+  '20. SD-JWT Basic Credential Verification': {
+    'number': 20,
+    'input_file': 'credential-sdjwt-selective.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.success,
   },
 
-  '13. SD-JWT Complex Credential Verification': {
-    'number': 13,
-    'input_file': 'credential-nested-selective-signed.json',
+  '21. SD-JWT Complex Credential Verification': {
+    'number': 21,
+    'input_file': 'credential-sdjwt-nested.txt',
     'key_file': TestVerificationMethods.p521,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_sdjwt,
     'expected_result': TestResult.success,
   },
 
-  '14. SD-JWT Presentation Verification': {
-    'number': 14,
-    'input_file': 'presentation-selective-signed.json',
+  '22. SD-JWT Presentation Verification': {
+    'number': 22,
+    'input_file': 'presentation-sdjwt-selective.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_sdjwt,
     'expected_result': TestResult.success,
   },
+
+  '23. SD-JWT Credential With an Invalid Signature': {
+    'number': 23,
+    'input_file': 'credential-sdjwt-bad-signature.txt',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.failure,
+  },
+
+  '24. SD-JWT Credential with an Invalid Media Type': {
+    'number': 24,
+    'input_file': 'credential-sdjwt-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_sdjwt,
+    'expected_result': TestResult.failure,
+  },
+
+  '25. SD-JWT Presentation with an Invalid Media Type': {
+    'number': 25,
+    'input_file': 'presentation-sdjwt-bad-media-type.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.failure,
+  },
+
+  '26. SD-JWT Presentation with Invalid Credentials': {
+    'number': 26,
+    'input_file': 'presentation-sdjwt-bad-credential.txt',
+    'key_file': TestVerificationMethods.p521,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.failure,
+  },
 };
 
 export const COSETestMapping = {
-  '15. COSE Basic Credential Issuance': {
-    'number': 15,
+  '27. COSE Basic Credential Issuance': {
+    'number': 27,
     'input_file': 'credential-minimal.json',
-    'key_file': TestVerificationMethods.p256,
+    'key_file': TestVerificationMethods.didEd25519,
     'fn': TestFunction.issue,
     'feature': TestFeature.credential_cose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'cose_sign1',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p256,
-    //   'required_fields': ['type', 'issuer', 'credentialSubject'],
-    // },
   },
 
-  '16. COSE Basic Presentation Issuance': {
-    'number': 16,
+  '28. COSE Basic Presentation Issuance': {
+    'number': 28,
     'input_file': 'presentation-single.json',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.issue,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.success,
-    // 'issuance_checks': {
-    //   'format': 'cose_sign1',
-    //   'signature_valid': true,
-    //   'signing_key': TestVerificationMethods.p384,
-    //   'required_fields': ['type', 'verifiableCredential'],
-    //   'encoding_valid': true,
-    // },
   },
 
-  '17. COSE Basic Credential Verification': {
-    'number': 17,
-    'input_file': 'credential-minimal-cose-signed.json',
+  '29. COSE Basic Credential Verification': {
+    'number': 29,
+    'input_file': 'credential-cose-minimal.txt',
     'key_file': TestVerificationMethods.p256,
     'fn': TestFunction.verify,
     'feature': TestFeature.credential_cose,
     'expected_result': TestResult.success,
   },
 
-  '18. COSE Basic Presentation Verification': {
-    'number': 18,
-    'input_file': 'presentation-single-cose-signed.json',
+  '30. COSE Credential Verification Incorrect Encoding': {
+    'number': 30,
+    'input_file': 'credential-cose-minimal-not-base64.txt',
+    'key_file': TestVerificationMethods.p256,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '31. COSE Basic Presentation Verification': {
+    'number': 31,
+    'input_file': 'presentation-cose-single.txt',
     'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.success,
+  },
+
+  '32. COSE Credential With an Invalid Signature': {
+    'number': 32,
+    'input_file': 'credential-cose-bad-signature.txt',
+    'key_file': TestVerificationMethods.ed25519,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '33. COSE Credential with an Invalid Media Type': {
+    'number': 33,
+    'input_file': 'credential-cose-bad-media-type.txt',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.credential_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '34. COSE Presentation with an Invalid Media Type': {
+    'number': 34,
+    'input_file': 'presentation-cose-bad-media-type.txt',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.failure,
+  },
+
+  '35. COSE Presentation with Invalid Credentials': {
+    'number': 35,
+    'input_file': 'presentation-cose-bad-credential.txt',
+    'key_file': TestVerificationMethods.p256,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_cose,
+    'expected_result': TestResult.failure,
   },
 };
