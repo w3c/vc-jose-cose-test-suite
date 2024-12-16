@@ -3,7 +3,7 @@ module github.com/w3c/vc-test-suite-template
 go 1.23.3
 
 require (
-	github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241215004540-cb1cc1a9b436
+	github.com/decentralgabe/vc-jose-cose-go v0.0.0-20241216012356-6bf57d050c12
 	github.com/goccy/go-json v0.10.3
 	github.com/lestrrat-go/jwx/v2 v2.1.3
 	github.com/pkg/errors v0.9.1

@@ -233,6 +233,15 @@ export const SDJWTTestMapping = {
     'expected_result': TestResult.success,
   },
 
+  '22. SD-JWT Presentation Verification': {
+    'number': 22,
+    'input_file': 'presentation-sdjwt-selective.txt',
+    'key_file': TestVerificationMethods.p384,
+    'fn': TestFunction.verify,
+    'feature': TestFeature.presentation_sdjwt,
+    'expected_result': TestResult.success,
+  },
+
   '23. SD-JWT Credential With an Invalid Signature': {
     'number': 23,
     'input_file': 'credential-sdjwt-bad-signature.txt',
@@ -337,7 +346,7 @@ export const COSETestMapping = {
   '34. COSE Presentation with an Invalid Media Type': {
     'number': 34,
     'input_file': 'presentation-cose-bad-media-type.txt',
-    'key_file': TestVerificationMethods.p348,
+    'key_file': TestVerificationMethods.p384,
     'fn': TestFunction.verify,
     'feature': TestFeature.presentation_cose,
     'expected_result': TestResult.failure,
