@@ -45,33 +45,32 @@ The suite makes use Digital Bazaar's [mocha-w3c-interop-reporter](https://github
 
 This file defines the structure of the test suite. It exports two main objects:
 
-1. `TestResult`: An enum of possible test outcomes (success, failure, indeterminate, error).
-2. `TestMapping`: A mapping of test names to their configurations. Each test configuration includes:
-    - `number`: A unique identifier for the test
-    - `input_file`: The name of the input file to be used, representing:
-      - For issuance, a JSON unsigned Verifiable Credential or Presentation (a .json file)
-      - For verification, a signed Verifiable Credential or Presentation, encoded as a JWT string (JOSE), 
-        Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT) (a .txt file)
-    - `key_file`: The name of the key file to be used, representing a Verification Method (a .json file)
-    - `fn`: The function being tested either `issue` or `verify`
-    - `disclosure_paths`: An array of paths to be disclosed in a Selective Disclosure JWT (e.g. a JSON array like 
-      `["issuer", "validFrom", "credentialSubject.id"]`)
-    - `feature`: The function being tested, one of `credential_jose`, `credential_cose`, `credential_sdjwt`, 
-      `presentation_jose`, `presentation_cose`, or `presentation_sdjwt`
-    - `expected_result`: The expected outcome of the test written to a file of the following format:
-    
+- `TestResult`: An enum of possible test outcomes (success, failure, indeterminate, error).
+- `TestMapping`: A mapping of test names to their configurations. Each test configuration includes:
+  - `number`: A unique identifier for the test
+  - `input_file`: The name of the input file to be used, representing:
+    - For issuance, an unsigned Verifiable Credential or Presentation serialized as JSON (a `.json` file)
+    - For verification, a signed Verifiable Credential or Presentation, encoded as a JWT string (JOSE), 
+      Base64 string (COSE), or SD-JWT string (Selective Disclosure JWT) (a `.txt` file)
+  - `key_file`: The name of the key file to be used, representing a Verification Method (a `.json` file)
+  - `fn`: The function being tested either `issue` or `verify`
+  - `disclosure_paths`: An array of paths to be disclosed in a Selective Disclosure JWT (e.g., a JSON array like 
+    `["issuer", "validFrom", "credentialSubject.id"]`)
+  - `feature`: The function being tested, one of `credential_jose`, `credential_cose`, `credential_sdjwt`, 
+    `presentation_jose`, `presentation_cose`, or `presentation_sdjwt`
+  - `expected_result`: The expected outcome of the test written to a file of the format below,
+    where `result` is one of `success`, `failure`, `indeterminate`, or `error`; and `data` is a string
+    containing a signed and encoded credential or presentation.
     ```json
     {
       "result": "success",
       "data": "..."
     }
     ```
-    Where `result` is one of `success`, `failure`, `indeterminate`, or `error`, and `data` is a string containing a 
-    signed and encoded credential or presentation.
 
 ### test-runner.js
 
-This is the main test runner script. It:
+This is the main test runner script. It does the following:
 
 1. Loads the implementations and their supported features
 2. Iterates through each implementation and test
@@ -83,8 +82,8 @@ This is the main test runner script. It:
 
 This file contains utility functions used by the test runner:
 
-1. `generateTestResults`: Executes the Docker command to run a test for a specific implementation
-2. `checkTestResults`: Reads and interprets the results of a test execution
+- `generateTestResults`: Executes the Docker command to run a test for a specific implementation
+- `checkTestResults`: Reads and interprets the results of a test execution
 
 ## Adding Implementations
 
@@ -93,32 +92,28 @@ To add a new implementation:
 1. Create a new folder in the `implementations/` directory with your implementation name.
 2. Add your implementation files, including a Dockerfile that sets up your environment.
 3. Update `implementations/implementations.json` to include your new implementation and its supported features:
-
-```json
-{
-  "your-implementation-name": {
-    "features": {
-      "feature1": true,
-      "feature2": false,
-      "feature3": true
-    }
-  }
-}
-```
-
-Note: if your implementation does not support a feature, set the value to `false`. This will cause the test runner to
-skip tests for that feature.
-
+   ```json
+   {
+     "your-implementation-name": {
+       "features": {
+         "feature1": true,
+         "feature2": false,
+         "feature3": true
+       }
+     }
+   }
+   ```
+   Note: If your implementation does not support a feature, set the value to `false`. This will cause the test runner to
+   skip tests for that feature.
 4. Update `implementations/compose.yml` to include your new service:
-
-```yaml
-services:
-  your-implementation-name:
-    build: ./your-implementation-name
-    volumes:
-      - ../tests/input:/tests/input
-      - ../tests/output:/tests/output
-```
+   ```yaml
+   services:
+     your-implementation-name:
+       build: ./your-implementation-name
+       volumes:
+         - ../tests/input:/tests/input
+         - ../tests/output:/tests/output
+   ```
 
 ## Running Tests
 
@@ -127,14 +122,11 @@ To run the test suite:
 1. Ensure Docker and [Docker Compose](https://docs.docker.com/compose/) are installed on your system.
 2. Navigate to the project root directory.
 3. Run the test runner script (the exact command may vary based on your setup, e.g., `node test-runner.js`).
-
-There is also an npm script that can be used to run the test suite:
-
-```sh
-npm run test
-```
-
-The test runner will execute each test for each implementation and generate a report in the `reports/` directory.
+   There is also an npm script that can be used to run the test suite:
+   ```sh
+   npm run test
+   ```
+4. The test runner will execute each test for each implementation and generate a report in the `reports/` directory.
 
 ## Extending the Test Suite
 
@@ -159,7 +151,7 @@ validate --input <input_file> --config '<config_json>' --output <output_file>
 The Docker containers are run using Docker Compose, with volumes mounted to provide access to the input and output directories.
 
 This configuration setup is designed to be flexible and can be modified to suit the specific requirements of each implementation,
-though it can be modified to suit the specific requirements of a given test suite.
+and it can be modified to suit the specific requirements of a given test suite.
 
 ## Troubleshooting
 
@@ -167,13 +159,13 @@ If you encounter issues:
 
 1. Check the console output for error messages.
 2. Verify that all necessary files exist in the expected locations.
-3. Ensure Docker containers have the necessary permissions to read input and write output.
+3. Ensure that Docker containers have the necessary permissions to read input and write output.
 4. Check that implementations correctly handle the provided CLI arguments.
 
 For more detailed debugging:
-- Add console.log statements in the test runner or utility functions.
+- Add `console.log` statements in the test runner or utility functions.
 - Inspect the Docker container logs for implementation-specific issues.
 
 ---
 
-For any questions or issues not covered in this README, please open an issue in the project repository.
+For any questions or issues not covered in this README, please open an [issue in the project repository](https://github.com/w3c/vc-jose-cose-test-suite/issues).
