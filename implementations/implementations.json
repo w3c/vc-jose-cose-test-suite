@@ -12,10 +12,10 @@
   "mavennet": {
     "features": {
       "credential_jose": true,
-      "credential_cose": false,
+      "credential_cose": true,
       "credential_sdjwt": false,
       "presentation_jose": true,
-      "presentation_cose": false,
+      "presentation_cose": true,
       "presentation_sdjwt": false
     }
   }
