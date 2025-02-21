@@ -8,5 +8,15 @@
       "presentation_cose": true,
       "presentation_sdjwt": true
     }
+  },
+  "mavennet": {
+    "features": {
+      "credential_jose": true,
+      "credential_cose": false,
+      "credential_sdjwt": false,
+      "presentation_jose": true,
+      "presentation_cose": false,
+      "presentation_sdjwt": false
+    }
   }
 }

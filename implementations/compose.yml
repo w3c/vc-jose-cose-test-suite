@@ -3,3 +3,7 @@ services:
     build: ./independent
     volumes:
       - ../tests:/tests
+  mavennet:
+    image: mavennet/mavennet-vc-cli:latest
+    volumes:
+      - ../tests:/tests
