@@ -7,3 +7,9 @@ services:
     image: mavennet/mavennet-vc-cli:latest
     volumes:
       - ../tests:/tests
+  tradeverifyd:
+    image: ghcr.io/tradeverifyd/vc-jose-cose-test-suite:latest
+    volumes:
+      - ../tests:/tests
+
+      
