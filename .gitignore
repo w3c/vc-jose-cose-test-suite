@@ -6,6 +6,7 @@
 
 # Reports
 reports/*.html
+reports/*.json
 
 # Output
 tests/output/*
