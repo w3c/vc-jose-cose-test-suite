@@ -1,6 +1,4 @@
-import fs from 'fs';
-
-const implementationsFile = './implementations/implementations.json';
+import {allImplementations, filterImplementations} from 'vc-test-suite-implementations';
 
 /**
  * Retrieves a list of implementations with their features from a JSON file.
@@ -11,18 +9,22 @@ const implementationsFile = './implementations/implementations.json';
  * If an error occurs during file reading or parsing, an empty array is returned.
  */
 export function implementationsWithFeatures() {
-  let implementationsData;
-  try {
-    const fileContent = fs.readFileSync(implementationsFile, 'utf8');
-    implementationsData = JSON.parse(fileContent);
-  } catch (error) {
-    console.error('Error reading or parsing implementations file:', error);
-    return [];
-  }
+  // Filter `allImplementations` to only include those with a `jose-cose` object
+  const filter = ({key, value}) => {
+    return 'jose-cose' in value.settings &&
+      value.settings['jose-cose']?.features;
+  };
+  const {match} = filterImplementations({allImplementations, filter});
+  return match;
+}
 
-  return Object.entries(implementationsData)
-      .map(([name, impl]) => ({name, ...impl}))
-      .filter((impl) => impl.features && Object.keys(impl.features).length > 0);
+/**
+ * Retrieves a list of implementation names that have features defined.
+ *
+ * @return {Array<string>} An array of implementation names.
+ */
+export function listImplementationNamesWithFeatures() {
+  return Array.from(implementationsWithFeatures().values().map((i) => i.settings.name));
 }
 
 /**
@@ -34,6 +36,5 @@ export function implementationsWithFeatures() {
  * If the implementation does not exist or an error occurs, an empty object is returned.
  */
 export function getImplementationFeatures(implName) {
-  const implementationsData = JSON.parse(fs.readFileSync(implementationsFile, 'utf8'));
-  return implementationsData[implName]?.features;
+  return allImplementations.get(implName).settings?.['jose-cose']?.features;
 }

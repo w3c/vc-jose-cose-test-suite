@@ -1,5 +1,5 @@
 import chai from 'chai';
-import {getImplementationFeatures, implementationsWithFeatures} from '../implementations/index.js';
+import {getImplementationFeatures, listImplementationNamesWithFeatures} from '../implementations/index.js';
 import {checkTestResults, generateTestResults} from './test-util.js';
 import {COSETestMapping, JOSETestMapping, SDJWTTestMapping} from './test-mapping.js';
 
@@ -13,11 +13,8 @@ const testMappingSuites = [
 
 for (const {name: suiteName, mapping} of testMappingSuites) {
   describe(suiteName, function() {
-    const impls = implementationsWithFeatures();
-    console.log('Implementations with features:', JSON.stringify(impls, null, 2));
-
-    const implNames = impls.map((i) => i.name);
-    console.log('Implementation names:', implNames);
+    const implNames = listImplementationNamesWithFeatures();
+    console.log('Implementations with features:', implNames);
 
     // Set up matrix reporting properties
     this.matrix = true;
@@ -26,26 +23,26 @@ for (const {name: suiteName, mapping} of testMappingSuites) {
     this.rowLabel = 'Test Name';
     this.columnLabel = 'Implementation';
 
-    for (const i of impls) {
-      describe(i.name, function() {
-        const features = getImplementationFeatures(i.name);
-        console.log(`Features for ${i.name}:`, JSON.stringify(features, null, 2));
+    for (const name of implNames) {
+      describe(name, function() {
+        const features = getImplementationFeatures(name);
+        console.log(`Features for ${name}:`, JSON.stringify(features, null, 2));
 
         for (const [testName, testConfig] of Object.entries(mapping)) {
           const requiredFeature = testConfig.feature;
 
           it(testName, async function() {
             if (!features[requiredFeature]) {
-              console.log(`Skipping test "${testName}" for ${i.name} due to missing feature: ${requiredFeature}`);
+              console.log(`Skipping test "${testName}" for ${name} due to missing feature: ${requiredFeature}`);
               this.skip();
               return;
             }
 
-            console.log(`Running test: ${testName} for implementation: ${i.name}`);
-            await generateTestResults(i.name, testConfig);
-            this.test.cell = {columnId: i.name, rowId: testName};
-            const result = await checkTestResults(i.name, testConfig);
-            console.log(`Test result for ${i.name} - ${testName}: ${result}`);
+            console.log(`Running test: ${testName} for implementation: ${name}`);
+            await generateTestResults(name, testConfig);
+            this.test.cell = {columnId: name, rowId: testName};
+            const result = await checkTestResults(name, testConfig);
+            console.log(`Test result for ${name} - ${testName}: ${result}`);
             should.equal(result, testConfig.expected_result);
 
             // Log the test result in a format that matches the report generator's expectations
