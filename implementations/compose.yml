@@ -1,13 +1,13 @@
 services:
-  independent:
+  decentralizedgabe:
     build: ./independent
     volumes:
       - ../tests:/tests
-  mavennet:
+  Mavennet:
     image: mavennet/mavennet-vc-cli:latest
     volumes:
       - ../tests:/tests
-  tradeverifyd:
+  Tradeverifyd:
     image: ghcr.io/tradeverifyd/vc-jose-cose-test-suite:latest
     volumes:
       - ../tests:/tests
