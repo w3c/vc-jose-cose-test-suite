@@ -10,10 +10,8 @@ import {allImplementations, filterImplementations} from 'vc-test-suite-implement
  */
 export function implementationsWithFeatures() {
   // Filter `allImplementations` to only include those with a `jose-cose` object
-  const filter = ({key, value}) => {
-    return 'jose-cose' in value.settings &&
-      value.settings['jose-cose']?.features;
-  };
+  const filter = ({value}) =>
+    value.settings?.['jose-cose']?.features !== undefined;
   const {match} = filterImplementations({allImplementations, filter});
   return match;
 }
