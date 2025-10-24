@@ -28,7 +28,7 @@ go run . issue \
 To build the Docker image:
 
 ```bash
-docker build -t independent .
+docker build -t decentralgabe .
 ```
 
 ### Running
@@ -36,7 +36,7 @@ docker build -t independent .
 To run the validator using Docker:
 
 ```bash
-docker run -v $(pwd)/tests:/tests independent issue \
+docker run -v $(pwd)/tests:/tests decentralgabe issue \
   --input /tests/input/credential-minimal.json \
   --key /tests/input/vm-ed25519.json \
   --feature credential_jose \
