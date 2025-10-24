@@ -1,6 +1,6 @@
 services:
-  decentralizedgabe:
-    build: ./independent
+  decentralgabe:
+    build: ./decentralgabe
     volumes:
       - ../tests:/tests
   Mavennet:
