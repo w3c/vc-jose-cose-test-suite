@@ -89,23 +89,27 @@ This file contains utility functions used by the test runner:
 
 To add a new implementation:
 
-1. Create a new folder in the `implementations/` directory with your implementation name.
-2. Add your implementation files, including a Dockerfile that sets up your environment.
-3. Update `implementations/implementations.json` to include your new implementation and its supported features:
+1. Add (or update) your implementation details in https://github.com/w3c/vc-test-suite-implementations/
+2. Use a `jose-cose` section and delineate which features you want tested:
    ```json
    {
-     "your-implementation-name": {
+     "name": "Provider Name",
+     "implementation": "Implementation Name",
+     "jose-cose": {
        "features": {
-         "feature1": true,
-         "feature2": false,
-         "feature3": true
+         "credential_jose": true,
+         "credential_cose": true,
+         "credential_sdjwt": true,
+         "presentation_jose": true,
+         "presentation_cose": true,
+         "presentation_sdjwt": true
        }
      }
    }
    ```
-   Note: If your implementation does not support a feature, set the value to `false`. This will cause the test runner to
-   skip tests for that feature.
-4. Update `implementations/compose.yml` to include your new service:
+   Note: If your implementation does not support a feature, set the value to
+   `false`. This will cause the test runner to skip tests for that feature.
+3. Update `implementations/compose.yml` to include your new service:
    ```yaml
    services:
      your-implementation-name:
