@@ -11,5 +11,9 @@ services:
     image: ghcr.io/tradeverifyd/vc-jose-cose-test-suite:latest
     volumes:
       - ../tests:/tests
+  Trential:
+    image: ghcr.io/trential/vc-jose-cose-cli:latest
+    volumes:
+      - ../tests:/tests
 
       
