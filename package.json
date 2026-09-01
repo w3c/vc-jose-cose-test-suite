@@ -24,7 +24,7 @@
     "clean": "find tests/output -name \"*.json\" -type f -delete"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "repository": {
     "type": "git",
